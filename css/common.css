@@ -1,0 +1,83 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{font-family:"Microsoft Yahei";background:#fff;color:#000;padding:0;margin:0; overflow: hidden}
+html{ overflow-x: hidden}
+body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,ol,li{list-style:none;font-family: "Microsoft Yahei"}
+a{text-decoration:none;font-family: "Microsoft Yahei"}
+img{border:0;}
+input{outline:none;font-family: "Microsoft Yahei"}
+span,a,i{ display: inline-block;font-family: "Microsoft Yahei"}
+a:focus,area{outline:none;font-family: "Microsoft Yahei"}
+.fl{float:left;}
+.fr{float:right;}
+.clear,.cf{clear:both;zoom:1;overflow:hidden;}
+/*字体图标*/
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1472026395'); /* IE9*/
+  src: url('iconfont.eot?t=1472026395#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1472026395') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1472026395') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1472026395#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:30px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 10px
+}
+.icon-shezhi:before { content: "\e600"; }
+.icon-wodezhuye:before { content: "\e601"; }
+.icon-you:before { content: "\e602"; }
+.icon-liuliangtongji:before { content: "\e603"; }
+.icon-zhuxiao:before { content: "\e604"; }
+.icon-biaoge:before { content: "\e605"; }
+.icon-xia:before { content: "\e606"; }
+.icon-huiyuanguanli:before { content: "\e607"; }
+.icon-shebeijian:before { content: "\e608"; }
+.icon-xitong:before { content: "\e609"; }
+.icon-yuedutongji:before { content: "\e60a"; }
+.nav .active .iconfont:last-child:before{content: "\e606";color: #fff}
+.nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 70px;}
+.nav .iconfont{font-size: 25px;padding: 0;color: #808080;text-align: center;}
+.nav .active .iconfont{color: #fff}
+.nav i{width: 70px;height: 70px;background-color: #f6f6f6;line-height: 70px;}
+span.nav-label{position: relative;top: -3px}
+.navbar-default .nav>li>a:hover i,.nav>li.active>a i{background-color: #65c8d1;color: #fff}
+.navbar-default .nav>li>a:hover span{color: #fff}
+
+/*common*/
+.common_top{height: 75px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
+.common_top p{font-size: 18px;line-height: 75px;}
+.common_top li{float: left;}
+.sidebar-collapse,.nav ul{background-color: #fff;}
+.common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
+.nav li{border-bottom: 2px solid #f0f0f0}
+/*首页*/
+.main1{width: 62.8%;margin-left: 1%;margin-right: 1.6%;}
+.main2{width: 32.3%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
