@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{margin:0;padding:0;}
-body{font-family:"Microsoft Yahei";background:#fff;color:#000;padding:0;margin:0; overflow: hidden}
+body{font-family:"Microsoft Yahei";background:#f6f6f6;color:#000;padding:0;margin:0; overflow: hidden}
 html{ overflow-x: hidden}
 body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -57,15 +57,23 @@ span.nav-label{position: relative;top: -3px}
 .sidebar-collapse,.nav ul{background-color: #fff;}
 .common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
 .nav li{border-bottom: 2px solid #f0f0f0}
+body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 /*首页*/
+.main{border-top: 4px solid #e7eaec;background-color: #fff;}
+.main p{height: 45px;line-height: 45px;padding-left: 20px;font-size: 14px;border-bottom: 1px solid #e7eaec}
 .main1{width: 62.8%;margin-left: 1%;margin-right: 1.6%;}
+#main1{margin: 25px 10px}
+#main2{margin: 25px 50px}
 .main2{width: 32.3%}
-
-
-
-
-
-
+.main3{border: 0;width: 33.7%;margin-left: 1%;margin-top: 30px;background-color: #f6f6f6;}
+.main4{margin-top: 30px;margin-left: 2.3%;width: 60.66%}
+.index_y{height: 220px;padding: 0 25px;background-color: #fff;}
+.index_y:first-child{margin-bottom: 10px}
+.index_y p{position: relative;}
+.index_y a{position: absolute;right: 10px;font-size: 18px;}
+.index_y ul{line-height: 45px;padding-top: 10px;padding-left: 30px}
+.index_y li{position: relative;}
+.index_y li span:last-child{position: absolute;right: 25px}
 
 
 
