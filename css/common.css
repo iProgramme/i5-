@@ -93,6 +93,7 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .btn3_3 li{display: inline-block;margin-right: 20px;}
 .btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
 .btn3_3 .btn7,.btn3_3 .btn8,.btn3_3 .btn9{padding-left: 0;background: #2f4050;}
+input.btn7{margin-left: 50px;}
 .table3_3 .btn1{background-color: #41b88c;}
 .table3_3 .btn2{background-color: #f5b473;}
 .table3_3 .btn3{background-color: #d66565;}
