@@ -81,12 +81,47 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .use3_3 ul{padding: 0 30px}
 .input3_3 ul{padding: 20px 30px}
 .use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
-.input3_3{width: 70%;margin-left: 1.5%;height: 200px}
+.input3_3{width: 69.1%;margin-left: 1.5%;height: 200px;border: 1px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
 .input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px}
 .input3_3 li span{width: 70px}
 .input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
-.input3_3 input[type="button"]{height: 40px;background-color: #2f4050;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px)}
+.input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
+.table3_3{margin-left: 1%;width: 98%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
+.btn3_3 ul{line-height: 88px;}
+.btn3_3{height: 88px;padding: 0 20px;border-bottom: 1px solid #eee;}
+.btn3_3 li{display: inline-block;margin-right: 20px;}
+.btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
+.btn3_3 .btn7,.btn3_3 .btn8,.btn3_3 .btn9{padding-left: 0;background: #2f4050;}
+.table3_3 .btn1{background-color: #41b88c;}
+.table3_3 .btn2{background-color: #f5b473;}
+.table3_3 .btn3{background-color: #d66565;}
+.table3_3 .btn4{background-color: #d96ce6;}
+.table3_3 .btn5{background-color: #c9c15f;}
+.table3_3 .btn6{background-color: #66b8d9;}
+.lan3_3{padding: 20px 20px;text-align: center;}
+.lan3_3 .btn1,.lan3_3 .btn2,.lan3_3 .btn3,.lan3_3 .btn4,.lan3_3 .btn5,.lan3_3 .btn6{width: 160px;height: 160px;margin-right: 9px;margin-bottom: 10px;}
+.lan3_3 li{display: inline-block;font-size: 12px;}
+.lan3_3 span{height: 70px;line-height: 70px;width: 100%}
+.lan3_3 li li{width: 48%;height: 38px;line-height: 38px;}
+/*几个图标*/
+.content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0;}
+.content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
+.roll-right.J_tabRight{background-position: 14px -17px;}
+.page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
+.input3_3 input[type="button"]{background: url(../img/index3_3.png) no-repeat 51px -76px #2f4050;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
