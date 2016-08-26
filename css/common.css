@@ -1,0 +1,133 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{font-family:"Microsoft Yahei";background:#f6f6f6;color:#000;padding:0;margin:0; overflow: hidden}
+html{ overflow-x: hidden}
+body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,ol,li{list-style:none;font-family: "Microsoft Yahei"}
+a{text-decoration:none;font-family: "Microsoft Yahei"}
+img{border:0;}
+input{outline:none;font-family: "Microsoft Yahei";border: 1px solid #8c8c8c}
+span,a,i{ display: inline-block;font-family: "Microsoft Yahei"}
+a:focus,area{outline:none;font-family: "Microsoft Yahei"}
+.fl{float:left;}
+.fr{float:right;}
+.clear,.cf{clear:both;zoom:1;overflow:hidden;}
+/*字体图标*/
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1472026395'); /* IE9*/
+  src: url('iconfont.eot?t=1472026395#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1472026395') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1472026395') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1472026395#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:30px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 10px
+}
+.icon-shezhi:before { content: "\e600"; }
+.icon-wodezhuye:before { content: "\e601"; }
+.icon-you:before { content: "\e602"; }
+.icon-liuliangtongji:before { content: "\e603"; }
+.icon-zhuxiao:before { content: "\e604"; }
+.icon-biaoge:before { content: "\e605"; }
+.icon-xia:before { content: "\e606"; }
+.icon-huiyuanguanli:before { content: "\e607"; }
+.icon-shebeijian:before { content: "\e608"; }
+.icon-xitong:before { content: "\e609"; }
+.icon-yuedutongji:before { content: "\e60a"; }
+.nav .active .iconfont:last-child:before{content: "\e606";color: #fff}
+.nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 70px;}
+.nav .iconfont{font-size: 25px;padding: 0;color: #808080;text-align: center;}
+.nav .active .iconfont{color: #fff}
+.nav i{width: 70px;height: 70px;background-color: #f6f6f6;line-height: 70px;}
+span.nav-label{position: relative;top: -3px}
+.navbar-default .nav>li>a:hover i,.nav>li.active>a i{background-color: #65c8d1;color: #fff}
+.navbar-default .nav>li>a:hover span{color: #fff}
+
+/*common*/
+.common_top{height: 75px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
+.common_top p{font-size: 18px;line-height: 75px;}
+.common_top li{float: left;}
+.sidebar-collapse,.nav ul{background-color: #fff;}
+.common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
+.nav li{border-bottom: 2px solid #f0f0f0}
+body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
+/*首页*/
+.main{border-top: 4px solid #e7eaec;background-color: #fff;}
+.main p{height: 45px;line-height: 45px;padding-left: 20px;font-size: 14px;border-bottom: 1px solid #e7eaec}
+.main3 p,.use3_3 p{border-bottom: 1px dashed #e7eaec}
+.main1{width: 62.8%;margin-left: 1%;margin-right: 1.6%;}
+/*#main1{margin: 25px 10px}
+#main2{margin: 25px 50px}
+#main4{margin: 25px 30px}*/
+.main2{width: 32.3%}
+.main3{border: 0;width: 33.7%;margin-left: 1%;margin-top: 30px;background-color: #f6f6f6;}
+.main4{margin-top: 30px;margin-left: 2.3%;width: 60.66%}
+.index_y{height: 220px;padding: 0 25px;background-color: #fff;}
+.index_y:first-child{margin-bottom: 10px}
+.index_y p{position: relative;}
+.index_y a{position: absolute;right: 10px;font-size: 18px;}
+.index_y ul{line-height: 45px;padding-top: 10px;padding-left: 30px}
+.index_y li{position: relative;font-size: 14px;}
+.index_y li span:last-child{position: absolute;right: 25px}
+/*内页3-3*/
+.use3_3{width: 24.5%;margin-left: 1%;padding: 0 15px;height: 200px;border: 1px solid #ccc}
+.use3_3 ul{padding: 0 30px}
+.input3_3 ul{padding: 20px 30px}
+.use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
+.input3_3{width: 69.1%;margin-left: 1.5%;height: 200px;border: 1px solid #ccc}
+.input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
+.input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px}
+.input3_3 li span{width: 70px}
+.input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
+.input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
+.table3_3{margin-left: 1%;width: 98%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
+.btn3_3 ul{line-height: 88px;}
+.btn3_3{height: 88px;padding: 0 20px;border-bottom: 1px solid #eee;}
+.btn3_3 li{display: inline-block;margin-right: 20px;}
+.btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
+.btn3_3 .btn7,.btn3_3 .btn8,.btn3_3 .btn9{padding-left: 0;background: #2f4050;}
+input.btn7{margin-left: 50px;}
+.table3_3 .btn1{background-color: #41b88c;}
+.table3_3 .btn2{background-color: #f5b473;}
+.table3_3 .btn3{background-color: #d66565;}
+.table3_3 .btn4{background-color: #d96ce6;}
+.table3_3 .btn5{background-color: #c9c15f;}
+.table3_3 .btn6{background-color: #66b8d9;}
+.lan3_3{padding: 20px 20px;text-align: center;}
+.lan3_3 .btn1,.lan3_3 .btn2,.lan3_3 .btn3,.lan3_3 .btn4,.lan3_3 .btn5,.lan3_3 .btn6{width: 160px;height: 160px;margin-right: 9px;margin-bottom: 10px;}
+.lan3_3 li{display: inline-block;font-size: 12px;}
+.lan3_3 span{height: 70px;line-height: 70px;width: 100%}
+.lan3_3 li li{width: 48%;height: 38px;line-height: 38px;}
+/*几个图标*/
+.content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0;}
+.content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
+.roll-right.J_tabRight{background-position: 14px -17px;}
+.page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
+.input3_3 input[type="button"]{background: url(../img/index3_3.png) no-repeat 51px -76px #2f4050;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
