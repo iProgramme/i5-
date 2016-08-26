@@ -74,7 +74,7 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .index_y p{position: relative;}
 .index_y a{position: absolute;right: 10px;font-size: 18px;}
 .index_y ul{line-height: 45px;padding-top: 10px;padding-left: 30px}
-.index_y li{position: relative;}
+.index_y li{position: relative;font-size: 14px;}
 .index_y li span:last-child{position: absolute;right: 25px}
 /*内页3-3*/
 .use3_3{width: 24.5%;margin-left: 1%;padding: 0 15px;height: 200px;border: 1px solid #ccc}
@@ -83,7 +83,7 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
 .input3_3{width: 69.1%;margin-left: 1.5%;height: 200px;border: 1px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
-.input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px}
+.input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
 .input3_3 li span{width: 70px}
 .input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
@@ -100,11 +100,11 @@ input.btn7{margin-left: 50px;}
 .table3_3 .btn4{background-color: #d96ce6;}
 .table3_3 .btn5{background-color: #c9c15f;}
 .table3_3 .btn6{background-color: #66b8d9;}
-.lan3_3{padding: 20px 20px;text-align: center;}
-.lan3_3 .btn1,.lan3_3 .btn2,.lan3_3 .btn3,.lan3_3 .btn4,.lan3_3 .btn5,.lan3_3 .btn6{width: 160px;height: 160px;margin-right: 9px;margin-bottom: 10px;}
-.lan3_3 li{display: inline-block;font-size: 12px;}
-.lan3_3 span{height: 70px;line-height: 70px;width: 100%}
-.lan3_3 li li{width: 48%;height: 38px;line-height: 38px;}
+.lan3_3{padding: 20px 20px;}
+.lan3_3 .btn1,.lan3_3 .btn2,.lan3_3 .btn3,.lan3_3 .btn4,.lan3_3 .btn5,.lan3_3 .btn6{width: 107px;height: 107px;margin:0 4px 10px;}
+.lan3_3 li{display: inline-block;font-size: 12px;text-align: center;}
+.lan3_3 span{height: 45px;line-height: 45px;width: 100%}
+.lan3_3 li li{width: 48%;height: 28px;line-height: 28px;}
 /*几个图标*/
 .content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0;}
 .content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
