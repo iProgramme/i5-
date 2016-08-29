@@ -13,9 +13,14 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     <link href="../css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=RFSysGOzwStwCVzqeYwwILRmb57e7VwO"></script>
+    <style type="text/css">
+        body, html,#allmap {width: 100%;height: 100%;overflow: visible;margin:0;font-family:"微软雅黑";}
+        #allmap{border: 0px solid #a9a6a6;height: 680px}
+    </style>
 </head>
 
-<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden;padding: 20px 0">
+<body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
     <div class="main3_3">
         <!-- 第一个框框 -->
         <div class="use3_3 main fl">
@@ -109,16 +114,16 @@
                         <input type="button" value="刷新" class="btn9">
                     </li>
                     <li>
-                        <input type="radio" name="" class="btn10">
+                        <input type="radio" name="aa" class="btn10" checked value="1"><span>表格</span>
                     </li>
                     <li>
-                        <input type="radio" name="" class="btn11">
+                        <input type="radio" name="aa" class="btn11" value="2"><span>GIS</span>
                     </li>
                 </ul>
             </div>
             <div class="lan3_3">
                 <ul>
-                    <li class="btn1">
+                    <li class="btn1 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -127,7 +132,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn1">
+                    <li class="btn1 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -136,7 +141,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn2">
+                    <li class="btn2 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -145,7 +150,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn3">
+                    <li class="btn3 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -154,7 +159,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn4">
+                    <li class="btn4 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -163,7 +168,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn5">
+                    <li class="btn5 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -172,7 +177,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn6">
+                    <li class="btn6 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -181,7 +186,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn1">
+                    <li class="btn1 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -190,7 +195,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn2">
+                    <li class="btn2 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -199,7 +204,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn3">
+                    <li class="btn3 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -208,7 +213,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn4">
+                    <li class="btn4 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -217,7 +222,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn5">
+                    <li class="btn5 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -226,7 +231,7 @@
                             <li>11.8V</li>
                         </ul>
                     </li>
-                    <li class="btn6">
+                    <li class="btn6 btn_n">
                         <span>1.消防支队</span>
                         <ul>
                             <li>B:0/18</li>
@@ -237,9 +242,630 @@
                     </li>
                 </ul>
             </div>
+            <div class="map3_3 disN">
+                <div id="allmap"></div>
+                <div class="map_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="6">站点信息</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>站点</th>
+                                <th>名称</th>
+                                <th>总柱</th>
+                                <th>总车</th>
+                                <th>故障</th>
+                                <th>电压</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>天安门广场</td>
+                                <td>20</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>12.6V</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>圆明园</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>11.8V</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="javascript:void(0)" class="open"> > </a>
+                </div>
+                <script src="../js/jquery.min.js"></script>
+            </div>
         </div>
         <!-- 第三个框框 -->
+        <div class="bgc000">
+            <div class="open_door disN">
+                <p>1.碧玉花园<span>&nbsp;</span></p>
+                <ul>
+                    <li class="index_btn2"><span>1</span><span>12312</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>2</span><span>32455</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>3</span><span>44444</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>4</span><span>23423</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>5</span><span>34543</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>6</span><span>55676</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>7</span><span>67868</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>8</span><span>78993</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>9</span><span>89002</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>10</span><span>12231</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>11</span><span>23234</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>12</span><span>34435</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>13</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>14</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>15</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>16</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>17</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>18</span><span>53543</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>19</span><span>53543</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>20</span><span>53554</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>21</span><span>35345</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>22</span><span>35345</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn2"><span>23</span><span>34545</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>24</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>25</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>26</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>27</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>28</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>29</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                    <li class="index_btn1"><span>30</span><span>&nbsp;</span>
+                        <ul class="disN">
+                            <li>遥控开锁(T)</li>
+                            <li>遥控关锁(U)</li>
+                            <li>状态(V)</li>
+                            <li>通讯测试(W)</li>
+                            <li>更新语音(X)</li>
+                            <li>刷新(Y)</li>
+                            <li>取消(Z)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript">
+    // 点击展开自己的30条目浮层
+    $(".btn_n").click(function() {
+
+        $('.open_door').show();
+
+
+    });
+    // 点击之后出现三级弹窗
+    $(".open_door li").click(function() {
+        $(".open_door li").css("z-index", "1");
+        $(this).css("z-index", "2");
+        $(".open_door li").removeClass('active_border');
+        $(this).addClass('active_border');
+        if ($(this).children('ul').is(':hidden')) {　　 //如果是隐藏的则显示元素，否则隐藏
+            $(".open_door li").children('ul').hide();
+            $(this).children('ul').show();
+        } else {
+            $(this).children('ul').hide();
+
+        }
+        event.stopPropagation();
+    });
+    $(".open_door li li").click(function() {
+        $(this).parents('li').css('z-index', '2')
+    });
+    $(".open_door p span").click(function() {
+            $(".open_door").hide();
+            event.stopPropagation();
+        })
+        // 切换表格和地图
+        // 切换表格和地图
+    $(".btn3_3 input[type=radio]").click(function() {
+        // 获取点击的value值
+        var value_num = $(this).attr('value');
+        if (value_num == 2) {
+            $(".lan3_3").hide();
+            $(".map3_3").show()
+        } else {
+            $(".map3_3").hide();
+            $(".lan3_3").show()
+        }
+    })
+    </script>
 </body>
 
 </html>
+<script type="text/javascript">
+    // 地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.360, 39.920);
+    map.centerAndZoom(point, 15);
+    // 这是第五个
+    var point5 = new BMap.Point(116.417, 39.911);    //这个要和下面的有点区别，不然的话框显示不到对应的地点
+    //创建图标
+    var pt5 = new BMap.Point(116.417, 39.911);
+    var myIcon = new BMap.Icon("../img/index_btn5.png", new BMap.Size(80,80));
+    var marker5 = new BMap.Marker(pt5,{icon:myIcon});  // 创建标注
+    map.addOverlay(marker5);              // 将标注添加到地图中
+    var opts = {
+      width : 80,     // 信息窗口宽度
+      height: 220,     // 信息窗口高度
+      title : "海底捞王府井店" , // 信息窗口标题
+      enableMessage:true,//设置允许信息窗发送短息
+      message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+    }
+    var infoWindow5 = new BMap.InfoWindow("<br/><ul><li>名称：亲亲家园</li><li>锁住数量：18</li><li>停放率：45%</li><li>可用车辆数量：7</li><li>故障：1</li><li>电压：11.8V</li><li>温度：38.0℃</li><li>地址：人民医院</li></ul>", opts);  // 创建信息窗口对象 
+    marker5.addEventListener("click", function(){          
+        map.openInfoWindow(infoWindow5,point5); //开启信息窗口
+    });
+    // 这是第二个
+    var point2 = new BMap.Point(116.4, 39.909);    //这个要和下面的有点区别，不然的话框显示不到对应的地点
+    //创建图标
+    var pt2 = new BMap.Point(116.4, 39.909);
+    //size表示可点击区域的大小
+    var myIcon = new BMap.Icon("../img/index_btn5.png", new BMap.Size(80,80));
+    var marker2 = new BMap.Marker(pt2,{icon:myIcon});  // 创建标注
+    map.addOverlay(marker2);              // 将标注添加到地图中
+    var opts = {
+      width : 80,     // 信息窗口宽度
+      height: 220,     // 信息窗口高度
+      title : "海底捞王府井店" , // 信息窗口标题
+      enableMessage:true,//设置允许信息窗发送短息
+      message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+    }
+    var infoWindow2 = new BMap.InfoWindow("<br/><ul><li>名称：亲亲家园</li><li>锁住数量：18</li><li>停放率：45%</li><li>可用车辆数量：7</li><li>故障：1</li><li>电压：11.8V</li><li>温度：38.0℃</li><li>地址：人民医院</li></ul>", opts);  // 创建信息窗口对象 
+    marker2.addEventListener("click", function(){          
+        map.openInfoWindow(infoWindow2,point2); //开启信息窗口
+    });
+
+
+    // 添加比例尺和缩放
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    /*缩放控件type有四种类型:
+    BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+    
+    //添加控件和比例尺
+    function add_control(){
+        map.addControl(top_left_control);        
+        map.addControl(top_left_navigation);     
+        map.addControl(top_right_navigation);    
+    }
+    add_control();
+
+    //打开和关闭左侧表格
+    $(".map_table .open").click(function () {
+        if ($(this).siblings('table').is(':hidden')){
+            $(".map_table table").show(500);
+            $(this).animate({"left":480},500);
+
+        }else{
+            $(".map_table table").hide(500);
+        $(this).animate({"left":0},500);
+        }
+        
+    })
+</script>
