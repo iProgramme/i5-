@@ -406,8 +406,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="javascript:void(0)" class="open"> > </a>
                 </div>
+                <a href="javascript:void(0)" class="open"> > </a>
                 <script src="../js/jquery.min.js"></script>
             </div>
         </div>
@@ -857,14 +857,14 @@
     add_control();
 
     //打开和关闭左侧表格
-    $(".map_table .open").click(function () {
-        if ($(this).siblings('table').is(':hidden')){
-            $(".map_table table").show(500);
-            $(this).animate({"left":480},500);
+    $(".map3_3 .open").click(function () {
+        if ($(".map_table table").is(':hidden')){
+            $(".map3_3 table").show();
+            $(this).animate({"right":480},001);
 
         }else{
-            $(".map_table table").hide(500);
-        $(this).animate({"left":0},500);
+            $(".map3_3 table").hide();
+            $(this).animate({"right":0},001);
         }
         
     })

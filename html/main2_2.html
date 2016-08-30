@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link href="../css/common.css" rel="stylesheet">
+    
+
+ <!-- jqgrid-->
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
+    <div class="main3_3 cl">
+        
+        <!-- 第一个框框 -->
+        <div class="input3_3 main fl input2_2">
+            <form>
+                <ul>
+                    <li>
+                        <label for="">
+                            <span>卡类型：</span>
+                            <select name="">
+                                <option value="">全部</option>
+                                <option value="">报警</option>
+                                <option value="">给警察</option>
+                                <option value="">打电话</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <span>卡号：</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <span>用户名：</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <span>证件号：</span>
+                            <input type="text" placeholder="请输入">
+                        </label>
+                    </li>
+                    <li class="time">
+                          <div class="demo-content">
+                            <form  method="post">
+                              <p>
+                                <label>开卡时间：</label><input type="text" class="calendar" />
+                              </p>
+                               <p>
+                                <label>至</label><input type="text" class="calendar" />
+                              </p>
+                         
+                            </form>
+                            
+                         
+                          <script src="../bui/jquery-1.8.1.min.js"></script>
+                          <script src="../bui/sea.js"></script>
+                          <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
+                         
+                        <!-- script start --> 
+                            <script type="text/javascript">
+                                BUI.use('bui/calendar',function(Calendar){
+                                  var datepicker = new Calendar.DatePicker({
+                                    trigger:'.calendar',
+                                    autoRender : true
+                                  });
+                                });
+                            </script>
+                        <!-- script end -->
+                          </div>
+                    </li>
+                    <li class="main_btn">
+                        <label for="">
+                            <input type="button" value="查询">
+                        </label>
+                    </li>
+                    <li class="main_btn">
+                        <label for="">
+                            <input type="button" value="导出excel">
+                        </label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!-- 第一个框框 -->
+        <!-- 第二个框框 表格-->
+        <iframe src="default/index.html" style="width: 97.2%;margin-left: 1.5%;border: 0;height: 327px;margin-top: 20px"></iframe>
+        <!-- 第二个框框 表格-->
+       
+    </div>
+</body>
+
+</html>
