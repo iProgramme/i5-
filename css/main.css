@@ -184,7 +184,7 @@ footer{margin-bottom: 300px;}
 .map_table tbody tr:hover{background-color: #f6a554;color: #fff}
 .map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
 .map_table .open{position: fixed;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
-#form33_sty{width: 97%;margin-left: 1.5%; background-color: #f5f5f5;margin-top: 30px;padding-bottom: 20px;border: 1px solid #ccc}
+#form33_sty{width: 97%;margin-left: 1.5%; background-color: #fff;padding-top: 20px;padding-bottom: 20px;border: 1px solid #ccc;border-top: 0}
 .form_sty{padding: 45px 0;background-color: #fff;position: relative;border-radius: 5px;}
 .form_33{margin: 30px 20px 20px;}
 .form_sty ul{width: calc(100% - 330px)}
@@ -198,8 +198,8 @@ footer{margin-bottom: 300px;}
 .form_btn .reset{background-color: #57c2b4;}
 .J_mainContent{border: 2px solid #cccccc;background-color: #f5f5f5;position: relative;z-index: 1;top: 40px}
 .form33_ifr{margin: 30px 0px 20px;border: 2px solid #cccccc;}
-.form10_tab{margin:0;overflow: auto;}
-.form10_tab table{width: 1550px;text-align: center;font-size: 16px;color: #494949;}
+.form10_tab{margin:0;overflow: auto;border: 1px solid #ccc;width: 98%;margin: 0 auto}
+.form10_tab table{width: 1550px;text-align: center;font-size: 12px;color: #494949;}
 .form10_tab table th{height: 50px;line-height: 50px;color: #033131;font-size: 14px;background-color: #fff;font-weight: 500;}
 .form10_tab .green{color: #f89838}
 .form10_tab tr:nth-child(odd){background-color: #fff;}

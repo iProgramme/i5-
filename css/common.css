@@ -158,7 +158,7 @@ input.btn7{margin-left: 10px;}
 .nav-second-level .borbot{border-bottom: 1px solid #eee;padding-bottom: 30px;}
 .nav-second-level .bortop{padding-top: 30px;}
 /*2-2页面*/
-.input2_2{width: 97%;margin-bottom: 30px;}
+.input2_2{width: 97%;padding-bottom: 30px;border-bottom: 0}
 .input2_2 li{width: 24%}
 .input2_2 .time{width: 48%}
 .input2_2 li input{width: calc(100% - 110px)}
