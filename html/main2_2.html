@@ -142,16 +142,16 @@
             <div class="form10_tab">
                 <table>
                     <tr>
-                        <th>还车流水号</th>
-                        <th>停车点</th>
-                        <th>停车柱号</th>
-                        <th>表面卡号</th>
-                        <th>车牌号</th>
-                        <th>收费金额</th>
-                        <th>还车状态</th>
-                        <th>借车时间</th>
-                        <th>还车时间</th>
-                        <th>备注</th>
+                        <th>编号</th>
+                        <th>用户名</th>
+                        <th>卡号</th>
+                        <th>卡类型</th>
+                        <th>用户状态</th>
+                        <th>余额</th>
+                        <th>手机号码</th>
+                        <th>证件号</th>
+                        <th>开户时间</th>
+                        <th>操作员</th>
                     </tr>
                     <tr>
                         <td>1101</td>
@@ -279,11 +279,18 @@
                 <ul>
                     <li>共28条</li>
                     <li>第1/1页</li>
-                    <li>跳转到第
-                        <input type="text">页</li>
-                    <li><a href="javascript:void(0)">《</a></li>
-                    <li><a href="javascript:void(0)">1</a></li>
-                    <li><a href="javascript:void(0)">》</a></li>
+                    
+                    <li><a href="javascript:void(0)" class="pre_page"><</a></li>
+                    <li>
+                        <ul class="change">
+                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" class="next_page active">></a></li>
+                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">跳转</a></li>
                 </ul>
             </div>
             <!-- 修改的窗口 -->
@@ -389,6 +396,29 @@
         <script>
         $(".form10_open .cancel").click(function() {
             $(".form10_open").hide()
+        })
+        // 点击翻页
+        $(".change a").click(function () {
+            $(".change a").removeClass('active');
+            $(this).addClass('active');
+            var num1=$(this).index();
+            var num2=$(".change a:last-child").index();
+            // 判断是不是第一个
+            if (num2==0) {
+
+            } else {}
+            // 判断是不是最后一个
+            if (num1==num2) {
+
+            } else {}
+        })
+        // 点击上一页
+        $(".pre_page").click(function () {
+            var pre_page=$(".change a").index();
+            if (pre_page==0) {
+
+            } else {}
+            
         })
         </script>
         <!-- 第二个框框 表格-->

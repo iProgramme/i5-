@@ -199,7 +199,7 @@ footer{margin-bottom: 300px;}
 .J_mainContent{border: 2px solid #cccccc;background-color: #f5f5f5;position: relative;z-index: 1;top: 40px}
 .form33_ifr{margin: 30px 0px 20px;border: 2px solid #cccccc;}
 .form10_tab{margin:0;overflow: auto;border: 1px solid #ccc;width: 98%;margin: 0 auto}
-.form10_tab table{width: 1550px;text-align: center;font-size: 12px;color: #494949;}
+.form10_tab table{width: 100%;text-align: center;font-size: 12px;color: #494949;}
 .form10_tab table th{height: 50px;line-height: 50px;color: #033131;font-size: 14px;background-color: #fff;font-weight: 500;}
 .form10_tab .green{color: #f89838}
 .form10_tab tr:nth-child(odd){background-color: #fff;}
@@ -207,22 +207,23 @@ footer{margin-bottom: 300px;}
 .form10_tab td{height: 30px;line-height: 30px;border-right: 2px solid #ebebeb}
 .form10_tab td:last-child{border: 0}
 .pages{width: calc(100% - 20px);text-align: right;}
-.pages li{display: inline-block;margin: 20px 5px}
-.pages input{width: 20px;height: 11px;margin: -1px 5px 0}
-.pages li a{color: #fff;background-color: #f89838;}
+.pages li{display: inline-block;margin: 20px 5px;color: #a2a2a2;}
+.pages input{width: 30px;height: 16px;margin: -1px 5px 0}
+.pages li a{color: #a2a2a2;background-color: #b9b9b9;padding: 0 6px;border: 1px solid #b9b9b9}
+.pages .change a{color: #979797;background-color: #f9f9f9;padding: 0 6px;border: 1px solid #b9b9b9}
 /*修改弹出窗*/
-.form10_open{position: fixed;width: 460px;top: 20px;left: calc(50% - 231px);background-color: #fff;border-radius:10px;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
+.form10_open{position: fixed;width: 460px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
 .form10_open td{font-size: 16px;color: #494949;vertical-align: middle;}
-.form10_open td:first-child{width: 150px;text-align: right;margin-right: 10px;font-size: 16px;color: #494949}
-.form10_open th{height: 50px;line-height: 50px;font-size: 18px;color: #fff;background-color: #57c2b4;width: 560px;border-top-right-radius: 10px;border-top-left-radius: 10px;margin-bottom: 10px;}
+.form10_open td:first-child{width: 110px;text-align: right;margin-right: 10px;font-size: 14px;color: #494949}
+.form10_open th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;}
 .form10_open tr{height: 40px;line-height: 40px;}
 .form10_open tr:last-child{height: 80px}
 .form10_open select,.form10_open textarea,.form10_open input{margin-bottom: 0;}
-.form10_btn input{width: 330px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;color: #494949;border-radius: 10px;margin: 10px 65px 10px;background-color: #ebebeb;}
-.form10_btn input:hover{background-color: #f89838;color: #fff}
-.form10_open1{width: 480px;left: calc(50% - 241px)}
-.form10_open1 input{width: 350px}
-.form10_open1 th{font-size: 26px;}
+.form10_btn input{width: 330px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;color: #494949;border-radius: 5px;margin: 10px 22px 20px;background-color: #97a4b7;cursor: pointer;}
+.form10_btn input:hover{background-color: #324e75;color: #fff;}
+.form10_open1{width: 370px;left: calc(50% - 186px)}
+.form10_open1 input{width: 80px;display: inline-block;}
+.form10_btn{width: 260px;margin: 0 auto;text-align: center;}
 .form4_0_sty{margin-left: 20px;height: 55px;padding-top: 25px}
 .form40_tabs li{display: inline-block;}
 .form20_content .form40_tabs{top: -60px;text-align: left;position: relative;border-bottom: 1px solid #cccccc;padding-left: 20px;}
@@ -247,7 +248,8 @@ footer{margin-bottom: 300px;}
 label, input, button, select, textarea{font-family: "Microsoft Yahei"}
 body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .over_auto{width: 100%;overflow: auto;}
-
+/*新加*/
+.pages li .active,.pages li a:hover,.pages li .active1{color: #fff;border: 1px solid #324e75;background-color: #324e75;}
 
 
 

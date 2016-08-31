@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
+    <div class="main2_1">
+        <div class="content2_1">
+            <div class="tab2_1">
+                <span class="shu">请选择</span>
+                <a href="#" class="inpt1 active">01·读卡模式</a>
+                <a href="#" class="inpt2">02·信息输入</a>
+            </div>
+            <div class="container_y container_y1">
+                <img src="../img/card1.jpg">
+                <p>团体卡等特殊卡种请按相应的按钮</p>
+                <p>请把卡片放到读卡器上，并按下一步</p>
+                <input type="button" name="" value="下一步">
+            </div>
+            <div class="container_y container_y2">
+                <ul>
+                    <li><span>姓名：</span><input type="text" placeholder="请输入"></li>
+                    <li>
+                        <span>证件号：</span>
+                        <select>
+                            <option>身份证</option>
+                            <option>军官证</option>
+                            <option>学生在</option>
+                        </select>
+                        <input type="text" placeholder="请输入">
+                    </li>
+                    <li><span>手机号：</span><input type="text" placeholder="请输入"></li>
+                </ul>
+                <input type="button" name="" value="查询" class="search">
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(".tab2_1 a").click(function() {
+        $(".tab2_1 a").removeClass('active');
+        $(this).addClass('active');
+        var num=$(this).index()-1;
+        $(".container_y").hide();
+        $(".container_y").eq(num).show();
+    })
+    </script>
+</body>
+
+</html>
