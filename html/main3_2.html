@@ -16,45 +16,42 @@
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
-    <div class="main2_1">
+    <div class="main3_2">
         <div class="content2_1">
-            <div class="tab2_1">
-                <span class="shu">请选择</span>
-                <a href="#" class="inpt1 active">01·读卡模式</a>
-                <a href="#" class="inpt2">02·信息输入</a>
+            <div class="tab3_2">
+                <a href="#" class="">充值</a>
+                <a href="#" class="">冲正</a>
+                <a href="#" class="">开户</a>
+                <a href="#" class="">换卡</a>
+                <a href="#" class="">卡还原</a>
+                <a href="#" class="">解锁</a>
+                <a href="#" class="">挂失解锁</a>
+                <a href="#" class="">修改个人信息</a>
+                <a href="#" class="">修改金额</a>
+                <a href="#" class="">密码修改</a>
+                <a href="#" class="">销户</a>
             </div>
-            <div class="container_y container_y1">
-                <img src="../img/card1.jpg">
-                <p>团体卡等特殊卡种请按相应的按钮</p>
-                <p>请把卡片放到读卡器上，并按下一步</p>
-                <input type="button" name="" value="下一步">
-            </div>
-            <div class="container_y container_y2">
-                <ul>
-                    <li><span>姓名：</span><input type="text" placeholder="请输入"></li>
-                    <li>
-                        <span>证件号：</span>
-                        <select>
-                            <option>身份证</option>
-                            <option>军官证</option>
-                            <option>学生在</option>
-                        </select>
-                        <input type="text" placeholder="请输入">
-                    </li>
-                    <li><span>手机号：</span><input type="text" placeholder="请输入"></li>
+            <div class="open3_2 disN">
+                <ul class="steps">
+                    <li class="active"><span>卡片放在读卡器上</span><span class="num">1</span></li>
+                    <li><span>输入开户信息</span><span class="num">2</span></li>
+                    <li><span>保存信息</span><span class="num">3</span></li>
+                    <li><span>完成开户</span><span class="num">4</span></li>
                 </ul>
-                <input type="button" name="" value="查询" class="search">
+                <div class="btn3_2">
+                    <input type="button" name="" value="下一步">
+                    <input type="button" name="" value="添加团体卡">
+                </div>
             </div>
         </div>
     </div>
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
-    $(".tab2_1 a").click(function() {
-        $(".tab2_1 a").removeClass('active');
-        $(this).addClass('active');
-        var num=$(this).index()-1;
-        $(".container_y").hide();
-        $(".container_y").eq(num).show();
+   
+    // 点击开户
+    $(".tab3_2 a").eq(2).click(function () {
+        $(".open3_2").show();
+        $(this).addClass('active')
     })
     </script>
 </body>

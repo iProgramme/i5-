@@ -215,7 +215,7 @@ footer{margin-bottom: 300px;}
 .form10_open{position: fixed;width: 460px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
 .form10_open td{font-size: 16px;color: #494949;vertical-align: middle;}
 .form10_open td:first-child{width: 110px;text-align: right;margin-right: 10px;font-size: 14px;color: #494949}
-.form10_open th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;}
+.form10_open th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;border-bottom: 1px solid #ccc}
 .form10_open tr{height: 40px;line-height: 40px;}
 .form10_open tr:last-child{height: 80px}
 .form10_open select,.form10_open textarea,.form10_open input{margin-bottom: 0;}
@@ -250,6 +250,28 @@ body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .over_auto{width: 100%;overflow: auto;}
 /*新加*/
 .pages li .active,.pages li a:hover,.pages li .active1{color: #fff;border: 1px solid #324e75;background-color: #324e75;}
+/*3-1弹出框*/
+.form31_1{position: fixed;width: 530px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;left: calc(50% - 265px)}
+.form31_1 table{width: 100%}
+.form31_1 td{font-size: 14px;color: #494949;vertical-align: middle;}
+.form31_1 td:first-child{width: 175px;text-align: right;margin-right: 10px;font-size: 14px;color: #313131}
+.form31_1 th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;border-bottom: 1px solid #ccc}
+.form31_1 tr{height: 48px;line-height: 48px;}
+.form31_1 tr:last-child{height: 80px}
+.form31_1 select,.form31_1 input{height: 28px;margin-bottom: 0;padding: 0 5px;font-size: 14px;width: 208px}
+.form31_1 select{width: 220px}
+.form31_1 textarea{margin-bottom: 0;padding: 0 5px;font-size: 14px;vertical-align: top;width: 260px}
+.form311_btn input{width: 120px;height: 38px;line-height: 38px;text-align: center;font-size: 16px;color: #494949;border-radius: 5px;margin: 10px 14px 20px;background-color: #97a4b7;cursor: pointer;}
+.form311_btn input:hover{background-color: #324e75;color: #fff;}
+.form311_btn{padding-left: 161px;}
+
+
+
+
+
+
+
+
 
 
 

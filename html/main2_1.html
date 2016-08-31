@@ -29,7 +29,7 @@
                 <p>请把卡片放到读卡器上，并按下一步</p>
                 <input type="button" name="" value="下一步">
             </div>
-            <div class="container_y container_y2">
+            <div class="container_y container_y2 disN">
                 <ul>
                     <li><span>姓名：</span><input type="text" placeholder="请输入"></li>
                     <li>
@@ -47,6 +47,35 @@
             </div>
         </div>
     </div>
+    <div class="main2_1 disN">
+        <div class="content2_1">
+            <div class="ul2_1">
+                <a href="#" class="">充值</a>
+                <a href="#" class="">冲正</a>
+                <a href="#" class="">开户</a>
+                <a href="#" class="">换卡</a>
+                <a href="#" class="">卡还原</a>
+                <a href="#" class="">解锁</a>
+                <a href="#" class="">挂失解锁</a>
+                <a href="#" class="">修改个人信息</a>
+                <a href="#" class="">修改金额</a>
+                <a href="#" class="">密码修改</a>
+                <a href="#" class="">销户</a>
+            </div>
+            <div class="open2_1 disN">
+                <ul class="steps">
+                    <li class="active"><span>卡片放在读卡器上</span><span class="num">1</span></li>
+                    <li><span>输入开户信息</span><span class="num">2</span></li>
+                    <li><span>保存信息</span><span class="num">3</span></li>
+                    <li><span>完成开户</span><span class="num">4</span></li>
+                </ul>
+                <div class="btn2_1">
+                    <input type="button" name="" value="下一步">
+                    <input type="button" name="" value="添加团体卡">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
     $(".tab2_1 a").click(function() {
@@ -56,6 +85,17 @@
         $(".container_y").hide();
         $(".container_y").eq(num).show();
     })
+    // 点击下一步
+    $(".container_y1 input").click(function() {
+        $(".main2_1").hide();
+        $(".main2_1").eq(1).show();
+        // 点击开户
+        $(".ul2_1 a").eq(2).click(function () {
+            $(".open2_1").show();
+            $(this).addClass('active')
+        })
+    });
+    
     </script>
 </body>
 

@@ -13,6 +13,7 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fl{float:left;}
 .fr{float:right;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
+input[type="button"]{cursor: pointer;}
 /*字体图标*/
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1472026395'); /* IE9*/
@@ -51,12 +52,13 @@ span.nav-label{position: relative;top: 0px;height: 70px;line-height: 70px;left: 
 .navbar-default .nav>li>a:hover span{color: #fff}
 
 /*common*/
+#side-menu{padding-bottom: 70px;}
 .common_top{height: 75px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
 .common_top p{font-size: 18px;line-height: 75px;}
 .common_top li{float: left;}
 .sidebar-collapse,.nav ul{background-color: #fff;}
 .common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
-.nav li{border-bottom: 2px solid #f0f0f0}
+.nav li{border-bottom: 2px solid #ccc}
 body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 /*首页*/
 .main{border-top: 4px solid #e7eaec;background-color: #fff;}
@@ -81,10 +83,10 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .use3_3 ul{padding: 0 30px}
 .input3_3 ul{padding: 20px 30px}
 .use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
-.input3_3{width: 69.1%;margin-left: 1.5%;height: 200px;border: 1px solid #ccc}
+.input3_3{width: 69.1%;margin-left: 1.5%;border: 1px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
 .input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
-.input3_3 li span{width: 70px}
+.input3_3 li span{width: 85px}
 .input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
 .table3_3{margin-left: 1%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
@@ -94,8 +96,8 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
 .btn3_3 li input[type="radio"]{position: relative;left: 30px;top: 10px}
 .btn3_3 li span{position: relative;left: -20px;top: 0px;width: 50px}
-.btn3_3 li:last-child{right: 0px;position: absolute;margin-right: 0px}
-.btn3_3 li:nth-last-child(2){right: 60px;position: absolute;}
+.btn3_3 li:last-child{right: -30px;position: absolute;margin-right: 0px}
+.btn3_3 li:nth-last-child(2){right: 30px;position: absolute;}
 .btn3_3 .btn7,.btn3_3 .btn8,.btn3_3 .btn9{padding-left: 0;background: #2f4050;}
 input.btn7{margin-left: 10px;}
 .table3_3 .btn1,.index_btn1{background-color: #41b88c;}
@@ -140,7 +142,7 @@ input.btn7{margin-left: 10px;}
 .map3_3 .open{position: absolute;right: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
 .map3_3{position: relative;}
 /*2-1页面*/
-.content2_1{margin: 0 30px;height: 410px;border: 1px solid #ccc;background-color: #fff;font-size: 14px;}
+.content2_1{margin: 0 30px;min-height: 500px;border: 1px solid #ccc;background-color: #fff;font-size: 14px;}
 .shu{padding: 0 35px 0 30px;background: url(../img/shu.png) no-repeat 11px 24px;color: #313131}
 .tab2_1{height: 62px;line-height: 62px;border-bottom: 1px solid #eee}
 .tab2_1 a{width: 122px;height: 33px;line-height: 33px;color: #313131;background-color: #f3f3f3;text-align: center;margin-right: 35px;}
@@ -155,18 +157,18 @@ input.btn7{margin-left: 10px;}
 .container_y2 select{height: 35px}
 .container_y2 span{width: 60px}
 .container_y2 .search{width: 80px;height: 38px;background-color: #324e75;color: #fff;position: absolute;top: 170px;right: 30px}
-.nav-second-level .borbot{border-bottom: 1px solid #eee;padding-bottom: 30px;}
-.nav-second-level .bortop{padding-top: 30px;}
+.nav-second-level .borbot{border-bottom: 1px solid #ccc!important;padding-bottom: 15px;}
+.nav-second-level .bortop{padding-top: 15px;}
 /*2-2页面*/
-.input2_2{width: 97%;padding-bottom: 30px;border-bottom: 0}
+.input2_2{width: 97%;padding-bottom: 0px;border-bottom: 0}
 .input2_2 li{width: 24%}
 .input2_2 .time{width: 48%}
 .input2_2 li input{width: calc(100% - 110px)}
 .input2_2 li select{width: calc(100% - 100px)}
 .time p{border: 0;padding: 0;display: inline-block;width: 49%}
 .time p label{padding-right: 10px;}
-.input2_2 .main_btn{width: 125px}
-.main_btn input[type="button"]{width: 80px;height: 38px;background: #324e75;color: #fff;padding: 0;left: 0}
+.input2_2 .main_btn{width: 26%;text-align: right;}
+.main_btn input[type="button"]{width: 80px;height: 38px;background: #324e75;color: #fff;padding: 0;left: 0;margin: 0 1.5%}
 .calendar{background: url(../img/time.png) no-repeat 95% 5px!important;}
 .jqGrid_wrapper{width: 97%;margin-left: 1.5%;margin-top: 20px;background-color: #fff;border: 1px solid #ccc}
 .ui-jqgrid-titlebar{display: none;}
@@ -175,6 +177,25 @@ input.btn7{margin-left: 10px;}
 .ui-pg-button span{width: 10px;height: 10px}
 .jqgrow:nth-child(even){background-color: #f6f6f6;}
 .jqgrow td{padding: 8px 0}
+/*3-2页面*/
+.ul2_1{height: 75px;line-height: 75px;border-bottom: 2px solid #eee}
+.ul2_1 a{padding: 0 25px;height: 75px;color: #3d3d3d}
+.ul2_1 .active,.ul2_1 a:hover{border-bottom: 2px solid #324e75}
+.open2_1{width: 58.5%;margin: 20px auto;border: 1px solid #ccc;border-radius: 5px}
+.steps{font-size: 0;}
+.steps li{display: inline-block;font-size: 14px;color: #464343;text-align: center;position: relative;width: 25%;border-bottom: 10px solid #ccc}
+.steps li span{width: 100%;height: 110px;line-height: 110px;}
+.steps .num{font-size: 24px;color: #464343;width: 38px;height: 38px;line-height: 38px;position: absolute;left: calc(50% - 19px);bottom: -24px;background-color: #ccc;border-radius: 19px}
+.steps .active{border-bottom: 10px solid #f6a554;}
+.steps .active span{color: #f6a554}
+.steps .active .num{color: #fff;background-color: #f6a554;}
+.btn2_1{margin: 115px 25px 55px;text-align: right;}
+.btn2_1 input{width: 80px;height: 40px;line-height: 40px;color: #fff;background-color: #97a4b7;cursor: pointer;margin-right: 40px;font-size: 14px;}
+.btn2_1 input:hover{background-color: #324e75;}
+
+
+
+
 
 
 
