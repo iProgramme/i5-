@@ -112,7 +112,8 @@ input.btn7{margin-left: 10px;}
 .lan3_3 span{height: 70px;line-height: 70px;width: 100%}
 .lan3_3 li li{width: 48%;height: 38px;line-height: 38px;}
 /*几个图标*/
-.content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0 #fff;}
+.content-tabs .roll-left,.roll-right.J_tabRight{background: url(../img/index3_3.png) no-repeat 0 0 #fff;}
+.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0}
 .content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
 .roll-right.J_tabRight{background-position: 14px -17px;}
 .page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
@@ -139,7 +140,7 @@ input.btn7{margin-left: 10px;}
 .map_table tbody tr:nth-child(even){background-color: #eeeeee;}
 .map_table tbody tr:hover{background-color: #acb6c5;color: #fff}
 .map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
-.map3_3 .open{position: absolute;right: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
+.map3_3 .open{position: absolute;right: 480px;width: 24px;height: 68px;line-height: 87px; background: url(../img/open.png) no-repeat 0 0;top: calc(50% - 34px);font-size: 20px;color: #fff;text-align: center;}
 .map3_3{position: relative;}
 /*2-1页面*/
 .content2_1{margin: 0 30px;min-height: 500px;border: 1px solid #ccc;background-color: #fff;font-size: 14px;}
