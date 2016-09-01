@@ -7,7 +7,7 @@ table{border-collapse:collapse;border-spacing:0;}
 ul,ol,li{list-style:none;font-family: "Microsoft Yahei"}
 a{text-decoration:none;font-family: "Microsoft Yahei"}
 img{border:0;}
-input{outline:none;font-family: "Microsoft Yahei";border: 1px solid #8c8c8c}
+input{outline:none;font-family: "Microsoft Yahei";border: 1px solid #8c8c8c;border-radius: 5px}
 span,a,i{ display: inline-block;font-family: "Microsoft Yahei"}
 a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fl{float:left;}

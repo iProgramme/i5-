@@ -275,54 +275,59 @@
                 </ul>
             </div>
             <!-- 添加窗口 -->
-            <div class="form31_1 form3_1 disN">
+            <div class="form34_1 form3_1 disN">
                 <table>
                     <tr>
-                        <th colspan=2>添加管理箱信息</th>
+                        <th colspan=4>添加自行车</th>
                     </tr>
                     <tr>
-                        <td>编号：</td>
+                        <td>车牌号：</td>
                         <td>
                            <input type="text" name="" placeholder="110">
+                        </td>
+                        <td>自行车标签号：</td>
+                        <td>
+                           <input type="text" name="" placeholder="110">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>序列号：</td>
+                        <td>
+                           <input type="text" name="" placeholder="天安门广场">
+                        </td>
+                        <td>自行车密码：</td>
+                        <td>
+                           <input type="password" name="" placeholder="密码不可见">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>类型：</td>
+                        <td>
+                            <select>
+                                <option>类型一</option>
+                                <option>北京东路二号</option>
+                            </select>
+                        </td>
+                        <td>重复密码：</td>
+                        <td>
+                           <input type="password" name="" placeholder="密码不可见">
                         </td>
                     </tr>
                     <tr>
                         <td>状态：</td>
                         <td>
                             <select>
-                                <option>请选择状态</option>
-                                <option>玉清</option>
-                                <option>上清</option>
-                                <option>太清</option>
+                                <option>可用</option>
+                                <option>北京东路二号</option>
                             </select>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>地址：</td>
-                        <td>
-                           <input type="text" name="" placeholder="天安门广场">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>所属停车点：</td>
-                        <td>
-                            <select>
-                                <option>请选择停车点</option>
-                                <option>青云门门口</option>
-                                <option>焚香谷谷口</option>
-                                <option>天音阁灭口</option>
-                            </select>
-                        </td>
-                    </tr>
-                    
-                    <tr>
                         <td>备注：</td>
                         <td>
                             <textarea name="" id="" cols="30" rows="3"></textarea>
                         </td>
                     </tr>
                 </table>
-                <div class="form311_btn">
+                <div class="form341_btn">
                     <input type="button" name="" value="确定" class="sure">
                     <input type="button" name="" value="取消" class="cancel">
                 </div>
@@ -344,50 +349,59 @@
             </div>
             <!-- 删除窗口 -->
             <!-- 修改窗口 -->
-            <div class="form31_3 form3_1 disN">
+            <div class="form34_3 form3_1 disN">
                 <table>
                     <tr>
-                        <th colspan=2>修改管理箱信息</th>
+                        <th colspan=4>修改自行车</th>
                     </tr>
                     <tr>
-                        <td>编号：</td>
+                        <td>车牌号：</td>
+                        <td>
+                           <input type="text" name="" placeholder="110">
+                        </td>
+                        <td>自行车标签号：</td>
                         <td>
                            <input type="text" name="" placeholder="110">
                         </td>
                     </tr>
                     <tr>
-                        <td>状态：</td>
-                        <td>
-                            <select>
-                                <option>正常</option>
-                                <option>傻了</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>地址：</td>
+                        <td>序列号：</td>
                         <td>
                            <input type="text" name="" placeholder="天安门广场">
                         </td>
+                        <td>自行车密码：</td>
+                        <td>
+                           <input type="password" name="" placeholder="密码隐藏">
+                        </td>
                     </tr>
                     <tr>
-                        <td>所属停车点：</td>
+                        <td>类型：</td>
                         <td>
                             <select>
                                 <option>北京路一号</option>
                                 <option>北京东路二号</option>
                             </select>
                         </td>
+                        <td>重复密码：</td>
+                        <td>
+                           <input type="password" name="" placeholder="密码隐藏">
+                        </td>
                     </tr>
-                    
                     <tr>
+                        <td>状态：</td>
+                        <td>
+                            <select>
+                                <option>状态一</option>
+                                <option>北京东路二号</option>
+                            </select>
+                        </td>
                         <td>备注：</td>
                         <td>
                             <textarea name="" id="" cols="30" rows="3"></textarea>
                         </td>
                     </tr>
                 </table>
-                <div class="form313_btn">
+                <div class="form343_btn">
                     <input type="button" name="" value="确定" class="sure">
                     <input type="button" name="" value="取消" class="cancel">
                 </div>
@@ -407,7 +421,7 @@
                     // icon: 'img/right_add.png',
                     action: function() {
                         $(".form3_1").hide();
-                        $(".form31_1").show()
+                        $(".form34_1").show()
                     }
                 }, {
                     label: '删除',
@@ -421,7 +435,7 @@
                     // icon: 'img/right_gai.png',
                     action: function() {
                         $(".form3_1").hide();
-                        $(".form31_3").show()
+                        $(".form34_3").show()
                     }
                 }]
             });
