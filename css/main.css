@@ -184,7 +184,7 @@ footer{margin-bottom: 300px;}
 .map_table tbody tr:hover{background-color: #f6a554;color: #fff}
 .map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
 .map_table .open{position: fixed;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
-#form33_sty{width: 97%;margin-left: 1.5%; background-color: #fff;padding-top: 20px;padding-bottom: 20px;border: 1px solid #ccc;border-top: 0}
+#form33_sty,.form33_sty{width: 97%;margin-left: 1.5%; background-color: #fff;padding-top: 20px;padding-bottom: 20px;border: 1px solid #ccc;border-top: 0}
 .form_sty{padding: 45px 0;background-color: #fff;position: relative;border-radius: 5px;}
 .form_33{margin: 30px 20px 20px;}
 .form_sty ul{width: calc(100% - 330px)}
@@ -250,21 +250,40 @@ body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .over_auto{width: 100%;overflow: auto;}
 /*新加*/
 .pages li .active,.pages li a:hover,.pages li .active1{color: #fff;border: 1px solid #324e75;background-color: #324e75;}
-/*3-1弹出框*/
-/*添加和修改*/
-.form31_3,.form31_1{position: fixed;width: 530px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;left: calc(50% - 265px)}
-.form31_3 table,.form31_1 table{width: 100%}
-.form31_3 td,.form31_1 td{font-size: 14px;color: #494949;vertical-align: middle;}
-.form31_3 td:first-child,.form31_1 td:first-child{width: 175px;text-align: right;margin-right: 10px;font-size: 14px;color: #313131}
-.form31_3 th,.form31_1 th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;border-bottom: 1px solid #ccc}
-.form31_3 tr,.form31_1 tr{height: 48px;line-height: 48px;}
-.form31_3 tr:last-child,.form31_1 tr:last-child{height: 80px}
-.form31_3 select,.form31_3 input,.form31_1 select,.form31_1 input{height: 28px;margin-bottom: 0;padding: 0 5px;font-size: 14px;width: 208px}
-.form31_3 select,.form31_1 select{width: 220px}
-.form31_3 textarea,.form31_1 textarea{margin-bottom: 0;padding: 0 5px;font-size: 14px;vertical-align: top;width: 260px;height: 110px}
-.form313_btn input,.form311_btn input{width: 120px;height: 38px;line-height: 38px;text-align: center;font-size: 16px;color: #494949;border-radius: 5px;margin: 20px 14px;background-color: #97a4b7;cursor: pointer;}
-.form313_btn input:hover,.form311_btn input:hover{background-color: #324e75;color: #fff;}
-.form313_btn,.form311_btn{padding-left: 161px;}
+/*3-1设备箱信息弹出框*/
+/*添加，修改，批量添加*/
+.form31_3,.form31_1,.form31_6{position: fixed;width: 530px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;left: calc(50% - 265px)}
+.form31_3 table,.form31_1 table,.form31_6 table{width: 100%}
+.form31_3 td,.form31_1 td,.form31_6 td{font-size: 14px;color: #494949;vertical-align: middle;}
+.form31_3 td:first-child,.form31_1 td:first-child,.form31_6 td:first-child{width: 160px;text-align: right;margin-right: 10px;font-size: 14px;color: #313131;padding-right: 15px}
+.form31_3 th,.form31_1 th,.form31_6 th{height: 40px;line-height: 40px;font-size: 14px;color: #313131;background-color: #f2f6f9;width: 370px;margin-bottom: 10px;padding: 0 20px;text-align: left;border-bottom: 1px solid #ccc}
+.form31_3 tr,.form31_1 tr,.form31_6 tr{height: 48px;line-height: 48px;}
+.form31_3 tr:last-child,.form31_1 tr:last-child,.form31_6 tr:last-child{height: 80px}
+.form31_3 select,.form31_3 input,.form31_1 select,.form31_1 input,.form31_6 select,.form31_6 input{height: 28px;margin-bottom: 0;padding: 0 5px;font-size: 14px;width: 208px;border: 1px solid #ccc}
+.form31_6 input{width: 73px}
+.form31_3 select,.form31_1 select,.form31_6 select{width: 220px}
+.form31_3 textarea,.form31_1 textarea,.form31_6 textarea{margin-bottom: 0;padding: 5px;font-size: 14px;vertical-align: top;width: 260px;height: 100px}
+.form313_btn input,.form311_btn input,.form316_btn input{width: 120px;height: 38px;line-height: 38px;text-align: center;font-size: 16px;color: #494949;border-radius: 5px;margin: 20px 14px;background-color: #97a4b7;cursor: pointer;}
+.form313_btn input:hover,.form311_btn input:hover,.form316_btn input:hover{background-color: #324e75;color: #fff;}
+.form313_btn,.form311_btn,.form316_btn{padding-left: 161px;}
+/*删除，关停，开锁*/
+.bell{height: 155px;border-bottom: 1px dashed #ccc}
+.bell img{margin: 18px auto 10px}
+.bell span{width: 100%;color: #324e75;font-size: 14px;}
+.bell .grey{color: #aeaeae;font-size: 12px;}
+.form31_2,.form31_4,.form31_5{position: fixed;width: 328px;top: calc(50% - 118px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;left: calc(50% - 180px);text-align: center;padding: 0 15px;border-radius: 5px}
+.form312_btn input,.form314_btn input,.form315_btn input{width: 78px;height: 38px;line-height: 38px;text-align: center;font-size: 14px;color: #324e75;border-radius: 5px;margin: 12px 20px;background-color: #fff;cursor: pointer;border: 1px solid #eee}
+.form312_btn input:hover,.form314_btn input:hover,.form315_btn input:hover{background-color: #90b1c5;color: #fff;}
+/*3-2停车柱信息弹出窗*/
+/*历史记录*/
+.demo-content input{cursor: pointer;}
+.btn3_2{margin: 15px 0 35px 1%}
+.btn3_2 input{width: 80px;height: 38px;background-color: #324e75;color: #fff;border-radius: 5px}
+.form33_sty{border: 0}
+
+
+
+
 
 
 

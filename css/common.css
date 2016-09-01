@@ -165,8 +165,8 @@ input.btn7{margin-left: 10px;}
 .input2_2 .time{width: 48%}
 .input2_2 li input{width: calc(100% - 110px)}
 .input2_2 li select{width: calc(100% - 100px)}
-.time p{border: 0;padding: 0;display: inline-block;width: 49%}
-.time p label{padding-right: 10px;}
+.time p{border: 0;padding: 0;display: inline-block;width: 50%}
+.time p label{padding-right: 15px;}
 .input2_2 .main_btn{width: 26%;text-align: right;}
 .main_btn input[type="button"]{width: 80px;height: 38px;background: #324e75;color: #fff;padding: 0;left: 0;margin: 0 1.5%}
 .calendar{background: url(../img/time.png) no-repeat 95% 5px!important;}
