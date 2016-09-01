@@ -112,7 +112,7 @@ input.btn7{margin-left: 10px;}
 .lan3_3 span{height: 70px;line-height: 70px;width: 100%}
 .lan3_3 li li{width: 48%;height: 38px;line-height: 38px;}
 /*几个图标*/
-.content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0;}
+.content-tabs .roll-left,.roll-right.J_tabRight,.page-tabs a i{background: url(../img/index3_3.png) no-repeat 0 0 #fff;}
 .content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
 .roll-right.J_tabRight{background-position: 14px -17px;}
 .page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
