@@ -74,28 +74,28 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .index_y{height: 220px;padding: 0 25px;background-color: #fff;}
 .index_y:first-child{margin-bottom: 10px}
 .index_y p{position: relative;}
-.index_y a{position: absolute;right: 10px;font-size: 18px;}
+.index_y a{position: absolute;right: 10px;font-size: 14px;color: #fe5b4c}
 .index_y ul{line-height: 45px;padding-top: 10px;padding-left: 30px}
 .index_y li{position: relative;font-size: 14px;}
 .index_y li span:last-child{position: absolute;right: 25px}
 /*内页3-3*/
-.use3_3{width: 24.5%;margin-left: 1%;padding: 0 15px;height: 200px;border: 1px solid #ccc}
+.use3_3{width: 24.5%;margin-left: 1.5%;padding: 0 15px;height: 190px;border: 1px solid #ccc}
 .use3_3 ul{padding: 0 30px}
 .input3_3 ul{padding: 20px 30px}
 .use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
-.input3_3{width: 69.1%;margin-left: 1.5%;border: 1px solid #ccc}
+.input3_3{width: 68.5%;margin-left: 1.5%;border: 1px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
 .input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
 .input3_3 li span{width: 85px}
 .input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
-.table3_3{margin-left: 1%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
+.table3_3{margin-left: 1.5%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
 .btn3_3 ul{line-height: 88px;position: relative;}
 .btn3_3{height: 88px;padding: 0 20px;border-bottom: 1px solid #eee;}
 .btn3_3 li{display: inline-block;margin-right: 20px;position: relative;}
 .btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
-.btn3_3 li input[type="radio"]{position: relative;left: 30px;top: 10px}
-.btn3_3 li span{position: relative;left: -20px;top: 0px;width: 50px}
+.btn3_3 li input[type="radio"]{position: relative;left: 0px;top: 5px;width: 20px;height: 20px;}
+.btn3_3 li span{position: relative;left: 10px;top: 0px;width: 50px}
 .btn3_3 li:last-child{right: -30px;position: absolute;margin-right: 0px}
 .btn3_3 li:nth-last-child(2){right: 30px;position: absolute;}
 .btn3_3 .btn7,.btn3_3 .btn8,.btn3_3 .btn9{padding-left: 0;background: #2f4050;}
@@ -119,13 +119,13 @@ input.btn7{margin-left: 10px;}
 .page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
 .input3_3 input[type="button"]{background: url(../img/index3_3.png) no-repeat 51px -76px #2f4050;}
 .disN{display: none;}
-.open_door p{width: 40%;height: 110px;line-height: 110px;text-align: center;color: #494949;border-right: 1px solid #bbe5d6;font-size: 18px}
+.open_door p{width: 40%;height: 110px;line-height: 110px;text-align: center;color: #494949;font-size: 18px}
 .open_door p{width: 690px;height: 50px;border-radius: 10px;line-height: 50px;text-align: left;padding: 0 10px 0 30px;cursor: default;background: url(../img/shu.png) no-repeat 19px 17px;}
 .open_door ul{border-top: 1px solid #ccc;padding: 10px 5px;cursor: default;}
-.open_door li{display: inline-block;font-size: 16px;margin: 5px;border-radius: 0;width: 54px;height: 54px;text-align: center;border-radius: 10px;cursor: pointer;position: relative;border: 3px solid #61cfa5}
+.open_door li{display: inline-block;font-size: 16px;margin: 5px;border-radius: 0;width: 60px;height: 60px;text-align: center;border-radius: 10px;cursor: pointer;position: relative;}
 .open_door li span{width: 100%;height: 30px;line-height: 30px;}
+.open_door .index_btn2 span{position: relative;top: 15px}
 .open_door{position: fixed;top: calc(50% - 200px);z-index: 1;font-size: 0;width: 710px;background-color: #fff;border-radius: 10px;border: 1px solid #cccccc;left: calc(50% - 355px);box-shadow: 0 0 10px #000;}
-.open_door .active_border{border: 3px solid #29313e;}
 .open_door p span{width: 22px;height: 22px;position: absolute;right: 20px;top: 15px;background: url(../img/index_close.png) no-repeat 0 0;cursor: pointer;}
 .open_door li li{display: block;line-height: 30px;height: 30px;width: 125px;text-align: left;border: 0!important;padding-left: 35px;border-bottom: 1px solid #eee!important;margin: 0;border-radius: 0;font-size: 14px;}
 .open_door li li:hover{background: url(../img/shu.png) no-repeat 19px 7px;}
@@ -143,7 +143,7 @@ input.btn7{margin-left: 10px;}
 .map3_3 .open{position: absolute;right: 480px;width: 24px;height: 68px;line-height: 87px; background: url(../img/open.png) no-repeat 0 0;top: calc(50% - 34px);font-size: 20px;color: #fff;text-align: center;}
 .map3_3{position: relative;}
 /*2-1页面*/
-.content2_1{margin: 0 30px;min-height: 500px;border: 1px solid #ccc;background-color: #fff;font-size: 14px;}
+.content2_1{margin: 0 1.5%;min-height: 500px;border: 1px solid #ccc;background-color: #fff;font-size: 14px;width: 97%}
 .shu{padding: 0 35px 0 30px;background: url(../img/shu.png) no-repeat 11px 24px;color: #313131}
 .tab2_1{height: 62px;line-height: 62px;border-bottom: 1px solid #eee}
 .tab2_1 a{width: 122px;height: 33px;line-height: 33px;color: #313131;background-color: #f3f3f3;text-align: center;margin-right: 35px;}
@@ -193,6 +193,7 @@ input.btn7{margin-left: 10px;}
 .btn2_1{margin: 115px 25px 55px;text-align: right;}
 .btn2_1 input{width: 80px;height: 40px;line-height: 40px;color: #fff;background-color: #97a4b7;cursor: pointer;margin-right: 40px;font-size: 14px;}
 .btn2_1 input:hover{background-color: #324e75;}
+.navbar-default li .index_active{background-color: #97a4b7;color: #fff}
 
 
 
