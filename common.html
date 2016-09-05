@@ -63,7 +63,7 @@
                     <li>
                         <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">设备管理</span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="html/main3_1.html">设备箱信息</a>
+                            <li><a class="J_menuItem" href="html/main3_1.html">管理箱信息</a>
                             </li>
                             <li><a class="J_menuItem" href="html/main3_2.html">停车柱信息</a>
                             </li>
@@ -131,38 +131,23 @@
                     <li>
                         <a href="#"><span class="icon iconfont">&#xe602;</span><span class="nav-label">运营管理</span></a>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="typography.html">电话留言</a>
+                            <li><a class="J_menuItem" href="html/main5_1.html">电话留言</a>
                             </li>
                             <li>
-                                <a href="#">咨询与投诉 <span class="fa arrow"></span></a>
+                                <a class="J_menuItem" href="html/main5_2.html">咨询与投诉</a>
                             </li>
-                            <li class="borbot"><a class="J_menuItem" href="buttons.html">车辆理赔</a>
+                            <li class="borbot"><a class="J_menuItem" href="html/main5_3.html">车辆理赔</a>
                             </li>
-                            <li class="bortop"><a class="J_menuItem" href="tabs_panels.html">电费管理</a>
+                            <li class="bortop"><a class="J_menuItem" href="html/main5_4.html">电费管理</a>
                             </li>
-                            <li><a class="J_menuItem" href="notifications.html">员工出勤</a>
+                            <li><a class="J_menuItem" href="html/main5_5.html">员工出勤</a>
                             </li>
-                            <li><a class="J_menuItem" href="badges_labels.html">在线用户</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="grid_options.html">登记记录</a>
-                            </li>
-                            <li><a class="J_menuItem" href="plyr.html">视频、音频</a>
+                            <li><a class="J_menuItem" href="html/main5_6.html">在线用户</a>
                             </li>
                             <li>
-                                <a href="#">弹框插件 <span class="fa arrow"></span></a>
+                                <a class="J_menuItem" href="html/main5_7.html">登陆记录</a>
                             </li>
-                            <li>
-                                <a href="#">树形视图 <span class="fa arrow"></span></a>
-                            </li>
-                            <li><a class="J_menuItem" href="toastr_notifications.html">Toastr通知</a>
-                            </li>
-                            <li><a class="J_menuItem" href="diff.html">文本对比</a>
-                            </li>
-                            <li><a class="J_menuItem" href="spinners.html">加载动画</a>
-                            </li>
-                            <li><a class="J_menuItem" href="widgets.html">小部件</a>
-                            </li>
+                            
                         </ul>
                     </li>
                     <li>
@@ -248,7 +233,9 @@
            
         })
         $(".index").click(function () {
-            $(".page-tabs-content .J_menuTab").eq(0).trigger('click')
+            $(".page-tabs-content .J_menuTab").eq(0).trigger('click');
+            $("#side-menu li").removeClass('active');
+            $("#side-menu li ul").removeClass('in');
         })
     </script>
     <script src="js/bootstrap.min.js?v=3.3.6"></script>

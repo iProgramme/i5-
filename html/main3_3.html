@@ -249,7 +249,7 @@
             <div class="map3_3 disN">
                 <div id="allmap"></div>
                 <div class="map_table">
-                    <table>
+                    <table class="disN">
                         <thead>
                             <tr>
                                 <td colspan="6">站点信息</td>
@@ -757,7 +757,7 @@
     <script type="text/javascript">
     // 点击展开自己的30条目浮层
     $(".btn_n").click(function() {
-
+        $(".open_door,.open_door li ul").hide();
         $('.open_door').show();
 
 
@@ -790,7 +790,7 @@
         // 获取点击的value值
         var value_num = $(this).attr('value');
         if (value_num == 2) {
-            $(".lan3_3").hide();
+            $(".lan3_3,.open_door,.open_door li ul").hide();
             $(".map3_3").show()
         } else {
             $(".map3_3").hide();
@@ -839,7 +839,7 @@
       enableMessage:true,//设置允许信息窗发送短息
       message:"亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
     }
-    var infoWindow2 = new BMap.InfoWindow("<br/><ul><li>名称：亲亲家园</li><li>锁住数量：18</li><li>停放率：45%</li><li>可用车辆数量：7</li><li>故障：1</li><li>电压：11.8V</li><li>温度：38.0℃</li><li>地址：人民医院</li></ul>", opts);  // 创建信息窗口对象 
+    var infoWindow2 = new BMap.InfoWindow("<br/><ul><li>名称：&nbsp;&nbsp;亲亲家园</li><li>锁住数量：&nbsp;&nbsp;18</li><li>停放率：&nbsp;&nbsp;45%</li><li>可用车辆数量：&nbsp;&nbsp;7</li><li>故障：&nbsp;&nbsp;1</li><li>电压：&nbsp;&nbsp;11.8V</li><li>温度：&nbsp;&nbsp;38.0℃</li><li>地址：&nbsp;&nbsp;人民医院</li></ul>", opts);  // 创建信息窗口对象 
     marker2.addEventListener("click", function(){          
         map.openInfoWindow(infoWindow2,point2); //开启信息窗口
     });
@@ -860,7 +860,7 @@
     }
     add_control();
 
-    //打开和关闭左侧表格
+    //打开和关闭右侧表格
     $(".map3_3 .open").click(function () {
         if ($(".map_table table").is(':hidden')){
             $(".map3_3 table").show();
