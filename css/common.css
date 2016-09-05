@@ -90,10 +90,10 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .input3_3 li select{display: inline-block;height: 28px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
 .table3_3{margin-left: 1.5%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
-.btn3_3 ul{line-height: 88px;position: relative;}
-.btn3_3{height: 88px;padding: 0 20px;border-bottom: 1px solid #eee;}
+.btn3_3 ul{line-height: 70px;position: relative;}
+.btn3_3{height: 70px;padding: 0 20px;border-bottom: 1px solid #eee;}
 .btn3_3 li{display: inline-block;margin-right: 20px;position: relative;}
-.btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -111px;width: 80px;height: 38px;line-height: 38px;text-align: center;padding-left: 30px;font-size: 16px;border-radius: 5px;border: 0;cursor: pointer;}
+.btn3_3 input{color: #fff;background: url(../img/index3_3.png) no-repeat 11px -114px;width: 80px;height: 33px;line-height: 33px;text-align: center;padding-left: 30px;font-size: 14px;border-radius: 5px;border: 0;cursor: pointer;}
 .btn3_3 li input[type="radio"]{position: relative;left: 0px;top: 5px;width: 20px;height: 20px;}
 .btn3_3 li span{position: relative;left: 10px;top: 0px;width: 50px}
 .btn3_3 li:last-child{right: -30px;position: absolute;margin-right: 0px}
@@ -212,7 +212,7 @@ input.btn7{margin-left: 10px;}
 .open2_1 #form33_sty{width: 100%;margin-left: 0;border: 0}
 .pre_step{padding: 20px 40px;background-color: #fff;border-top-left-radius: 10px;border-top-right-radius: 10px}
 .pre_step input{width: 80px;height: 38px;background-color: #324e75;color: #fff;margin-right: 20px;}
-
+.pre_step2{width: 91%;margin-left: 1.5%;padding: 20px 3%;margin-bottom: 20px;border: 1px solid #ccc;border-radius: 0}
 
 
 
