@@ -879,7 +879,7 @@
         </ul>
     </div>
     <div class="per_info1 per_info disN">
-        <p>个人信息</p>
+        <p>个人信息<a href="javascript:void(0)" class="close"></a></p>
         <ul>
             <li><span>用户名：</span><input type="text"></li>
             <li><span>表面卡号：</span><input type="text"></li>
@@ -892,7 +892,7 @@
         </div>
     </div>
     <div class="per_info2 per_info disN">
-        <p>个人信息</p>
+        <p>个人信息<a href="javascript:void(0)" class="close"></a></p>
         <ul>
             <li><span>用户名：</span><input type="text"></li>
             <li><span>表面卡号：</span><input type="text"></li>
@@ -1359,7 +1359,7 @@
     $(".info2 a").click(function () {
         $(".per_info2").show()
     })
-    $(".cancel").click(function () {
+    $(".cancel,.close").click(function () {
         $(".per_info").hide()
     })
     // 返回上一步

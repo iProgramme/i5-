@@ -273,9 +273,9 @@ body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 .form34_1,.form34_3{width: 780px;left: calc(50% - 390px)}
 .form34_1 td:first-child,.form34_1 td:nth-child(3),.form34_3 td:first-child,.form34_3 td:nth-child(3){width: 115px;padding-right: 5px;text-align: right;}
 .form34_1 select,.form34_3 select,.form31_3 select,.form34_1 input,.form34_3 input{height: 28px;margin-bottom: 0;padding: 0 5px;font-size: 14px;width: 198px;border: 1px solid #ccc}
-.form34_1 select,.form34_3 select,.form31_3 select{width: 220px}
+.form34_1 select,.form34_3 select,.form31_3 select{width: 210px}
 .form341_btn input,.form343_btn input,.form313_btn input,.form311_btn input,.form316_btn input{width: 120px;height: 38px;line-height: 38px;text-align: center;font-size: 16px;color: #494949;border-radius: 5px;margin: 20px 14px;background-color: #97a4b7;cursor: pointer;}
-.form341_btn,.form343_btn{padding-left: 461px;}
+.form341_btn,.form343_btn{padding-left: 0px;text-align: center;}
 .form34_1 tr:last-child td:nth-child(1),.form34_1 tr:last-child td:nth-child(2),.form34_3 tr:last-child td:nth-child(1),.form34_3 tr:last-child td:nth-child(2){vertical-align: top;}
 /*3-5设备预警*/
 .tabs_first{width: 95%;margin-left: 1.5%;padding: 0 1%;height: 50px;line-height: 50px;background-color: #fff;margin-bottom: 15px;}
@@ -289,14 +289,14 @@ body.full-height-layout #page-wrapper{height: calc(100% - 140px)}
 /*2-1查询个人信息*/
 .person{width: 430px;padding-left: 20px;margin-left: 1.5%;border: 1px solid #ccc;background-color: #fff;margin-bottom: 20px;}
 .person p{border-bottom: 1px solid #ccc;height: 45px;line-height: 45px;font-size: 14px;color: #324e75}
-.person p span{padding-left: 25px;background: url(../img/shu.png) no-repeat 11px 20px;}
-.person a{margin-right: 10px;padding-left: 25px;color: #313131;background: url(../img/change.png) no-repeat 0 21px;}
+.person p span{padding-left: 25px;background: url(../img/shu.png) no-repeat 11px 15px;}
+.person a{margin-right: 10px;padding-left: 25px;color: #313131;background: url(../img/change.png) no-repeat 0 16px;}
 .person li{height: 35px;line-height: 35px;font-size: 14px;}
 .person li span{width: 85px;text-align: right;}
 .table2_1 p{padding-bottom: 20px;padding-top: 20px; color: #324e75;padding-left: 30px;font-size: 14px;background: url(../img/shu.png) no-repeat 14px 23px;;}
 .table2_1 p span{padding-left: 20px;color: #929292}
 .close{background: url(../img/close23.png) no-repeat 0 0;width: 20px;height: 20px;position: absolute;top: 17px;right: 5px}
-
+p .close{top: 8px}
 
 
 
