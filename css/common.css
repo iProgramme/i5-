@@ -47,7 +47,7 @@ input[type="button"]{cursor: pointer;}
 .nav .iconfont{font-size: 22px;padding: 0;color: #808080;text-align: center;position: relative;top: 3px}
 .nav .active .iconfont{color: #fff;transform:rotate(90deg)}
 .nav i{width: 70px;height: 70px;background-color: #f6f6f6;line-height: 70px;}
-span.nav-label{position: relative;top: 0px;height: 70px;line-height: 70px;left: 16px}
+span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 16px}
 .navbar-default .nav>li>a:hover i,.nav>li.active>a i{background-color: #65c8d1;color: #fff}
 .navbar-default .nav>li>a:hover span{color: #fff}
 
@@ -79,15 +79,15 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .index_y li{position: relative;font-size: 14px;}
 .index_y li .index_b2{position: absolute;right: 25px;color: #fe5b4c}
 /*内页3-3*/
-.use3_3{width: 24.5%;margin-left: 1.5%;padding: 0 15px;height: 190px;border: 1px solid #ccc}
+.use3_3{width: 24.5%;margin-left: 1.5%;padding: 0 15px;height: 150px;border: 1px solid #ccc}
 .use3_3 ul{padding: 0 30px}
 .input3_3 ul{padding: 20px 30px}
-.use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
+.use3_3 li{display: inline-block;width: 48%;height: 30px;line-height: 30px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
 .input3_3{width: 68.5%;margin-left: 1.5%;border: 1px solid #ccc}
-.input3_3 li{display: inline-block;width: 32%;height: 65px;line-height: 65px;font-size: 14px;}
+.input3_3 li{display: inline-block;width: 32%;height: 55px;line-height: 55px;font-size: 14px;}
 .input3_3 li input{height: 30px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
 .input3_3 li span{width: 85px}
-.input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
+.input3_3 li select{display: inline-block;height: 28px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
 .table3_3{margin-left: 1.5%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
 .btn3_3 ul{line-height: 88px;position: relative;}
@@ -171,8 +171,8 @@ input.btn7{margin-left: 10px;}
 .time p{border: 0;padding: 0;display: inline-block;width: 50%}
 .time p label{padding-right: 15px;}
 .input2_2 .main_btn{width: 26%;text-align: right;}
-.main_btn input[type="button"]{width: 80px;height: 38px;background: #324e75;color: #fff;padding: 0;left: 0;margin: 0 1.5%}
-.calendar{background: url(../img/time.png) no-repeat 95% 5px!important;}
+.main_btn input[type="button"]{width: 80px;height: 33px;background: #324e75;color: #fff;padding: 0;left: 0;margin: 0 1.5%}
+.calendar{background: url(../img/time.png) no-repeat 95% 3px!important;}
 .jqGrid_wrapper{width: 97%;margin-left: 1.5%;margin-top: 20px;background-color: #fff;border: 1px solid #ccc}
 .ui-jqgrid-titlebar{display: none;}
 .ui-jqgrid{}
@@ -181,8 +181,8 @@ input.btn7{margin-left: 10px;}
 .jqgrow:nth-child(even){background-color: #f6f6f6;}
 .jqgrow td{padding: 8px 0}
 /*3-2页面*/
-.ul2_1{line-height: 73px;border-bottom: 2px solid #eee}
-.ul2_1 a{padding: 0 25px;height: 73px;color: #3d3d3d;border-bottom: 2px solid #fff}
+.ul2_1{line-height: 40px;border-bottom: 2px solid #eee}
+.ul2_1 a{padding: 0 25px;height: 40px;color: #3d3d3d;border-bottom: 2px solid #fff}
 .ul2_1 .active,.ul2_1 a:hover{border-bottom: 2px solid #324e75}
 .open2_1{width: 58.5%;margin: 20px auto;border: 1px solid #ccc;border-radius: 5px}
 .steps{font-size: 0;}
@@ -211,7 +211,7 @@ input.btn7{margin-left: 10px;}
 .open2_1 .input2_2{width: 100%;margin: 0;border: 0;border-radius: 10px;padding-bottom: 20px}
 .open2_1 #form33_sty{width: 100%;margin-left: 0;border: 0}
 .pre_step{padding: 20px 40px;background-color: #fff;border-top-left-radius: 10px;border-top-right-radius: 10px}
-.pre_step input{width: 80px;height: 38px;background-color: #324e75;color: #fff}
+.pre_step input{width: 80px;height: 38px;background-color: #324e75;color: #fff;margin-right: 20px;}
 
 
 
