@@ -248,7 +248,7 @@
             </div>
             <div class="map3_3 disN">
                 <div id="allmap"></div>
-                <div class="map_table">
+                <div class="map_table disN">
                     <table class="disN">
                         <thead>
                             <tr>
@@ -863,11 +863,11 @@
     //打开和关闭右侧表格
     $(".map3_3 .open").click(function () {
         if ($(".map_table table").is(':hidden')){
-            $(".map3_3 table").show();
+            $(".map3_3 table,.map_table").show();
             $(this).animate({"right":480},001);
 
         }else{
-            $(".map3_3 table").hide();
+            $(".map3_3 table,.map_table").hide();
             $(this).animate({"right":0},001);
         }
         

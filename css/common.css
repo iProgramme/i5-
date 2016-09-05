@@ -84,8 +84,8 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .input3_3 ul{padding: 20px 30px}
 .use3_3 li{display: inline-block;width: 48%;height: 45px;line-height: 45px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
 .input3_3{width: 68.5%;margin-left: 1.5%;border: 1px solid #ccc}
-.input3_3 li{display: inline-block;width: 32%;height: 75px;line-height: 75px;font-size: 14px;}
-.input3_3 li input{height: 35px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
+.input3_3 li{display: inline-block;width: 32%;height: 65px;line-height: 65px;font-size: 14px;}
+.input3_3 li input{height: 30px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
 .input3_3 li span{width: 85px}
 .input3_3 li select{display: inline-block;height: 35px;width: calc(100% - 160px)}
 .input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
@@ -181,8 +181,8 @@ input.btn7{margin-left: 10px;}
 .jqgrow:nth-child(even){background-color: #f6f6f6;}
 .jqgrow td{padding: 8px 0}
 /*3-2页面*/
-.ul2_1{height: 75px;line-height: 75px;border-bottom: 2px solid #eee}
-.ul2_1 a{padding: 0 25px;height: 75px;color: #3d3d3d}
+.ul2_1{line-height: 73px;border-bottom: 2px solid #eee}
+.ul2_1 a{padding: 0 25px;height: 73px;color: #3d3d3d;border-bottom: 2px solid #fff}
 .ul2_1 .active,.ul2_1 a:hover{border-bottom: 2px solid #324e75}
 .open2_1{width: 58.5%;margin: 20px auto;border: 1px solid #ccc;border-radius: 5px}
 .steps{font-size: 0;}
@@ -210,7 +210,8 @@ input.btn7{margin-left: 10px;}
 .wid100{width: 97%;margin: 20px 1.5%}
 .open2_1 .input2_2{width: 100%;margin: 0;border: 0;border-radius: 10px;padding-bottom: 20px}
 .open2_1 #form33_sty{width: 100%;margin-left: 0;border: 0}
-
+.pre_step{padding: 20px 40px;background-color: #fff;border-top-left-radius: 10px;border-top-right-radius: 10px}
+.pre_step input{width: 80px;height: 38px;background-color: #324e75;color: #fff}
 
 
 
