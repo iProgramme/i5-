@@ -194,7 +194,8 @@ footer{margin-bottom: 300px;}
 .form10_tab{margin:0;overflow: auto;border: 1px solid #ccc;width: 98%;margin: 0 auto}
 .form10_tab table{width: 100%;text-align: center;font-size: 12px;color: #494949;}
 .form10_tab table th{cursor: default; height: 50px;line-height: 50px;color: #033131;font-size: 14px;background-color: #fff;font-weight: 500;}
-.form10_tab .green{color: #f89838}
+.form10_tab th.green{color: #fe5b4c;background: url(../img/arrow.png) no-repeat 90% 18px;}
+.form10_tab th.green2{color: #fe5b4c;background: url(../img/arrow2.png) no-repeat 90% 18px;}
 .form10_tab tr:nth-child(odd){background-color: #fff;}
 .form10_tab tr:nth-child(even){background-color: #f5f5f5;}
 .form10_tab td{height: 30px;line-height: 30px;border-right: 0px solid #ebebeb}

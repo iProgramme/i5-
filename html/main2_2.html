@@ -43,6 +43,11 @@
             </div>
         </div>
     </div>
+    
+    <div class="pre_step pre_step2 disN">
+        <input type="button" name="" value="返回第一步" class="back">
+        <input type="button" name="" value="上一步" class="pre">
+    </div>
     <div class="main2_1 disN">
         <div class="content2_1 clear">
             <div class="ul2_1">
@@ -858,10 +863,6 @@
             <!-- 销户 -->
         </div>
     </div>
-    <div class="pre_step pre_step2 disN">
-        <input type="button" name="" value="返回第一步" class="back">
-        <input type="button" name="" value="上一步" class="pre">
-    </div>
     <div class="person fl disN">
         <p class="clear info1"><span class="fl">基础信息</span><a href="javascript:void(0)" class="fr">编辑</a></p>
         <ul>
@@ -1349,7 +1350,8 @@
     // 点击表格出现个人信息
     $(".info_table tr").click(function() {
         $(".info_table #form33_sty,.main2_1,.info_table1").hide();
-        $(".form33_sty,.person,.pre_step2").show();
+        $(".form33_sty,.person,.pre_step2,.main2_1:nth-child(3)").show();
+        $(".main2_1:nth-child(3)").addClass('spec')
     });
 
     // 编辑信息
@@ -1373,6 +1375,19 @@
         $(".main2_1,.pre_step2,.person,.per_info,.table2_1").hide();
         $(".info_table,#form33_sty").show()
     });
+
+
+    
+    //这个暂时不加
+    // // 点击开户等
+    // $(".ul2_1 a").click(function () {
+    //     $(".ul2_1 a").removeClass('active');
+    //     var num=$(this).index();
+    //     $(".open2_1").hide();
+    //     $(".open2_1").eq(num).show();
+    //     $(this).addClass('active')
+    // })
+    
     </script>
 </body>
 

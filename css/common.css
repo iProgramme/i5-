@@ -52,7 +52,7 @@ span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 1
 .navbar-default .nav>li>a:hover span{color: #fff}
 
 /*common*/
-#side-menu{padding-bottom: 70px;}
+#side-menu{padding-bottom: 75px;}
 .common_top{height: 75px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
 .common_top p{font-size: 18px;line-height: 75px;}
 .common_top li{float: left;}
@@ -79,16 +79,16 @@ body.fixed-sidebar .navbar-static-side{border-right: 1px solid #cccccc}
 .index_y li{position: relative;font-size: 14px;}
 .index_y li .index_b2{position: absolute;right: 25px;color: #fe5b4c}
 /*内页3-3*/
-.use3_3{width: 24.5%;margin-left: 1.5%;padding: 0 15px;height: 150px;border: 1px solid #ccc}
+.use3_3{width: calc(27% - 32px);margin-left: 1.5%;padding: 0 15px;height: 150px;border: 1px solid #ccc}
 .use3_3 ul{padding: 0 30px}
 .input3_3 ul{padding: 20px 30px}
 .use3_3 li{display: inline-block;width: 48%;height: 30px;line-height: 30px;overflow: hidden; text-overflow:ellipsis; white-space: nowrap;font-size: 14px;}
 .input3_3{width: 68.5%;margin-left: 1.5%;border: 1px solid #ccc}
 .input3_3 li{display: inline-block;width: 32%;height: 55px;line-height: 55px;font-size: 14px;}
-.input3_3 li input{height: 30px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px}
+.input3_3 li input{height: 30px;width: calc(100% - 110px);padding: 0 5px;border-radius: 3px;font-weight: 100;}
 .input3_3 li span{width: 85px}
 .input3_3 li select{display: inline-block;height: 28px;width: calc(100% - 160px)}
-.input3_3 input[type="button"]{height: 40px;color: #fff;width: 80px;padding-right: 20px;position: relative;left: calc(100% - 65px);cursor: pointer;}
+.input3_3 input[type="button"]{height: 33px;color: #fff;width: 80px;position: relative;left: calc(100% - 65px);cursor: pointer;text-align: center;}
 .table3_3{margin-left: 1.5%;width: 97%;border: 1px solid #cccccc;margin-top: 20px;background-color: #fff;}
 .btn3_3 ul{line-height: 70px;position: relative;}
 .btn3_3{height: 70px;padding: 0 20px;border-bottom: 1px solid #eee;}
@@ -117,7 +117,7 @@ input.btn7{margin-left: 10px;}
 .content-tabs .roll-left,.content-tabs .roll-left:hover{background-position: 14px 14px;}
 .roll-right.J_tabRight{background-position: 14px -17px;}
 .page-tabs a i{background-position: 0 -57px;width: 15px;height: 15px;position: relative;top: 3px;left: 5px}
-.input3_3 input[type="button"]{background: url(../img/index3_3.png) no-repeat 51px -76px #2f4050;}
+.input3_3 input[type="button"]{/*background: url(../img/index3_3.png) no-repeat 51px -76px #2f4050*/;background-color: #2f4050;}
 .disN{display: none;}
 .open_door p{width: 40%;height: 110px;line-height: 110px;text-align: center;color: #494949;font-size: 18px}
 .open_door p{width: 690px;height: 50px;border-radius: 10px;line-height: 50px;text-align: left;padding: 0 10px 0 30px;cursor: default;background: url(../img/shu.png) no-repeat 19px 17px;}
@@ -182,8 +182,8 @@ input.btn7{margin-left: 10px;}
 .jqgrow td{padding: 8px 0}
 /*3-2页面*/
 .ul2_1{line-height: 40px;border-bottom: 2px solid #eee}
-.ul2_1 a{padding: 0 25px;height: 40px;color: #3d3d3d;border-bottom: 2px solid #fff}
-.ul2_1 .active,.ul2_1 a:hover{border-bottom: 2px solid #324e75}
+.ul2_1 a{padding: 0 20px;height: 40px;color: #3d3d3d;position: relative;top: 2px}
+.ul2_1 .active,.ul2_1 a:hover{border-bottom: 2px solid #324e75;height: 36px;line-height: 36px;}
 .open2_1{width: 58.5%;margin: 20px auto;border: 1px solid #ccc;border-radius: 5px}
 .steps{font-size: 0;}
 .steps li{display: inline-block;font-size: 14px;color: #464343;text-align: center;position: relative;width: 25%;border-bottom: 10px solid #ccc}
@@ -207,15 +207,15 @@ input.btn7{margin-left: 10px;}
 .steps2 li{width: 33.33%}
 .BMap_bubble_title{background: url(../img/shu.png) no-repeat 0px 4px;padding-left: 10px;}
 /*2-1表格*/
-.wid100{width: 97%;margin: 20px 1.5%}
+.wid100{width: 97%;margin: 0px 1.5% 20px}
 .open2_1 .input2_2{width: 100%;margin: 0;border: 0;border-radius: 10px;padding-bottom: 20px}
 .open2_1 #form33_sty{width: 100%;margin-left: 0;border: 0}
 .pre_step{padding: 20px 40px;background-color: #fff;border-top-left-radius: 10px;border-top-right-radius: 10px}
 .pre_step input{width: 80px;height: 33px;background-color: #324e75;color: #fff;margin-right: 20px;}
-.pre_step2{width: 91%;margin-left: 1.5%;padding: 10px 2%;margin-bottom: 20px;border: 1px solid #ccc;border-radius: 0}
+.pre_step2{width: calc(97% - 80px);margin-left: 1.5%;padding: 20px 40px;margin-bottom: 20px;border: 1px solid #ccc;border-radius: 0}
 
-
-
+.spec{position: relative;;top: -21px;width: 97%;margin-left: 1.5%;}
+.spec .content2_1{border-top: 0;min-height: 55px;width: 100%;margin: 0}
 
 
 

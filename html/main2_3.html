@@ -141,8 +141,8 @@
                     <tr>
                         <th>编号</th>
                         <th>用户名</th>
-                        <th>卡号</th>
-                        <th>卡类型</th>
+                        <th class="green">卡号</th>
+                        <th class="green2">卡类型</th>
                         <th>用户状态</th>
                         <th>余额</th>
                         <th>手机号码</th>
@@ -152,7 +152,7 @@
                     </tr>
                     <tr>
                         <td>1101</td>
-                        <td class="green">201503</td>
+                        <td>201503</td>
                         <td>正常</td>
                         <td>3/0/4</td>
                         <td>盈泽演示</td>
@@ -405,7 +405,7 @@
         <script src="../js/jquery.contextmenu.js"></script>
         <script>
         $(function() {
-            $('.form10_tab tr').contextPopup({
+            $('.form10_tab td').contextPopup({
                 // title: 'My Popup Menu',
                 items: [{
                     label: '查看个人信息',
