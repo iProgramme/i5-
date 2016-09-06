@@ -202,9 +202,9 @@ footer{margin-bottom: 300px;}
 .form10_tab td:last-child{border: 0}
 .pages{width: calc(100% - 20px);text-align: right;}
 .pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 12px;}
-.pages input{width: 30px;height: 16px;margin: -1px 5px 0}
-.pages li a{color: #a2a2a2;background-color: #b9b9b9;padding: 0 6px;border: 1px solid #b9b9b9}
-.pages .change a{color: #979797;background-color: #f9f9f9;padding: 0 6px;border: 1px solid #b9b9b9}
+.pages input{width: 24px;height: 16px;margin: -1px 5px 0}
+.pages li a{color: #a2a2a2;background-color: #b9b9b9;padding: 0 4px;border: 1px solid #b9b9b9}
+.pages .change a{color: #979797;background-color: #f9f9f9;padding: 0 5px;border: 1px solid #b9b9b9}
 /*修改弹出窗*/
 .form10_open{position: fixed;width: 460px;top: calc(50% - 196px);background-color: #fff;border: 1px solid #ccc;box-shadow: 0 0 15px #000;}
 .form10_open td{font-size: 16px;color: #494949;vertical-align: middle;}

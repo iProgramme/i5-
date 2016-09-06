@@ -13,11 +13,29 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     <link href="../css/common.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=RFSysGOzwStwCVzqeYwwILRmb57e7VwO"></script>
     <style type="text/css">
         body, html,#allmap {width: 100%;height: 100%;overflow: visible;margin:0;font-family:"微软雅黑";}
         #allmap{border: 0px solid #a9a6a6;height: 680px}
     </style>
+    <script language="JavaScript">
+            $(function(){
+                var w=window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+                if (1170 <= w <= 1240) {//1024及以下分辨率
+                   // alert(w)
+                    //$(document).ready(function(){
+                        //autoPlayMobile();
+                    //});
+                    $(".lan3_3").css('padding-left','17px')
+                }
+                
+            });
+
+        </script>
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
@@ -46,13 +64,13 @@
                     </li>
                     <li>
                         <label for="">
-                            <span>区域：</span>
+                            <span>&nbsp;&nbsp;&nbsp;区&nbsp;&nbsp;&nbsp;域&nbsp;&nbsp;：</span>
                             <input type="text" placeholder="请输入">
                         </label>
                     </li>
                     <li>
                         <label for="">
-                            <span>状态：</span>
+                            <span>&nbsp;&nbsp;&nbsp;状&nbsp;&nbsp;&nbsp;态&nbsp;&nbsp;：</span>
                             <select name="">
                                 <option value="">全部</option>
                                 <option value="">报警</option>
@@ -69,7 +87,7 @@
                     </li>
                     <li>
                         <label for="">
-                            <span>区域：</span>
+                            <span>&nbsp;&nbsp;&nbsp;区&nbsp;&nbsp;&nbsp;域&nbsp;&nbsp;：</span>
                             <input type="text" placeholder="请输入">
                         </label>
                     </li>
@@ -115,7 +133,7 @@
                     </li>
                     <li>
                         <label>
-                            <input type="radio" name="aa" class="btn10" checked value="1"><span>表格</span>
+                            <input type="radio" name="aa" class="btn10" checked value="1"><span class="tubiao">表格</span>
                         </label>
                     </li>
                     <li>
@@ -412,7 +430,6 @@
                     </table>
                 </div>
                 <a href="javascript:void(0)" class="open"></a>
-                <script src="../js/jquery.min.js"></script>
             </div>
         </div>
         <!-- 第三个框框 -->
@@ -757,6 +774,7 @@
     <script type="text/javascript">
     // 点击展开自己的30条目浮层
     $(".btn_n").click(function() {
+        $(".open_door li").removeClass('active_border');
         $(".open_door,.open_door li ul").hide();
         $('.open_door').show();
 
@@ -789,6 +807,9 @@
     $(".btn3_3 input[type=radio]").click(function() {
         // 获取点击的value值
         var value_num = $(this).attr('value');
+        $(".btn3_3 span").removeClass('tubiao')
+        $(this).next().addClass('tubiao');
+
         if (value_num == 2) {
             $(".lan3_3,.open_door,.open_door li ul").hide();
             $(".map3_3").show()
