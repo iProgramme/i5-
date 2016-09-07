@@ -70,41 +70,46 @@
                     
                     <li>
                         <label for="">
-                            <span>停车点名称：</span>
+                            <span>&nbsp;用&nbsp;户&nbsp;名&nbsp;：</span>
                             <input type="text" placeholder="请输入">
                         </label>
                     </li>
                     <li>
                         <label for="">
-                            <span>&nbsp;&nbsp;&nbsp;卡&nbsp;&nbsp;&nbsp;号：</span>
+                            <span>&nbsp;登&nbsp;录&nbsp;名&nbsp;：</span>
                             <input type="text" placeholder="请输入">
                         </label>
                     </li>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;车&nbsp;牌&nbsp;号&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li class="">
-                        <label for="">
-                            <span>车标签号：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li class="">
-                        <label for="">
-                            <span>自行车状态：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li class="">
-                        <label for="">
-                            <span>&nbsp;&nbsp;&nbsp;区&nbsp;&nbsp;&nbsp;域&nbsp;&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
+                    <li class="time">
+                        <div class="demo-content">
+                            <form method="post">
+                                <p>
+                                    <label>登陆时间：</label>
+                                    <input type="text" class="calendar" />
+                                </p><!-- 
+                                 --><p>
+                                    <label>至&nbsp;&nbsp;&nbsp;</label>
+                                    <input type="text" class="calendar" />
+                                </p>
+                            </form>
+                            <script src="../bui/jquery-1.8.1.min.js"></script>
+                            <script src="../bui/sea.js"></script>
+                            <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
+                            <!-- script start -->
+                            <script type="text/javascript">
+                            BUI.use('bui/calendar', function(Calendar) {
+                                var datepicker = new Calendar.DatePicker({
+                                    trigger: '.calendar',
+                                    autoRender: true
+                                });
+                            });
+                            </script>
+                            <!-- script end -->
+                        </div>
                     </li>
                     
+                    <li><span></span></li>
+                    <li><span></span></li>
                     <li><span></span></li>
                     <li class="main_btn">
                         <label for="">
@@ -123,23 +128,19 @@
             <div class="form10_tab">
                 <table>
                     <tr>
-                        <th>编号</th>
                         <th>用户名</th>
-                        <th>卡号</th>
-                        <th>卡类型</th>
-                        <th>用户状态</th>
-                        <th>余额</th>
-                        <th>手机号码</th>
-                        <th>证件号</th>
-                        <th>开户时间</th>
-                        <th>操作员</th>
+                        <th>登录名</th>
+                        <th>性别</th>
+                        <th>电话号码</th>
+                        <th>登陆时间</th>
+                        <th>离开时间</th>
+                        <th>退出类型</th>
+                        <th>登陆时长</th>
                     </tr>
                     <tr>
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -155,13 +156,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -174,8 +171,6 @@
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -191,13 +186,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -210,8 +201,6 @@
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -227,13 +216,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -246,8 +231,6 @@
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -263,13 +246,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -282,8 +261,6 @@
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -299,15 +276,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>1101</td>
                         <td class="green">201503</td>
                         <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
                         <td>192.168.10.144</td>
                         <td>2005</td>
                         <td>市财政局</td>
@@ -335,59 +308,52 @@
                 </ul>
             </div>
             <!-- 添加窗口 -->
-            <div class="form34_1 form3_1 disN">
+            <div class="form31_1 form3_1 disN">
                 <table>
                     <tr>
-                        <th colspan=4>添加自行车<a href="javascript:void(0)" class="close"></a></th>
+                        <th colspan=2>添加停车柱<a href="javascript:void(0)" class="close"></a></th>
                     </tr>
                     <tr>
-                        <td>车牌号：</td>
+                        <td>停车柱编号：</td>
                         <td>
-                           <input type="text" name="" placeholder="110">
-                        </td>
-                        <td>自行车标签号：</td>
-                        <td>
-                           <input type="text" name="" placeholder="110">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>序列号：</td>
-                        <td>
-                           <input type="text" name="" placeholder="天安门广场">
-                        </td>
-                        <td>自行车密码：</td>
-                        <td>
-                           <input type="password" name="" placeholder="密码不可见">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>类型：</td>
-                        <td>
-                            <select>
-                                <option>类型一</option>
-                                <option>北京东路二号</option>
-                            </select>
-                        </td>
-                        <td>重复密码：</td>
-                        <td>
-                           <input type="password" name="" placeholder="密码不可见">
+                           <select>
+                               <option>请选择状态</option>
+                               <option>玉清</option>
+                               <option>上清</option>
+                               <option>太清</option>
+                           </select>
                         </td>
                     </tr>
                     <tr>
                         <td>状态：</td>
                         <td>
                             <select>
-                                <option>可用</option>
-                                <option>北京东路二号</option>
+                                <option>请选择状态</option>
+                                <option>玉清</option>
+                                <option>上清</option>
+                                <option>太清</option>
                             </select>
                         </td>
+                    </tr>
+                    <tr>
+                        <td>所属管理箱：</td>
+                        <td>
+                           <select>
+                               <option>请选择停车点</option>
+                               <option>青云门门口</option>
+                               <option>焚香谷谷口</option>
+                               <option>天音阁灭口</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>备注：</td>
                         <td>
                             <textarea name="" id="" cols="30" rows="3"></textarea>
                         </td>
                     </tr>
                 </table>
-                <div class="form341_btn">
+                <div class="form311_btn">
                     <input type="button" name="" value="确定" class="sure">
                     <input type="button" name="" value="取消" class="cancel">
                 </div>
@@ -409,81 +375,276 @@
             </div>
             <!-- 删除窗口 -->
             <!-- 修改窗口 -->
-            <div class="form34_3 form3_1 disN">
+            <div class="form31_3 form3_1 disN">
                 <table>
                     <tr>
-                        <th colspan=4>修改自行车<a href="javascript:void(0)" class="close"></a></th>
+                        <th colspan=2>修改停车柱<a href="javascript:void(0)" class="close"></a></th>
                     </tr>
                     <tr>
-                        <td>车牌号：</td>
+                        <td>停车柱编号：</td>
                         <td>
-                           <input type="text" name="" placeholder="110">
-                        </td>
-                        <td>自行车标签号：</td>
-                        <td>
-                           <input type="text" name="" placeholder="110">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>序列号：</td>
-                        <td>
-                           <input type="text" name="" placeholder="天安门广场">
-                        </td>
-                        <td>自行车密码：</td>
-                        <td>
-                           <input type="password" name="" placeholder="密码隐藏">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>类型：</td>
-                        <td>
-                            <select>
-                                <option>北京路一号</option>
-                                <option>北京东路二号</option>
-                            </select>
-                        </td>
-                        <td>重复密码：</td>
-                        <td>
-                           <input type="password" name="" placeholder="密码隐藏">
+                           <select>
+                               <option>110</option>
+                               <option>120</option>
+                               <option>120111</option>
+                           </select>
                         </td>
                     </tr>
                     <tr>
                         <td>状态：</td>
                         <td>
                             <select>
-                                <option>状态一</option>
-                                <option>北京东路二号</option>
+                                <option>正常</option>
+                                <option>傻了</option>
                             </select>
                         </td>
+                    </tr>
+                    <tr>
+                        <td>所属管理箱：</td>
+                        <td>
+                           <select>
+                               <option>北京路一号</option>
+                               <option>北京东路二号</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>备注：</td>
                         <td>
                             <textarea name="" id="" cols="30" rows="3"></textarea>
                         </td>
                     </tr>
                 </table>
-                <div class="form343_btn">
+                <div class="form313_btn">
                     <input type="button" name="" value="确定" class="sure">
                     <input type="button" name="" value="取消" class="cancel">
                 </div>
                 <a href="javascript:void(0)" class="disN">&nbsp;</a>
             </div>
             <!-- 修改窗口 -->
+            <!-- 关停窗口 -->
+            <div class="form31_4 form3_1 disN">
+                <div class="bell">
+                    <img src="../img/bell.png">
+                    <span>确定关停</span>
+                </div>
+                <div class="form314_btn">
+                    <input type="button" name="" value="取消" class="cancel">
+                    <input type="button" name="" value="确定" class="sure">
+                </div>
+                <a href="javascript:void(0)" class="disN">&nbsp;</a>
+            </div>
+            <!-- 关停窗口 -->
+            <!-- 开锁窗口 -->
+            <div class="form31_5 form3_1 disN">
+                <div class="bell">
+                    <img src="../img/bell.png">
+                    <span>确定开锁</span>
+                </div>
+                <div class="form315_btn">
+                    <input type="button" name="" value="取消" class="cancel">
+                    <input type="button" name="" value="确定" class="sure">
+                </div>
+                <a href="javascript:void(0)" class="disN">&nbsp;</a>
+            </div>
+            <!-- 开锁窗口 -->
+            <!-- 批量添加窗口 -->
+            <div class="form31_6 form3_1 disN">
+                <table>
+                    <tr>
+                        <th colspan=2>批量添加停车柱</th>
+                    </tr>
+                    <tr>
+                        <td>停车柱编号：</td>
+                        <td>
+                           <input type="text" name="">
+                           <input type="text" name=""> -
+                           <input type="text" name="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>状态：</td>
+                        <td>
+                            <select>
+                                <option>正常</option>
+                                <option>傻了</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>所属管理箱：</td>
+                        <td>
+                           <select>
+                               <option>北京路一号</option>
+                               <option>北京东路二号</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>备注：</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="3"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form316_btn">
+                    <input type="button" name="" value="确定" class="sure">
+                    <input type="button" name="" value="取消" class="cancel">
+                </div>
+                <a href="javascript:void(0)" class="disN">&nbsp;</a>
+            </div>
+            <!-- 批量添加窗口 -->
             
         </div>
+        <!-- 历史记录窗口 -->
+        <div class="form33_sty form31_7 form3_1 disN">
+            <div class="btn3_2">
+                <input type="button" name="" value="返回">
+            </div>
+            <div class="form10_tab">
+                <table>
+                    <tr>
+                        <th>编号</th>
+                        <th>用户名</th>
+                        <th>卡号</th>
+                        <th>卡类型</th>
+                        <th>用户状态</th>
+                        <th>余额</th>
+                        <th>操作员</th>
+                    </tr>
+                    <tr>
+                        <td>1101</td>
+                        <td class="green">201503</td>
+                        <td>正常</td>
+                        <td>3/0/4</td>
+                        <td>盈泽演示</td>
+                        <td>192.168.10.144</td>
+                        <td class="green">TN-黄河南</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li>共28条</li>
+                    <li>第1/1页</li>
+                    
+                    <li><a href="javascript:void(0)" class="pre_page"><</a></li>
+                    <li>
+                        <ul class="change">
+                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" class="next_page active">></a></li>
+                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">跳转</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 历史记录窗口 -->
         <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
         <script src="../js/jquery.contextmenu.js"></script>
         <script>
         $(function() {
-            $('.form10_tab tr').contextPopup({
+            $('#form33_sty tr').contextPopup({
                 // title: 'My Popup Menu',
                 items: [{
                     label: '添加',
                     // icon: 'img/right_add.png',
                     action: function() {
                         $(".form3_1").hide();
-                        $(".form34_1").show()
+                        $(".form31_1").show()
                     }
                 }, {
+                    label: '批量添加',
+                    // icon: 'img/right_del.png',
+                    action: function() {
+                        $(".form3_1").hide();
+                        $(".form31_6").show()
+                    }
+                },{
                     label: '删除',
                     // icon: 'img/right_del.png',
                     action: function() {
@@ -495,7 +656,28 @@
                     // icon: 'img/right_gai.png',
                     action: function() {
                         $(".form3_1").hide();
-                        $(".form34_3").show()
+                        $(".form31_3").show()
+                    }
+                }, {
+                    label: '关停',
+                    // icon: 'img/right_gai.png',
+                    action: function() {
+                        $(".form3_1").hide();
+                        $(".form31_4").show()
+                    }
+                }, {
+                    label: '开锁',
+                    // icon: 'img/right_gai.png',
+                    action: function() {
+                        $(".form3_1").hide();
+                        $(".form31_5").show()
+                    }
+                },{
+                    label: '记录',
+                    // icon: 'img/right_del.png',
+                    action: function() {
+                        $(".form3_1,#form33_sty,.main").hide();
+                        $(".form31_7").show()
                     }
                 }]
             });
@@ -503,8 +685,14 @@
         </script>
         <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
         <script>
+        // 点取消，关闭弹出窗
         $(".cancel,.close").click(function() {
             $(".form3_1").hide()
+        })
+        // 历史记录点击返回
+        $(".btn3_2 input").click(function () {
+            $(".form3_1,.form31_7").hide();
+            $("#form33_sty,.main").show();
         })
         // 点击翻页
         $(".change a").click(function () {
