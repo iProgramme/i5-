@@ -1343,9 +1343,9 @@
             // 获取点击的value值
             var value_num = $(this).attr('value');
             if (value_num == 2) {
-                $(".tabs_second").show();
+                $(".tabs_second,.lock").show();
             } else {
-                $(".tabs_second").hide();
+                $(".tabs_second,.lock").hide();
             }
         })
         //锁住下三个标签栏切换
@@ -1360,5 +1360,4 @@
         
     </div>
 </body>
-
 </html>

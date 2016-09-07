@@ -177,7 +177,7 @@ footer{margin-bottom: 300px;}
 .map_table tbody tr:hover{background-color: #f6a554;color: #fff}
 .map_table tbody tr:first-child:hover{background-color: #fff;color: #494949}
 .map_table .open{position: fixed;left: 480px;width: 35px;height: 87px;line-height: 87px; background-color: #f6a554;top: calc(50% - 44px);font-size: 20px;color: #fff;text-align: center;}
-#form33_sty,.form33_sty{width: 97%;margin-left: 1.5%; background-color: #fff;padding-top: 0px;padding-bottom: 20px;border: 1px solid #ccc;border-top: 0}
+#form33_sty,.form33_sty{width: 97%;margin-left: 1.5%; background-color: #fff;padding-top: 0px;padding-bottom: 20px;border: 0px solid #ccc;border-top: 0}
 .form_sty{padding: 45px 0;background-color: #fff;position: relative;border-radius: 5px;}
 .form_33{margin: 30px 20px 20px;}
 .form_sty ul{width: calc(100% - 330px)}
@@ -202,7 +202,7 @@ footer{margin-bottom: 300px;}
 .form10_tab td:last-child{border: 0}
 .pages{width: calc(100% - 20px);text-align: right;}
 .pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 12px;}
-.pages input{width: 24px;height: 16px;margin: -1px 5px 0}
+.pages input{width: 24px;height: 16px;margin: -1px 5px 0;text-align: center;}
 .pages li a{color: #a2a2a2;background-color: #b9b9b9;padding: 0 4px;border: 1px solid #b9b9b9}
 .pages .change a{color: #979797;background-color: #f9f9f9;padding: 0 5px;border: 1px solid #b9b9b9}
 /*修改弹出窗*/
