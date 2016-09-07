@@ -51,6 +51,19 @@ span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 1
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
+.main{padding: 35px}
+/*2-2停车柱管理*/
+.main header li{float: left;text-align: center;width: }
+.main header span{height: 40px;line-height: 40px;}
+.main header .left{background: url(../img/bread.png) no-repeat 40px 0;width: 20px;height: 40px}
+.main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px}
+.main header li:first-child{width: 80px;text-align: center;}
+
+
+
+
+
+
 
 
 
