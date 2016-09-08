@@ -25,14 +25,14 @@
         <ul class="clear">
             <li><span class="icon iconfont">&nbsp;&#xe609;&nbsp;</span><span class="right">&nbsp;</span></li>
             <li><span class="left">&nbsp;</span><span class="center">车辆业务</span><span class="right">&nbsp;</span></li>
-            <li><span class="left">&nbsp;</span><span class="center">停车柱管理</span><span class="right">&nbsp;</span></li>
+            <li><span class="left">&nbsp;</span><span class="center">停车证管理</span><span class="right">&nbsp;</span></li>
         </ul>
     </header>
     <!-- 面包屑 -->
     <!-- nav条 -->
     <div class="tab1_2 clear">
         <ul>
-            <li>待审核</li>
+            <li class="tab_active">待审核</li>
             <li>缴费记录</li>
             <li>停车证查询及导出</li>
             <li class="add">新建申请</li>
@@ -41,11 +41,11 @@
     <!-- nav条 -->
     <!-- 待审核 -->
     <!-- 输入框及表格部分 -->
-    <div class="max1260 disN">
+    <div class="max1260">
         <!-- 输入框部分 -->
         <div class="all_input clear">
             <p class="head_p">查询</p>
-            <ul class="dib">
+            <ul class="dib fl">
                 <li>
                     <label>
                         <span>注册人/单位：</span><input type="text" placeholder="请输入">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                     <label>
-                        <span>车牌号码：</span><input type="text" placeholder="请输入">
+                        <span>车&nbsp;牌&nbsp;号&nbsp;码&nbsp;：</span><input type="text" placeholder="请输入">
                     </label>
                 </li>
                 
@@ -76,9 +76,9 @@
         </div>
         <!-- 输入框部分 -->
         <!-- 表格部分 -->
-        <div class="table1_2">
+        <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="10"><span>大型车辆预约</span></td></tr></thead>
+                <thead><tr><td colspan="10"><div class="clear"><h3><span>大型车辆预约</span></h3></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th>编号</th>
@@ -396,7 +396,7 @@
         <!-- 输入框部分 -->
         <div class="all_input clear">
             <p class="head_p">查询 <span>添加</span></p>
-            <ul class="dib">
+            <ul class="dib fl">
                 <li>
                     <label>
                         <span>注册人/单位：</span><input type="text" placeholder="请输入">
@@ -404,17 +404,16 @@
                 </li>
                 <li>
                     <label>
-                        <span>车牌号码：</span><input type="text" placeholder="请输入">
+                        <span>车&nbsp;牌&nbsp;号&nbsp;码&nbsp;：</span><input type="text" placeholder="请输入">
                     </label>
                 </li>
                 <li class="time">
                     <div class="demo-content">
                         <form method="post">
                             <p>
-                                <label>登记日期：</label>
+                                <label>登&nbsp;记&nbsp;日&nbsp;期&nbsp;：</label>
                                 <input type="text" class="calendar" />
-                            </p><!-- 
-                             --><p>
+                            
                                 <label>至&nbsp;&nbsp;&nbsp;</label>
                                 <input type="text" class="calendar" />
                             </p>
@@ -436,7 +435,7 @@
                 </li>
             </ul>
             
-            <div class="find dib">
+            <div class="find dib lie2">
                 <button class="search2">重置</button>
                 <button class="search1">查询</button>
                 <button class="search3">在线支付</button>
@@ -446,7 +445,7 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="13"><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></td></tr></thead>
+                <thead><tr><td colspan="13"><div class="clear"><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th class="tab_checkbox"><span></span></th>
@@ -808,15 +807,10 @@
 
     <!-- 停车证查询及导出 -->
     <!-- 输入框及表格部分 -->
-    <div class="max1260">
+    <div class="max1260 disN">
         <!-- 输入框部分 -->
         <div class="all_input clear">
-            <ul class="dib">
-                <li>
-                    <label>
-                        <span>车牌号码：</span><input type="text" placeholder="请输入">
-                    </label>
-                </li>
+            <ul class="dib fl">
                 <li>
                     <label>
                         <span>注册人/单位：</span><input type="text" placeholder="请输入">
@@ -824,20 +818,24 @@
                 </li>
                 <li>
                     <label>
-                        <span>停放区域：</span><input type="text" placeholder="请输入">
+                        <span>车&nbsp;牌&nbsp;号&nbsp;码&nbsp;：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>停&nbsp;放&nbsp;区&nbsp;域&nbsp;：</span><input type="text" placeholder="请输入">
                     </label>
                 </li>
                 
             </ul>
             <div class="choice dib">
                 <label>
-                    <span>停放区域：</span>
+                    <span>状&nbsp;&nbsp;态&nbsp;&nbsp;：</span>
                     <select>
                         <option>请选择</option>
-                        <option>公共区域</option>
-                        <option>西秀村</option>
-                        <option>东秀村</option>
-                        <option>南新村</option>
+                        <option>未交费</option>
+                        <option>注销</option>
+                        <option>过期</option>
                     </select>
                 </label>
             </div>
@@ -849,13 +847,18 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="8"><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></td></tr></thead>
+                <thead><tr><td colspan="13"><div class="clear"><h3><span>查询</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th class="tab_checkbox"><span></span></th>
                         <th>系统编号</th>
                         <th>注册人/单位</th>
                         <th>车牌号码</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>车辆类别</th>
+                        <th>登记时间</th>
+                        <th>用户类型</th>
                         <th>金额</th>
                         <th>收费员</th>
                         <th>所属学校</th>
@@ -865,10 +868,15 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>02</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
                         <td>卡萨接电话</td>
                         <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
                         <td>234234</td>
+                        <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
                             <ul class="disN">
@@ -880,10 +888,15 @@
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
                         <td>3</td>
+                        <td>买买买</td>
                         <td>卖卖卖</td>
                         <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
                         <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
@@ -897,7 +910,12 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>4</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
                         <td>234234</td>
                         <td>皇家理工</td>
@@ -914,7 +932,12 @@
                         <td>5</td>
                         <td>买买买</td>
                         <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
                         <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
@@ -927,11 +950,16 @@
                     </tr>
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
+                        <td>6</td>
+                        <td>买买买</td>
                         <td>买买买</td>
                         <td>买买买</td>
                         <td>卖卖卖</td>
+                        <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
@@ -945,8 +973,13 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>7</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
                         <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
                         <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
@@ -961,9 +994,14 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>8</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
                         <td>卡萨接电话</td>
                         <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
@@ -976,7 +1014,12 @@
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
                         <td>9</td>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
                         <td>奥斯卡接电话</td>
                         <td>奥斯卡接电话</td>
                         <td>234234</td>
@@ -991,9 +1034,14 @@
                     </tr>
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
+                        <td>01</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>234234</td>
                         <td>234234</td>
                         <td>皇家理工</td>
@@ -1008,9 +1056,14 @@
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
                         <td>10</td>
+                        <td>买买买</td>
                         <td>卖卖卖</td>
+                        <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
                         <td>皇家理工</td>
                         <td>皇家理工</td>
                         <td class="action">
@@ -1025,8 +1078,13 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>11</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
+                        <td>卡萨接电话</td>
                         <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
                         <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
@@ -1039,7 +1097,12 @@
                     </tr>
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
+                        <td>12</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
                         <td>卡萨接电话</td>
                         <td>09234</td>
                         <td>奥斯卡接电话</td>
@@ -1057,9 +1120,14 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>13</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
                         <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
                         <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
@@ -1072,7 +1140,12 @@
                     <tr>
                         <td class="tab_checkbox"><span></span></td>
                         <td>14</td>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
                         <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
                         <td>09234</td>
                         <td>奥斯卡接电话</td>
                         <td>234234</td>
@@ -1089,9 +1162,14 @@
                         <td class="tab_checkbox"><span></span></td>
                         <td>15</td>
                         <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
                         <td>234</td>
                         <td>卡萨接电话</td>
+                        <td>09234</td>
                         <td>奥斯卡接电话</td>
+                        <td>234234</td>
                         <td>皇家理工</td>
                         <td class="action">
                             <span>操作</span>
@@ -1162,5 +1240,12 @@
         }
     })
     // 切换待审核之类的
+    $(".tab1_2 li").click(function () {
+        var num=$(this).index();
+        $(".tab1_2 li").removeClass('tab_active');
+        $(this).addClass('tab_active');
+        $(".max1260").hide();
+        $(".max1260").eq(num).show();
+    })
 </script>
 </html>

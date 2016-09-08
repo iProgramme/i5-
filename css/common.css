@@ -14,7 +14,7 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fr{float:right;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 input[type="button"]{cursor: pointer;border-radius: 2px}
-.dib{display: inline-block;position: relative;}
+.dib{display: inline-block;}
 .nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px}
 .nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
 .nav .active .icon2{color: #fff;transform:rotate(90deg);background-color: #fff;}
@@ -54,7 +54,7 @@ button{cursor: pointer;}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
-.main{padding: 35px}
+.main{padding: 20px 35px}
 /*面包屑*/
 .main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; }
 .main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
@@ -65,28 +65,32 @@ button{cursor: pointer;}
 .center{padding: 0 20px}
 /*2-1*/
 /*待审核*/
-.tab1_2{margin: 35px 0;text-align: left;}
+.tab1_2{margin: 20px 0;text-align: left;}
 .tab1_2 li{width: 160px;height: 36px;line-height: 36px;text-align: center;float: left;background-color: #f0f0f0;color: #535353;font-size: 16px;margin-right: 1px;cursor: pointer;}
-.tab1_2 li:hover{background-color: #1a2734;color: #fff}
-.tab1_2 .add{background:url(../img/xuebi_y.png) no-repeat 12px 7px;margin-left: 30px;}
+.tab1_2 li:hover,.tab1_2 .tab_active{background-color: #1a2734;color: #fff}
+.tab1_2 .add{background:url(../img/xuebi_y.png) no-repeat 12px 7px;margin-left: 30px;color: #535353}
 .tab1_2 .add:hover{background:url(../img/xuebi_y.png) no-repeat 12px 7px;color: #535353}
 /*输入框部分*/
-.all_input{border: 1px solid #b9b9b9;position: relative;padding: 10px 0}
+.all_input{border: 1px solid #b9b9b9;position: relative;padding: 0}
 .all_input .head_p{border-left: 3px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #f9f9f9;position: relative;}
-.all_input ul{width: 65.5%;}
-.all_input li{float: left;width: 49%;height: 80px;line-height: 80px;text-align: right;}
-.all_input .time{width: 96%}
-.time p{border: 0;padding: 0;display: inline-block;width: 50%}
+.all_input ul{width: 61.5%;padding: 20px 0}
+.all_input li{float: left;width: calc(49% - 20px);height: 55px;line-height: 55px;text-align: left;padding-left: 20px;}
+.all_input .time{width: calc(96% - 20px)}
+.time p{border: 0;padding: 0;display: inline-block;width: 100%}
 .time p label{padding-right: 15px;text-align: right;padding-right: 0;padding-left: 15px;}
 .time p:last-child{text-align: left;}
 .all_input li label{width: 100%}
-.all_input li input{width: calc(100% - 130px);height: 28px;padding: 0 5px}
-.all_input .choice{height: 50px;line-height: 80px;top: -35px;left: 20px}
-.all_input .find{bottom: 36px;left: 60px;}
-.all_input .find button{width: 82px;line-height: 38px;height: 38px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;}
+.all_input li input{width: calc(100% - 170.578px);height: 28px;padding: 0 5px}
+.all_input .choice{height: 50px;line-height: 80px;top: 7px;left: 0px;position: relative;}
+.all_input li span{width: 120px}
+.all_input li label:first-child{width: 120px}
+.all_input .time input{width: calc(50% - 170.578px)}
+.choice,.find{}
+.all_input .find{bottom: 29px;left: 78%;position: absolute;}
+.all_input .find button{width: 82px;line-height: 38px;height: 38px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
 .all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 47px -47px #00ccab;width: 72px;padding-right: 10px;border: 1px solid #00ccab}
 /*表格*/
-.table1_2{margin-top: 48px;}
+.table1_2{margin-top: 20px;}
 .table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353}
 .table1_2 thead{border: 1px solid #b9b9b9;background-color: #f6f6f6;text-align: left;}
 .table1_2 thead span{border-left: 3px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
@@ -114,16 +118,21 @@ button{cursor: pointer;}
 .all_input .head_p span{position: absolute;right: 15px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -45px -45px;cursor: pointer;}
 /*缴费记录*/
 .all_input .find .search2{background-color: #f6f6f6;color: #535353;border: 1px solid #dcdcdc}
-.induce thead{text-align: right;border: 0}
+.induce thead{text-align: right;border: 0;}
+.induce thead td{height: 43px}
 .induce thead tr:nth-child(odd){background-color: #dedede;}
 .induce thead span{margin-right: 20px;border: 0}
-.induce thead p{border-left: 3px solid #293d51;cursor: pointer;}
-.induce thead p i{position: relative;top: 5px}
-.induce thead p span{position: relative;top: -2px}
+.induce thead div{border-left: 3px solid #293d51;height: 43px}
+.induce thead p{display: inline-block;cursor: pointer;}
+.induce thead div i{position: relative;top: 5px}
+.induce thead div span{position: relative;top: -2px}
+.induce thead h3 span{top: 3px}
+.induce thead h3 {text-align: left;font-weight: normal;float: left;}
 .tab_checkbox input{opacity: 0}
 .tab_checkbox span{width: 18px;height: 18px;background: url(../img/xuebi_y.png) no-repeat 0px -198px;position: relative;top: 3px}
 .tab_checkbox .checkbox_active{background: url(../img/xuebi_y.png) no-repeat -47px -199px;}
-
+.induce .top0{top: 0}
+.all_input .lie2{left: 65%;width: 220px}
 
 
 
