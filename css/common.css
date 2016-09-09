@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{margin:0;padding:0;}
-body{font-family:"Microsoft Yahei";background:#fff;color:#000;padding:0;margin:0; overflow: hidden;font-size: 14px;}
+body{font-family:"Microsoft Yahei";background:#fff;color:#535353;padding:0;margin:0; overflow: hidden;font-size: 14px;}
 html{ overflow-x: hidden;background-color: #fff;}
 body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -13,6 +13,7 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fl{float:left;}
 .fr{float:right;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
+.over_vis{overflow: visible;}
 input[type="button"]{cursor: pointer;border-radius: 2px}
 .dib{display: inline-block;}
 .nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px}
@@ -57,7 +58,7 @@ button{cursor: pointer;}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; }
+.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 20px 0 10px}
 .main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
 .main header .left{background: url(../img/bread.png) no-repeat 5px -70px;width: 20px;height: 40px}
 .main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px;font-size: 16px;}
@@ -98,12 +99,14 @@ button{cursor: pointer;}
 .table1_2 thead span{border-left: 3px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
 .table1_2 th{color: #000;height: 30px}
 .table1_2 td{height: 30px;position: relative;z-index: 1}
-.table1_2 tr:nth-child(odd){background-color: #f6f6f6;}
-.action span{width: 64px;height: 22px;background-color: #f6f6f6;border: 1px solid #bfbfbf;cursor: pointer;line-height: 22px;}
+.table1_2 tr:nth-child(odd){background-color: #eee;}
+.action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px}
+.action .operate,.action span{background-position: 64px -221px}
+.action span{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -245px #fff;width: 98px}
 .action{width: 90px}
-.action ul{position: absolute;border: 1px solid #bfbfbf;left: 12px;width: 64px;background-color: #fff;}
-.action ul li{cursor: pointer;}
-.action ul li:hover{background-color: #f9f9f9;color: #00ccab}
+.action ul{position: absolute;border: 1px solid #00ccab;left: 10px;width: 98px;background-color: #fff;border-top: 0}
+.action ul li{cursor: pointer;height: 38px;line-height: 38px;}
+.action ul li:hover{background-color: #00ccab;color: #fff}
 .pages{width: calc(100% - 20px);text-align: right;}
 .pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 16px;}
 .pages input{width: 30px;height: 24px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 16px;}
@@ -150,9 +153,32 @@ button{cursor: pointer;}
 .creat .time p{border-left: 0;margin-bottom: 0;padding-left: 0;text-align: right;}
 .creat .time input[type="text"]{width: 100px}
 .creat .time{padding-right: 0%;width: 47.5%}
-.creat .sel1_2{width: 170px;padding: 0;float:none;display: inline-block;border:1px solid #8c8c8c;height: 28px;line-height: 28px;text-align: left;}
-.creat .sel_ul{width: 170px;position: absolute;}
-.creat .sel_ul li{height: 28px;line-height: 28px;float: none;width: 170px;padding: 0;text-align: left;}
+.creat .sel1_2{width: 160px;padding: 0;float:none;display: inline-block;border:1px solid #8c8c8c;height: 28px;line-height: 28px;text-align: left;padding-left: 10px;background: url(../img/xuebi_y.png) no-repeat 147px -218px;cursor: pointer;}
+.creat .sel_ul{width: 170px;position: absolute;left: 74px;top: 25px;padding: 0;border: 1px solid #8c8c8c;border-top: 0;padding-left: 0px;background-color: #fff;}
+.approve .sel_ul{left: 46px}
+.creat .sel_ul li{height: 28px;line-height: 28px;float: none;width: 160px;padding: 0;text-align: left;padding-left: 10px;position: relative;}
+.z-in3{z-index: 3;position: relative;}
+.sel_ul ul{position: absolute;left: 170px;border: 1px solid #8c8c8c;padding: 0;width: 100px;top: -1px;background-color: #fff;}
+.creat .sel_ul li li{width: 90px}
+.sel_ul li:hover{color: #00ccab;background-color: #f9f9f9;}
+.sel_ul li:hover li{color: #000}
+.sel_ul li li:hover{color: #00ccab}
+.save1_2{margin-top: 175px;margin-bottom: 20px;text-align: center;}
+.save1_2 input{width: 82px;height: 40px;color: #fff;background-color: #00ccab;margin: 0 19px}
+.save1_2 .back{background-color: #fff;color: #535353}
+.approve{margin-bottom: 120px;}
+.approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 325px -283px}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
