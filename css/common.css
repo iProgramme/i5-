@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{margin:0;padding:0;}
-body{font-family:"Microsoft Yahei";background:#fff;color:#000;padding:0;margin:0; overflow: hidden}
+body{font-family:"Microsoft Yahei";background:#fff;color:#000;padding:0;margin:0; overflow: hidden;font-size: 14px;}
 html{ overflow-x: hidden;background-color: #fff;}
 body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -20,6 +20,7 @@ input[type="button"]{cursor: pointer;border-radius: 2px}
 .nav .active .icon2{color: #fff;transform:rotate(90deg);background-color: #fff;}
 span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 16px}
 .max1260{max-width: 1260px}
+.max900{max-width: 900px}
 .disN{display: none;}
 button{cursor: pointer;}
 /*图标字体*/
@@ -106,7 +107,7 @@ button{cursor: pointer;}
 .pages{width: calc(100% - 20px);text-align: right;}
 .pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 16px;}
 .pages input{width: 30px;height: 24px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 16px;}
-.pages li a{color: #a2a2a2;background-color: #00ccab;padding: 0 4px;border: 1px solid #b9b9b9}
+.pages li a{color: #fff;background-color: #00ccab;padding: 0 4px;border: 1px solid #b9b9b9}
 .pages .change a{color: #979797;background-color: #f9f9f9;padding: 1px 7px;border: 1px solid #b9b9b9;border-radius: 2px}
 .pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -104px;width: 23px;height: 23px;padding: 0;position: relative;top: 6px}
 .pages .pre_page.active{background-position: -48px -104px;}
@@ -134,6 +135,24 @@ button{cursor: pointer;}
 .tab_checkbox .checkbox_active{background: url(../img/xuebi_y.png) no-repeat -47px -199px;}
 .induce .top0{top: 0}
 .all_input .lie2{left: 65%;width: 220px}
+/*新建申请*/
+.creat{width: 100%;margin-bottom: 30px;}
+.creat p{width: 100%;border-left: 3px solid #ff503f;padding-left: 10px;margin-bottom: 10px;height: 28px;line-height: 28px;}
+.creat ul{border: 2px solid #eaeaea;float: left;padding: 10px 0;width: 99.5%}
+.creat li{float: left;width: 38%;height: 55px ;line-height: 55px;padding-right: 11%;text-align: right;}
+.creat li label{position: relative;}
+.creat li span{text-align: right;}
+.creat li input[type="text"]{width: 170px;height: 28px}
+.creat li input[type="button"]{position: absolute;right: -75px;width: 60px;height: 30px;color: #fff;background-color: #00ccab;top: -3px}
+.creat li:nth-child(odd){text-align: right;padding-right: 15%;width: 34.5%;}
+.creat .upload{border: 2px solid #eaeaea;float: left;width: 93.5%;border-top: 0;padding: 0 3%;padding-top: 0;height: 200px}
+.upload span{width: 100%;height: 36px;line-height: 36px;}
+.creat .time p{border-left: 0;margin-bottom: 0;padding-left: 0;text-align: right;}
+.creat .time input[type="text"]{width: 100px}
+.creat .time{padding-right: 0%;width: 47.5%}
+.creat .sel1_2{width: 170px;padding: 0;float:none;display: inline-block;border:1px solid #8c8c8c;height: 28px;line-height: 28px;text-align: left;}
+.creat .sel_ul{width: 170px;position: absolute;}
+.creat .sel_ul li{height: 28px;line-height: 28px;float: none;width: 170px;padding: 0;text-align: left;}
 
 
 
