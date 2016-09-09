@@ -58,11 +58,11 @@ button{cursor: pointer;border-radius: 2px}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
+.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 20px 0 10px}
 .main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
 .main header .left{background: url(../img/bread.png) no-repeat 5px -70px;width: 20px;height: 40px}
 .main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px;font-size: 16px;}
-.main header li:first-child{text-align: center;background: none;}
+.main header li:first-child{width: 80px;text-align: center;}
 .main header li:first-child .right{font-size: 26px;}
 .center{padding: 0 20px}
 /*2-1*/
@@ -109,14 +109,14 @@ button{cursor: pointer;border-radius: 2px}
 .action ul li{cursor: pointer;height: 38px;line-height: 38px;}
 .action ul li:hover{background-color: #00ccab;color: #fff}
 .pages{width: calc(100% - 20px);text-align: right;}
-.pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 12px;}
-.pages input{width: 26px;height: 20px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 16px;}
+.pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 16px;}
+.pages input{width: 30px;height: 24px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 16px;}
 .pages li a{color: #fff;background-color: #00ccab;padding: 0 4px;border: 1px solid #b9b9b9}
 .pages .change a{color: #979797;background-color: #f9f9f9;padding: 1px 7px;border: 1px solid #b9b9b9;border-radius: 2px}
-.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -103px;width: 19px;height: 19px;padding: 0;position: relative;top: 6px}
-.pages .pre_page.active{background-position: -48px -103px;}
-.pages li .next_page{background-position: -48px -103px;}
-.pages .next_page.active{background-position: 0 -153px;}
+.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -104px;width: 23px;height: 23px;padding: 0;position: relative;top: 6px}
+.pages .pre_page.active{background-position: -48px -104px;}
+.pages li .next_page{background-position: -48px -104px;}
+.pages .next_page.active{background-position: 0 -155px;}
 .pages .change .active{background-color: #00ccab;color: #fff}
 /*表格*/
 /*待审核*/
@@ -177,7 +177,7 @@ button{cursor: pointer;border-radius: 2px}
 .test_tab li{float: left;padding-left: 46px;}
 .test_tab p a{position: absolute;height: 40px;width: 40px;background: url(../img/xuebi_y.png) no-repeat -34px -217px;right: 20px}
 .test_tab p .sure{position: absolute;right: 20px;width: 60px;height: 28px;background-color: #fff;border: 1px solid #d2d2d2;top: 8px}
-.all_input .choice select{height: 30px}
+
 
 
 
