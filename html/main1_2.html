@@ -1507,7 +1507,7 @@
         <!-- 审批信息 -->
         <div class="creat clear approve over_vis">
             <p>车主信息</p>
-            <ul>
+            <ul style="height: 130px">
                 <li class="z-in3">
                      <label for="">
                          <span>状态：</span>
@@ -1522,10 +1522,10 @@
                         </ul>
                     </label>
                 </li>
-                <li>
+                <li class="textarea1_2">
                     <label for="">
-                        <span>职工姓名：</span>
-                        
+                        <span>保卫处审批意见：</span>
+                        <textarea rows="6"></textarea>
                     </label>
                 </li>
                 
@@ -1631,6 +1631,38 @@
             <input type="button" name="" value="返回" class="back">
         </div>
         <!-- 保存 -->
+        <!-- 审核的弹窗 -->
+        <div class="test_tab disN">
+            <p><span>职工审核</span><a href="javascript:void(0)"></a></p>
+            <ul class="clear">
+                <li>姓名：八戒</li>
+                <li>单位：天庭</li>
+                <li>类型：天蓬元帅</li>
+                <li>银行卡：天地银行</li>
+            </ul>
+            <ul class="clear">
+                <li>姓名：悟空</li>
+                <li>单位：花果山</li>
+                <li>类型：齐天大圣</li>
+                <li>银行卡：天地银行</li>
+            </ul>
+            <ul class="clear">
+                <li>姓名：白骨精</li>
+                <li>单位：人间</li>
+                <li>类型：妖怪</li>
+                <li>银行卡：天地银行</li>
+            </ul>
+            <ul class="clear">
+                <li>姓名：如来</li>
+                <li>单位：西天</li>
+                <li>类型：佛教头头</li>
+                <li>银行卡：自带金</li>
+                <li>状态：在发光</li>
+                <li>银行卡：天地银行</li>
+            </ul>
+            <p><input type="button" name="" value="确定" class="sure"></p>
+        </div>
+        <!-- 审核的弹窗 -->
     </div>
     <!-- 输入框及表格部分 -->
     <!-- 审核 -->
@@ -1722,9 +1754,14 @@
     // 点保存的时候判断
     $(".max1260_5 .save").click(function () {
         var chioce="请选择";
-        if ($(".max1260_5 .change_value").test(chioce)) {
-            alert(000)
-        } else {}
+        if ($(".max1260_5 .approve .change_value").text()==chioce) {
+            alert("请填写车主信息状态")
+        } else {
+            $(".test_tab").show()
+        }
+    })
+    $(".test_tab .sure").click(function () {
+        $(this).hide()
     })
 </script>
 

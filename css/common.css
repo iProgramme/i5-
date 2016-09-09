@@ -166,16 +166,16 @@ button{cursor: pointer;}
 .save1_2{margin-top: 175px;margin-bottom: 20px;text-align: center;}
 .save1_2 input{width: 82px;height: 40px;color: #fff;background-color: #00ccab;margin: 0 19px}
 .save1_2 .back{background-color: #fff;color: #535353}
-.approve{margin-bottom: 120px;}
-.approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 325px -283px}
-
-
-
-
-
-
-
-
+.approve{margin-bottom: 190px;}
+.approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 325px -283px;margin-top: 40px;}
+.approve .textarea1_2{margin-top: -17px;width: 48%;padding-right: 1%;}
+.textarea1_2 textarea{width: 66%;position: relative;top: 40px}
+.test_tab{position: fixed;left: 150px;top: 150px;background-color: #fff;box-shadow: 0 0 15px #000;z-index: 4;border: 1px solid #7b7773}
+.test_tab p{height: 42px;background-color: #f6f7fb;position: relative;padding-left: 20px;line-height: 42px;}
+.test_tab ul{line-height: 55px;}
+.test_tab li{float: left;padding-left: 46px;}
+.test_tab p a{position: absolute;height: 40px;width: 40px;background: url(../img/xuebi_y.png) no-repeat -34px -217px;right: 20px}
+.test_tab p .sure{position: absolute;right: 20px;width: 60px;height: 28px;background-color: #fff;border: 1px solid #d2d2d2;top: 8px}
 
 
 
