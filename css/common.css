@@ -23,7 +23,7 @@ span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 1
 .max1260{max-width: 1260px}
 .max900{max-width: 900px}
 .disN{display: none;}
-button{cursor: pointer;}
+button{cursor: pointer;border-radius: 2px}
 /*图标字体*/
 @font-face {font-family: 'iconfont';
     src: url('iconfont.eot'); /* IE9*/
@@ -74,8 +74,8 @@ button{cursor: pointer;}
 .tab1_2 .add:hover{background:url(../img/xuebi_y.png) no-repeat 12px 7px;color: #535353}
 /*输入框部分*/
 .all_input{border: 1px solid #b9b9b9;position: relative;padding: 0}
-.all_input .head_p{border-left: 3px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #f9f9f9;position: relative;}
-.all_input ul{width: 61.5%;padding: 20px 0}
+.all_input .head_p{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #f9f9f9;position: relative;}
+.all_input ul{width: 61.5%;padding: 5px 0}
 .all_input li{float: left;width: calc(49% - 20px);height: 55px;line-height: 55px;text-align: left;padding-left: 20px;}
 .all_input .time{width: calc(96% - 20px)}
 .time p{border: 0;padding: 0;display: inline-block;width: 100%}
@@ -83,26 +83,27 @@ button{cursor: pointer;}
 .time p:last-child{text-align: left;}
 .all_input li label{width: 100%}
 .all_input li input{width: calc(100% - 170.578px);height: 28px;padding: 0 5px}
-.all_input .choice{height: 50px;line-height: 80px;top: 7px;left: 0px;position: relative;}
-.all_input li span{width: 120px}
+.all_input .choice{height: 50px;line-height: 80px;top: -7px;left: 0px;position: relative;}
+.all_input li span{width: 107px}
 .all_input li label:first-child{width: 120px}
 .all_input .time input{width: calc(50% - 170.578px)}
 .choice,.find{}
-.all_input .find{bottom: 29px;left: 78%;position: absolute;}
-.all_input .find button{width: 82px;line-height: 38px;height: 38px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
-.all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 54px -47px #00ccab;width: 82px;padding-right: 10px;border: 1px solid #00ccab}
+.all_input .find{bottom: 16px;left: 78%;position: absolute;}
+.all_input .find button{width: 82px;line-height: 32px;height: 32px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
+.all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 54px -51px #00ccab;width: 82px;padding-right: 10px;border: 1px solid #00ccab}
 .all_input .find .search3{margin-left:106px;}
 /*表格*/
 .table1_2{margin-top: 20px;}
 .table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353}
 .table1_2 thead{border: 1px solid #b9b9b9;background-color: #f6f6f6;text-align: left;}
-.table1_2 thead span{border-left: 3px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
+.table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
 .table1_2 th{color: #000;height: 30px}
 .table1_2 td{height: 30px;position: relative;z-index: 1}
 .table1_2 tr:nth-child(odd){background-color: #eee;}
-.action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px}
-.action .operate,.action span{background-position: 64px -221px}
-.action span{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -245px #fff;width: 98px}
+.action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px;color: #00ccab}
+.action span:hover,.action .operate{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -245px #fff;width: 98px}
+.action .operate,.action .operate:hover{background-position: 64px -221px}
+
 .action{width: 90px}
 .action ul{position: absolute;border: 1px solid #00ccab;left: 10px;width: 98px;background-color: #fff;border-top: 0}
 .action ul li{cursor: pointer;height: 38px;line-height: 38px;}
@@ -120,14 +121,14 @@ button{cursor: pointer;}
 /*表格*/
 /*待审核*/
 /*缴费记录*/
-.all_input .head_p span{position: absolute;right: 15px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -45px -45px;cursor: pointer;}
+.all_input .head_p span{position: absolute;right: 15px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -45px -45px;cursor: pointer;color: #00ccab}
 /*缴费记录*/
 .all_input .find .search2{background-color: #f6f6f6;color: #535353;border: 1px solid #dcdcdc}
 .induce thead{text-align: right;border: 0;}
 .induce thead td{height: 43px}
 .induce thead tr:nth-child(odd){background-color: #dedede;}
 .induce thead span{margin-right: 20px;border: 0}
-.induce thead div{border-left: 3px solid #293d51;height: 43px}
+.induce thead div{border-left: 0px solid #293d51;height: 43px}
 .induce thead p{display: inline-block;cursor: pointer;}
 .induce thead div i{position: relative;top: 5px}
 .induce thead div span{position: relative;top: -2px}
