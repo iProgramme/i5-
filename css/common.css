@@ -58,11 +58,11 @@ button{cursor: pointer;border-radius: 2px}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 20px 0 10px}
+.main header li{float: left;text-align: left;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 10px 0 20px;background: url(../img/xuebi_y.png) no-repeat 325px -283px;}
 .main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
 .main header .left{background: url(../img/bread.png) no-repeat 5px -70px;width: 20px;height: 40px}
 .main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px;font-size: 16px;}
-.main header li:first-child{width: 80px;text-align: center;}
+.main header li:first-child{width: 80px;padding: 0 10px 0 0}
 .main header li:first-child .right{font-size: 26px;}
 .center{padding: 0 20px}
 /*2-1*/
