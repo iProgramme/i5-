@@ -12,12 +12,18 @@
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
+    <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+        
+        <link rel="stylesheet" href="../upload/zyupload-1.0.0.min.css " type="text/css">
+        <script type="text/javascript" src="../upload/zyupload-1.0.0.min.js"></script>
     <link href="../css/common.css" rel="stylesheet">
     <link href="../bui/bui.css" rel="stylesheet">
     <style type="text/css">
         #form33_sty tr{cursor: pointer;}
         #form33_sty tr:hover{background-color: rgba(151,164,183,0.5);color: #fff}
     </style>
+    <script src="../bui/sea.js"></script>
+    <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
 </head>
 <body class="main">
     <!-- 面包屑 -->
@@ -32,9 +38,9 @@
     <!-- nav条 -->
     <div class="tab1_2 clear">
         <ul>
-            <li class="tab_active">待审核</li>
+            <li class="tab_active" style="border-top-left-radius: 2px;border-bottom-left-radius: 2px">待审核</li>
             <li>缴费记录</li>
-            <li>停车证查询及导出</li>
+            <li style="border-top-right-radius: 2px;border-bottom-right-radius: 2px">停车证查询及导出</li>
             <li class="add">新建申请</li>
         </ul>
     </div>
@@ -418,9 +424,7 @@
                                 <input type="text" class="calendar" />
                             </p>
                         </form>
-                        <script src="../bui/jquery-1.8.1.min.js"></script>
-                        <script src="../bui/sea.js"></script>
-                        <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
+                        
                         <!-- script start -->
                         <script type="text/javascript">
                         BUI.use('bui/calendar', function(Calendar) {
@@ -1311,15 +1315,12 @@
                     </label>
                 </li>
             </ul>
-            <div class="upload">
-                <span class="">证件照片(应上传5张)</span>
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
+            <div class="upload fl">
+                <div id="" class="zyupload"></div>  
+                
+                
+                
             </div>
-            
         </div>
         <!-- 车主信息 -->
 
@@ -1381,9 +1382,6 @@
                                 <input type="text" class="calendar" />
                             </p>
                         </form>
-                        <script src="../bui/jquery-1.8.1.min.js"></script>
-                        <script src="../bui/sea.js"></script>
-                        <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
                         <!-- script start -->
                         <script type="text/javascript">
                         BUI.use('bui/calendar', function(Calendar) {
@@ -1494,13 +1492,11 @@
                     </label>
                 </li>
             </ul>
-            <div class="upload">
-                <span class="">证件照片(应上传5张)</span>
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
-                <input type="file" name="">
+            <div class="upload fl">
+                <div id="" class="zyupload"></div>  
+                
+                
+                
             </div>
             
         </div>
@@ -1595,9 +1591,6 @@
                                 <input type="text" class="calendar" />
                             </p>
                         </form>
-                        <script src="../bui/jquery-1.8.1.min.js"></script>
-                        <script src="../bui/sea.js"></script>
-                        <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
                         <!-- script start -->
                         <script type="text/javascript">
                         BUI.use('bui/calendar', function(Calendar) {
@@ -1669,7 +1662,6 @@
     <!-- 输入框及表格部分 -->
     <!-- 审核 -->
 </body>
-<script src="../js/jquery.min.js?v=2.1.4"></script>
 <script type="text/javascript">
     // 点击打开表格的操作
     $(".action span").click(function() {
@@ -1712,15 +1704,57 @@
             $(this).children('span').addClass('checkbox_active');
         }
     })
-    // 切换待审核之类的
+    // 切换待审核nav之类的
     $(".tab1_2 li").click(function () {
         var num=$(this).index();
         $(".tab1_2 li").removeClass('tab_active');
         $(this).addClass('tab_active');
         $(".max1260").hide();
         $(".max1260").eq(num).show();
+        $(".zyupload").removeAttr('id', 'zyupload');
+        $(".zyupload").children('form').remove();
+        $(".max1260").eq(num).find('.zyupload').attr('id', 'zyupload');
+        // 初始化插件
+        $("#zyupload").zyUpload({
+            width            :   "896px",                 // 宽度
+            height           :   "330px",                 // 宽度
+            itemWidth        :   "140px",                 // 文件项的宽度
+            itemHeight       :   "115px",                 // 文件项的高度
+            url              :   "/upload/UploadAction",  // 上传文件的路径
+            fileType         :   ["jpg","png","txt","js","exe"],// 上传文件的类型
+            fileSize         :   51200000,                // 上传文件的大小
+            multiple         :   true,                    // 是否可以多个文件上传
+            dragDrop         :   true,                    // 是否可以拖动上传文件
+            tailor           :   true,                    // 是否可以裁剪图片
+            del              :   true,                    // 是否可以删除文件
+            finishDel        :   false,                   // 是否在上传文件完成后删除预览
+            /* 外部获得的回调接口 */
+            onSelect: function(selectFiles, allFiles){    // 选择文件的回调方法  selectFile:当前选中的文件  allFiles:还没上传的全部文件
+                console.info("当前选择了以下文件：");
+                console.info(selectFiles);
+            },
+            onDelete: function(file, files){              // 删除一个文件的回调方法 file:当前删除的文件  files:删除之后的文件
+                console.info("当前删除了此文件：");
+                console.info(file.name);
+            },
+            onSuccess: function(file, response){          // 文件上传成功的回调方法
+                console.info("此文件上传成功：");
+                console.info(file.name);
+                console.info("此文件上传到服务器地址：");
+                console.info(response);
+                $("#uploadInf").append("<p>上传成功，文件地址是：" + response + "</p>");
+            },
+            onFailure: function(file, response){          // 文件上传失败的回调方法
+                console.info("此文件上传失败：");
+                console.info(file.name);
+            },
+            onComplete: function(response){               // 上传完成的回调方法
+                console.info("文件上传完成");
+                console.info(response);
+            }
+        });
     })
-    // 停放类型
+    // 新建申请-停放类型
     $(".sel1_2").click(function () {
         $(this).next().toggle()
     })
@@ -1729,7 +1763,7 @@
     },function () {
         $(this).children('ul').hide()
     })
-    // 点击停放类型的子元素
+    // 新建申请/审核-点击停放类型的子元素
     $(".max1260_4 .sel_ul ul li").click(function() {
         var text=$(this).text();
         $(".max1260_4 .change_value").html(text);
@@ -1741,8 +1775,50 @@
     $(".max1260_1 .exam").click(function () {
         $(".max1260").hide();
         $(".max1260_5").show();
+        $(".zyupload").children('form').remove();
+        $(".zyupload").removeAttr('id', 'zyupload');
+        $(".max1260_5").find('.zyupload').attr('id', 'zyupload');
+        // 初始化插件
+        $("#zyupload").zyUpload({
+            width            :   "896px",                 // 宽度
+            height           :   "330px",                 // 宽度
+            itemWidth        :   "140px",                 // 文件项的宽度
+            itemHeight       :   "115px",                 // 文件项的高度
+            url              :   "/upload/UploadAction",  // 上传文件的路径
+            fileType         :   ["jpg","png","txt","js","exe"],// 上传文件的类型
+            fileSize         :   51200000,                // 上传文件的大小
+            multiple         :   true,                    // 是否可以多个文件上传
+            dragDrop         :   true,                    // 是否可以拖动上传文件
+            tailor           :   true,                    // 是否可以裁剪图片
+            del              :   true,                    // 是否可以删除文件
+            finishDel        :   false,                   // 是否在上传文件完成后删除预览
+            /* 外部获得的回调接口 */
+            onSelect: function(selectFiles, allFiles){    // 选择文件的回调方法  selectFile:当前选中的文件  allFiles:还没上传的全部文件
+                console.info("当前选择了以下文件：");
+                console.info(selectFiles);
+            },
+            onDelete: function(file, files){              // 删除一个文件的回调方法 file:当前删除的文件  files:删除之后的文件
+                console.info("当前删除了此文件：");
+                console.info(file.name);
+            },
+            onSuccess: function(file, response){          // 文件上传成功的回调方法
+                console.info("此文件上传成功：");
+                console.info(file.name);
+                console.info("此文件上传到服务器地址：");
+                console.info(response);
+                $("#uploadInf").append("<p>上传成功，文件地址是：" + response + "</p>");
+            },
+            onFailure: function(file, response){          // 文件上传失败的回调方法
+                console.info("此文件上传失败：");
+                console.info(file.name);
+            },
+            onComplete: function(response){               // 上传完成的回调方法
+                console.info("文件上传完成");
+                console.info(response);
+            }
+        });
     })
-    // 点击审批信息的状态
+    // 审批-车主信息-状态
     $(".max1260_5 .approve .sel_ul li").click(function() {
         var text=$(this).text();
         $(this).parents(".sel_ul").siblings('.change_value').html(text);
@@ -1767,4 +1843,11 @@
     })
 </script>
 
+<script type="text/javascript">
+    $(function(){
+        
+        
+    });
+
+</script>
 </html>

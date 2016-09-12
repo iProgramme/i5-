@@ -16,7 +16,7 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .over_vis{overflow: visible;}
 input[type="button"]{cursor: pointer;border-radius: 2px}
 .dib{display: inline-block;}
-.nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px}
+.nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px;width: 22px}
 .nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
 .nav .active .icon2{color: #fff;transform:rotate(90deg);background-color: #fff;}
 span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 16px}
@@ -34,7 +34,7 @@ button{cursor: pointer;border-radius: 2px}
 }
 .iconfont{
     font-family:"iconfont" !important;
-    font-size:32px;font-style:normal;
+    font-size:26px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
@@ -50,7 +50,7 @@ button{cursor: pointer;border-radius: 2px}
 .common_top p{font-size: 18px;line-height: 75px;}
 .common_top li{float: left;cursor: pointer;}
 .common_top .iconfont{margin-top: 5px;}
-.common_top li:last-child .iconfont{font-size: 30px;}
+.common_top li:last-child .iconfont{font-size: 24px;}
 .sidebar-collapse,.nav ul{background-color: #213240;height: 100%}
 .common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
 .nav li{border-bottom: 1px solid #213240}
@@ -58,23 +58,24 @@ button{cursor: pointer;border-radius: 2px}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header li{float: left;text-align: left;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 10px 0 20px;background: url(../img/xuebi_y.png) no-repeat 325px -283px;}
+.main header{margin-bottom: 20px;}
+.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
 .main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
 .main header .left{background: url(../img/bread.png) no-repeat 5px -70px;width: 20px;height: 40px}
 .main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px;font-size: 16px;}
-.main header li:first-child{width: 80px;padding: 0 10px 0 0}
+.main header li:first-child{text-align: center;background: none;padding-left: 0;}
 .main header li:first-child .right{font-size: 26px;}
 .center{padding: 0 20px}
 /*2-1*/
 /*待审核*/
-.tab1_2{margin: 20px 0;text-align: left;}
+.tab1_2{margin: 0px 0 20px 0;text-align: left;}
 .tab1_2 li{width: 160px;height: 36px;line-height: 36px;text-align: center;float: left;background-color: #f0f0f0;color: #535353;font-size: 16px;margin-right: 1px;cursor: pointer;}
 .tab1_2 li:hover,.tab1_2 .tab_active{background-color: #1a2734;color: #fff}
 .tab1_2 .add{background:url(../img/xuebi_y.png) no-repeat 12px 7px;margin-left: 30px;color: #535353}
 .tab1_2 .add:hover{background:url(../img/xuebi_y.png) no-repeat 12px 7px;color: #535353}
 /*输入框部分*/
 .all_input{border: 1px solid #b9b9b9;position: relative;padding: 0}
-.all_input .head_p{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #f9f9f9;position: relative;}
+.all_input .head_p{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #eee;position: relative;}
 .all_input ul{width: 61.5%;padding: 5px 0}
 .all_input li{float: left;width: calc(49% - 20px);height: 55px;line-height: 55px;text-align: left;padding-left: 20px;}
 .all_input .time{width: calc(96% - 20px)}
@@ -82,19 +83,19 @@ button{cursor: pointer;border-radius: 2px}
 .time p label{padding-right: 15px;text-align: right;padding-right: 0;padding-left: 15px;}
 .time p:last-child{text-align: left;}
 .all_input li label{width: 100%}
-.all_input li input{width: calc(100% - 170.578px);height: 28px;padding: 0 5px}
+.all_input li input{width: calc(100% - 160.578px);height: 28px;padding: 0 5px}
 .all_input .choice{height: 50px;line-height: 80px;top: -7px;left: 0px;position: relative;}
-.all_input li span{width: 107px}
+.all_input li span{width: 107px;text-align: right;}
 .all_input li label:first-child{width: 120px}
 .all_input .time input{width: calc(50% - 170.578px)}
 .choice,.find{}
-.all_input .find{bottom: 16px;left: 78%;position: absolute;}
+.all_input .find{bottom: 16px;left: 80%;position: absolute;}
 .all_input .find button{width: 82px;line-height: 32px;height: 32px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
 .all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 54px -51px #00ccab;width: 82px;padding-right: 10px;border: 1px solid #00ccab}
 .all_input .find .search3{margin-left:106px;}
 /*表格*/
 .table1_2{margin-top: 20px;}
-.table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353}
+.table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353;border: 1px solid #b9b9b9}
 .table1_2 thead{border: 1px solid #b9b9b9;background-color: #f6f6f6;text-align: left;}
 .table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
 .table1_2 th{color: #000;height: 30px}
@@ -109,19 +110,20 @@ button{cursor: pointer;border-radius: 2px}
 .action ul li{cursor: pointer;height: 38px;line-height: 38px;}
 .action ul li:hover{background-color: #00ccab;color: #fff}
 .pages{width: calc(100% - 20px);text-align: right;}
-.pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 16px;}
-.pages input{width: 30px;height: 24px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 16px;}
+.pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 12px;}
+.pages input{width: 26px;height: 16px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 12px;}
 .pages li a{color: #fff;background-color: #00ccab;padding: 0 4px;border: 1px solid #b9b9b9}
-.pages .change a{color: #979797;background-color: #f9f9f9;padding: 1px 7px;border: 1px solid #b9b9b9;border-radius: 2px}
-.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -104px;width: 23px;height: 23px;padding: 0;position: relative;top: 6px}
+.pages li .active1{border: 0;padding: 1px 4px}
+.pages .change a{color: #979797;background-color: #f9f9f9;padding: 1px 5px;border: 1px solid #b9b9b9;border-radius: 2px}
+.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -103px;width: 18px;height: 20px;padding: 0;position: relative;top: 5px;border: 0}
 .pages .pre_page.active{background-position: -48px -104px;}
 .pages li .next_page{background-position: -48px -104px;}
-.pages .next_page.active{background-position: 0 -155px;}
+.pages .next_page.active{background-position: 0 -154px;}
 .pages .change .active{background-color: #00ccab;color: #fff}
 /*表格*/
 /*待审核*/
 /*缴费记录*/
-.all_input .head_p span{position: absolute;right: 15px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -45px -45px;cursor: pointer;color: #00ccab}
+.all_input .head_p span{position: absolute;right: 20px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -37px -46px;cursor: pointer;color: #00ccab}
 /*缴费记录*/
 .all_input .find .search2{background-color: #f6f6f6;color: #535353;border: 1px solid #dcdcdc}
 .induce thead{text-align: right;border: 0;}
@@ -130,14 +132,14 @@ button{cursor: pointer;border-radius: 2px}
 .induce thead span{margin-right: 20px;border: 0}
 .induce thead div{border-left: 0px solid #293d51;height: 43px}
 .induce thead p{display: inline-block;cursor: pointer;}
-.induce thead div i{position: relative;top: 5px}
-.induce thead div span{position: relative;top: -2px}
+.induce thead div i{position: relative;top: 8px}
+.induce thead div span{position: relative;top: 3px}
 .induce thead h3 span{top: 3px}
 .induce thead h3 {text-align: left;font-weight: normal;float: left;}
 .tab_checkbox input{opacity: 0}
 .tab_checkbox span{width: 18px;height: 18px;background: url(../img/xuebi_y.png) no-repeat 0px -198px;position: relative;top: 3px}
 .tab_checkbox .checkbox_active{background: url(../img/xuebi_y.png) no-repeat -47px -199px;}
-.induce .top0{top: 0}
+.induce .top0{top: 4px}
 .all_input .lie2{left: 65%;width: 220px}
 /*新建申请*/
 .creat{width: 100%;margin-bottom: 30px;}
@@ -147,10 +149,9 @@ button{cursor: pointer;border-radius: 2px}
 .creat li label{position: relative;}
 .creat li span{text-align: right;}
 .creat li input[type="text"]{width: 170px;height: 28px}
-.creat li input[type="button"]{position: absolute;right: -75px;width: 60px;height: 30px;color: #fff;background-color: #00ccab;top: -3px}
+.creat li input[type="button"]{position: absolute;right: -75px;width: 60px;height: 30px;color: #fff;background-color: #00ccab;top: -5px}
 .creat li:nth-child(odd){text-align: right;padding-right: 15%;width: 34.5%;}
-.creat .upload{border: 2px solid #eaeaea;float: left;width: 93.5%;border-top: 0;padding: 0 3%;padding-top: 0;height: 200px}
-.upload span{width: 100%;height: 36px;line-height: 36px;}
+.creat .upload{border: 2px solid #eaeaea;width: 896px;border-top: 0;padding: 0;padding-top: 0;}
 .creat .time p{border-left: 0;margin-bottom: 0;padding-left: 0;text-align: right;}
 .creat .time input[type="text"]{width: 100px}
 .creat .time{padding-right: 0%;width: 47.5%}
@@ -178,9 +179,9 @@ button{cursor: pointer;border-radius: 2px}
 .test_tab p a{position: absolute;height: 40px;width: 40px;background: url(../img/xuebi_y.png) no-repeat -34px -217px;right: 20px}
 .test_tab p .sure{position: absolute;right: 20px;width: 60px;height: 28px;background-color: #fff;border: 1px solid #d2d2d2;top: 8px}
 
-
-
-
-
-
+.all_input .choice select{height: 30px}
+/*2-3的结构*/
+.all_input33 ul{width: 30.75%}
+.all_input33 li{width: calc(100% - 20px)}
+.all_input33 .find{left: 47%}
 
