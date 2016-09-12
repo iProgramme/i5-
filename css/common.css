@@ -14,7 +14,7 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fr{float:right;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 .over_vis{overflow: visible;}
-input[type="button"]{cursor: pointer;border-radius: 2px}
+input[type="button"]{cursor: pointer;border-radius: 2px;border: 0}
 .dib{display: inline-block;}
 .nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px;width: 22px}
 .nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
@@ -97,13 +97,13 @@ button{cursor: pointer;border-radius: 2px}
 .table1_2{margin-top: 20px;}
 .table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353;border: 1px solid #b9b9b9}
 .table1_2 thead{border: 1px solid #b9b9b9;background-color: #f6f6f6;text-align: left;}
-.table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
+.table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 3px;height: 38px;line-height: 38px;}
 .table1_2 th{color: #000;height: 30px}
 .table1_2 td{height: 30px;position: relative;z-index: 1}
 .table1_2 tr:nth-child(odd){background-color: #eee;}
 .action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px;color: #00ccab}
-.action span:hover,.action .operate{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -245px #fff;width: 98px}
-.action .operate,.action .operate:hover{background-position: 64px -221px}
+.action span:hover,.action .operate{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -247px #fff;width: 98px}
+.action .operate,.action .operate:hover{background-position: 64px -219px}
 
 .action{width: 90px}
 .action ul{position: absolute;border: 1px solid #00ccab;left: 10px;width: 98px;background-color: #fff;border-top: 0}
@@ -113,13 +113,13 @@ button{cursor: pointer;border-radius: 2px}
 .pages li{display: inline-block;margin: 10px 5px;color: #a2a2a2;font-size: 12px;}
 .pages input{width: 26px;height: 16px;margin: -1px 5px 0;text-align: center;color: #979797;font-size: 12px;}
 .pages li a{color: #fff;background-color: #00ccab;padding: 0 4px;border: 1px solid #b9b9b9}
-.pages li .active1{border: 0;padding: 1px 4px}
+.pages li .active1{border: 0;padding: 2px 4px;border-radius: 2px}
 .pages .change a{color: #979797;background-color: #f9f9f9;padding: 1px 5px;border: 1px solid #b9b9b9;border-radius: 2px}
-.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -103px;width: 18px;height: 20px;padding: 0;position: relative;top: 5px;border: 0}
+.pages li .pre_page,.pages li .next_page{background: url(../img/xuebi_y.png) no-repeat 0px -103px;width: 18px;height: 20px;padding: 0;position: relative;top: 5px;border: 0;border-radius: 2px}
 .pages .pre_page.active{background-position: -48px -104px;}
 .pages li .next_page{background-position: -48px -104px;}
 .pages .next_page.active{background-position: 0 -154px;}
-.pages .change .active{background-color: #00ccab;color: #fff}
+.pages .change .active{background-color: #00ccab;color: #fff;border: 0;height: 18px;line-height: 18px;padding: 1px 6px}
 /*表格*/
 /*待审核*/
 /*缴费记录*/
@@ -144,14 +144,14 @@ button{cursor: pointer;border-radius: 2px}
 /*新建申请*/
 .creat{width: 100%;margin-bottom: 30px;}
 .creat p{width: 100%;border-left: 3px solid #ff503f;padding-left: 10px;margin-bottom: 10px;height: 28px;line-height: 28px;}
-.creat ul{border: 2px solid #eaeaea;float: left;padding: 10px 0;width: 99.5%}
+.creat ul{border: 1px solid #eaeaea;float: left;padding: 10px 0;width: 99.5%}
 .creat li{float: left;width: 38%;height: 55px ;line-height: 55px;padding-right: 11%;text-align: right;}
 .creat li label{position: relative;}
 .creat li span{text-align: right;}
 .creat li input[type="text"]{width: 170px;height: 28px}
 .creat li input[type="button"]{position: absolute;right: -75px;width: 60px;height: 30px;color: #fff;background-color: #00ccab;top: -5px}
 .creat li:nth-child(odd){text-align: right;padding-right: 15%;width: 34.5%;}
-.creat .upload{border: 2px solid #eaeaea;width: 896px;border-top: 0;padding: 0;padding-top: 0;}
+.creat .upload{border: 1px solid #eaeaea;width: 896px;border-top: 0;padding: 0;padding-top: 0;}
 .creat .time p{border-left: 0;margin-bottom: 0;padding-left: 0;text-align: right;}
 .creat .time input[type="text"]{width: 100px}
 .creat .time{padding-right: 0%;width: 47.5%}
@@ -179,9 +179,40 @@ button{cursor: pointer;border-radius: 2px}
 .test_tab p a{position: absolute;height: 40px;width: 40px;background: url(../img/xuebi_y.png) no-repeat -34px -217px;right: 20px}
 .test_tab p .sure{position: absolute;right: 20px;width: 60px;height: 28px;background-color: #fff;border: 1px solid #d2d2d2;top: 8px}
 
-.all_input .choice select{height: 30px}
+.all_input .choice select{height: 30px;padding-right: 15px;}
 /*2-3的结构*/
 .all_input33 ul{width: 30.75%}
 .all_input33 li{width: calc(100% - 20px)}
-.all_input33 .find{left: 47%}
+.all_input33 .find{left: 50%}
+.file_edit{display: none;}
+/*3-1的结构*/
+.all_input31 .find{left: 61%}
+.max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;}
+.max800 p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
+.max800 ul{width: 400px;}
+.max800 li{height: 45px;line-height: 45px;}
+.max800 li span{width: 100px;text-align: right;position: relative;}
+.max800 li input{width: 225px;height: 23px;border-radius: 2px;padding-left: 5px;}
+.max800 li select{width: 146px;height: 23px;border-radius: 2px}
+.max800 li textarea{width: 230px;border-radius: 2px;border-color: #8c8c8c}
+.max800 .z-in3{margin-top: 0;background-position: 337px -289px}
+.max800 .z-in3_short{background-position: 265px -289px}
+.max800 li .file_del{width: 14px;display: inline-block;right: -18px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
