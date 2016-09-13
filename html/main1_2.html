@@ -46,7 +46,6 @@
     </div>
     <!-- nav条 -->
     <!-- 待审核 -->
-    <!-- 输入框及表格部分 -->
     <div class="max1260 max1260_1">
         <!-- 输入框部分 -->
         <div class="all_input clear">
@@ -392,12 +391,10 @@
         </div>
         <!-- 表格部分 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- 待审核 -->
 
 
     <!-- 缴费记录 -->
-    <!-- 输入框及表格部分 -->
     <div class="max1260 max1260_2 disN">
         <!-- 输入框部分 -->
         <div class="all_input clear">
@@ -805,12 +802,10 @@
         </div>
         <!-- 表格部分 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- 缴费记录 -->
 
 
     <!-- 停车证查询及导出 -->
-    <!-- 输入框及表格部分 -->
     <div class="max1260 max1260_3 disN">
         <!-- 输入框部分 -->
         <div class="all_input clear">
@@ -857,17 +852,17 @@
                 <tbody>
                     <tr>
                         <th class="tab_checkbox"><span></span></th>
-                        <th>系统编号</th>
-                        <th>注册人/单位</th>
-                        <th>车牌号码</th>
-                        <th>开始时间</th>
-                        <th>结束时间</th>
+                        <th>编号</th>
+                        <th>车辆所属人</th>
+                        <th>职工姓名</th>
+                        <th>车牌号</th>
+                        <th>停放区域</th>
                         <th>车辆类别</th>
-                        <th>登记时间</th>
+                        <th>停放类别</th>
                         <th>用户类型</th>
                         <th>金额</th>
-                        <th>收费员</th>
-                        <th>所属学校</th>
+                        <th>状态</th>
+                        <th>失效日期</th>
                         <th>操作</th>
                     </tr>
                     <tr>
@@ -1239,14 +1234,12 @@
         </div>
         <!-- 表格部分 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- 停车证查询及导出 -->
     
 
     
 
     <!-- 新建申请 -->
-    <!-- 输入框及表格部分 -->
     <div class="max1260 max1260_4 disN max900">
         <!-- 车辆信息 -->
         <div class="creat clear">
@@ -1417,13 +1410,11 @@
         </div>
         <!-- 保存 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- 新建申请 -->
 
 
 
     <!-- 审核 -->
-    <!-- 输入框及表格部分 -->
     <div class="max1260 max1260_5 disN max900">
         <!-- 车辆信息 -->
         <div class="creat clear">
@@ -1659,7 +1650,6 @@
         </div>
         <!-- 审核的弹窗 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- 审核 -->
 </body>
 <script type="text/javascript">
@@ -1843,8 +1833,8 @@
         $(".max1260").hide();
         $(".max1260_1").show()
     })
-    $(".test_tab .sure").click(function () {
-        $(this).hide()
+    $(".test_tab .sure,.test_tab p a").click(function () {
+        $(".test_tab").hide()
     })
 </script>
 

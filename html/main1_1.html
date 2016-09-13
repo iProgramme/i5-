@@ -74,17 +74,17 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="13"><div class="clear"><h3><span>查询</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
+                <thead><tr><td colspan="10"><div class="clear"><h3><span>查询</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
                 <tbody>
                     <tr>
-                        <th>车牌号码</th>
-                        <th>开始时间</th>
-                        <th>结束时间</th>
+                        <th>系统编号</th>
+                        <th>车辆所属人</th>
+                        <th>手机号码</th>
                         <th>车辆类别</th>
-                        <th>登记时间</th>
-                        <th>用户类型</th>
-                        <th>金额</th>
-                        <th>收费员</th>
+                        <th>车牌号码</th>
+                        <th>同行卡号</th>
+                        <th>注册人/单位</th>
+                        <th>状态</th>
                         <th>所属学校</th>
                         <th>操作</th>
                     </tr>
@@ -414,6 +414,94 @@
     </div>
     <!-- 车辆管理 -->
     
+
+    <!-- 添加 -->
+    <div class="max900 approve max900_1 disN">
+        <p class="max800_p">添加</p>
+        <!-- 添加信息 -->
+        <div class="creat clear">
+            <ul>
+                <li class="z-in3">
+                    <label for="">
+                        <span>账号注册人姓名：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>行驶证车辆所属人：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>行驶证车辆类型：</span>
+                        <select>
+                            <option>请选择</option>
+                            <option>类型一</option>
+                            <option>类型二</option>
+                            <option>类型三</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>车牌号码：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>手机号码：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>粤通号码：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <span>品牌型号：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <span>行驶证注册日期：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>住址类型：</span>
+                        <select>
+                            <option>请选择</option>
+                            <option>类型98</option>
+                            <option>类型19</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="z-in3 address">
+                    <label for="">
+                        <span>家庭住址：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- 添加信息 -->
+        <!-- 保存 -->
+        <div class="save1_2" style="margin-top: 30px">
+            <input type="button" name="" value="保存" class="save">
+            <input type="button" name="" value="返回" class="back">
+        </div>
+        <!-- 保存 -->
+    </div>
+    <!-- 添加 -->
 </body>
 <script src="../js/jquery.min.js?v=2.1.4"></script>
 <script type="text/javascript">
@@ -451,6 +539,33 @@
         } else {}
     })
 
+    // 点击添加
+    $(".head_p span").click(function () {
+        $(".max1260").hide();
+        $(".max900").show()
+    })
     
+    // 点保存的时候判断
+    $(".save").click(function () {
+    
+        $(".approve .z-in3 input").each(function () {
+
+            var value=$(this).val();
+            if (value=="") {
+                alert("带*号的为必填项，请填写完整")
+            } else {
+                $(".max800").hide();
+                $(".max1260").show()
+            }
+            
+        })
+        
+        
+    })
+    // 点击返回的时候
+    $(".back").click(function () {
+        $(".max900").hide();
+        $(".max1260").show()
+    })
 </script>
 </html>

@@ -64,10 +64,10 @@
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="html/main3_1.html">违章录入</a>
                             </li>
-                            <li><a class="J_menuItem" href="html/main3_2.html">违章发布</a>
+                            <li><a class="J_menuItem" href="html/main3_2.html">违章审核</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="html/main3_3.html">违章审核</a>
+                                <a class="J_menuItem" href="html/main3_3.html">违章发布</a>
                             </li>
                         </ul>
                     </li>
@@ -181,12 +181,24 @@
         </div>
         <!--右侧部分结束-->
     </div>
+    <!-- 右下角弹窗 -->
+    <div class="frame_win">
+        <p class="win_p">您有新的待审批消息<a href="javascript:void(0)"></a></p>
+        <ul>
+            <li>待审批停车柱（10）</li>
+            <li>待审批注册用户（123）</li>
+        </ul>
+    </div>
+    <!-- 右下角弹窗 -->
     <script src="js/jquery.min.js?v=2.1.4"></script>
     <script type="text/javascript">
     $(".nav-second-level .J_menuItem").click(function() {
         $(".nav-second-level .J_menuItem").removeClass('index_active');
         $(this).addClass('index_active');
 
+    })
+    $(".win_p a").click(function () {
+        $(".frame_win").hide()
     })
     </script>
     <script src="js/bootstrap.min.js?v=3.3.6"></script>

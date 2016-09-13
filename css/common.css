@@ -191,15 +191,15 @@ button{cursor: pointer;border-radius: 2px}
 /*3-1的结构*/
 .all_input31 .find{left: 61%}
 .max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;}
-.max800 p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
+.max800 p,.max800_p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
 .max800 ul{width: 500px;}
-.max800 li{height: 45px;line-height: 45px;}
+.max800 li{height: 55px;line-height: 55px;}
 .max800 li span{width: 100px;text-align: right;position: relative;}
 .max800 li input{width: 225px;height: 23px;border-radius: 2px;padding-left: 5px;}
-.max800 li select{width: 146px;height: 23px;border-radius: 2px}
+.max800 li select{width: 146px;height: 25px;border-radius: 2px}
 .max800 li textarea{width: 230px;border-radius: 2px;border-color: #8c8c8c}
-.max800 .z-in3{margin-top: 0;background-position: 337px -289px;width: 400px}
-.max800 .z-in3_short{background-position: 265px -289px;width: 300px}
+.max800 .z-in3,.max900_1 .z-in3{margin-top: 0;background-position: 345px -284px;width: 400px}
+.max800 .z-in3_short{background-position: 265px -284px;width: 300px}
 .max800 li .file_del{width: 14px;display: inline-block;right: -18px}
 /*4-1黑名单*/
 .all_input31 .choice{margin-left: 20px;}
@@ -223,16 +223,18 @@ article{padding: 0 60px 0 20px;border: 1px solid #ddd;margin-bottom: 20px;}
 article h2{height: 42px;line-height: 42px;font-weight: 500;font-size: 14px;}
 article .article_all p{line-height: 28px;text-indent: 2em;}
 .mark{border-top: 1px solid #eaeaea;color: #878787;width: 100%;padding: 10px 0;font-size: 12px;}
-
-
-
-
-
-
-
-
-
-
+.creat li select{width: 170px;height: 30px}
+.max900_1 .z-in3,.max900_1 .creat li{width: 34.5%;padding-right: 15%;}
+.max900_1 .creat .address{width: 425px;background-position: 450px -283px;}
+.max900_1 .address input[type="text"]{width: 285px}
+.max800_p{width: 888px;}
+/*右下角弹窗*/
+.frame_win{width: 255px;height: 155px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px}
+.win_p{width: 100%;background-color: #73b2ff;color: #fff;height: 35px;line-height: 35px;text-align: center;position: relative;}
+.win_p a{position: absolute;right: 0px;top: 0px;width: 35px;height: 35px;background: url(../img/xuebi_y.png) no-repeat 7px -369px;}
+.frame_win ul{padding: 5px 0}
+.frame_win li{cursor: pointer;color: #73b2ff;height: 28px;line-height: 28px;text-align: center;}
+.frame_win li:hover{text-decoration: underline;}
 
 
 
