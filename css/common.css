@@ -103,6 +103,7 @@ button{cursor: pointer;border-radius: 2px}
 .table1_2 tr:nth-child(odd){background-color: #eee;}
 .action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px;color: #00ccab}
 .action span:hover,.action .operate{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -247px #fff;width: 98px}
+.delete span:hover{border: 0;background: none;width: 90px}
 .action .operate,.action .operate:hover{background-position: 64px -219px}
 
 .action{width: 90px}
@@ -124,6 +125,8 @@ button{cursor: pointer;border-radius: 2px}
 /*待审核*/
 /*缴费记录*/
 .all_input .head_p span{position: absolute;right: 20px;height: 40px;line-height: 40px;padding-left: 30px;background: url(../img/xuebi_y.png) no-repeat -37px -46px;cursor: pointer;color: #00ccab}
+.add_th1{background: url(../img/xuebi_y.png) no-repeat -37px -54px;height: 22px;width: 30px}
+.table1_2 thead .add_th2{color: #00ccab}
 /*缴费记录*/
 .all_input .find .search2{background-color: #f6f6f6;color: #535353;border: 1px solid #dcdcdc}
 .induce thead{text-align: right;border: 0;}
@@ -167,7 +170,7 @@ button{cursor: pointer;border-radius: 2px}
 .sel_ul li li:hover{color: #00ccab}
 .save1_2{margin-top: 175px;margin-bottom: 20px;text-align: center;}
 .save1_2 input{width: 82px;height: 40px;color: #fff;background-color: #00ccab;margin: 0 19px}
-.save1_2 .back{background-color: #fff;color: #535353}
+.save1_2 .back{background-color: #fff;color: #535353;border: 1px solid #bebebe}
 .approve{margin-bottom: 190px;}
 .approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 325px -283px;margin-top: 40px;}
 .approve .textarea1_2{margin-top: -17px;width: 48%;padding-right: 1%;}
@@ -189,15 +192,38 @@ button{cursor: pointer;border-radius: 2px}
 .all_input31 .find{left: 61%}
 .max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;}
 .max800 p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
-.max800 ul{width: 400px;}
+.max800 ul{width: 500px;}
 .max800 li{height: 45px;line-height: 45px;}
 .max800 li span{width: 100px;text-align: right;position: relative;}
 .max800 li input{width: 225px;height: 23px;border-radius: 2px;padding-left: 5px;}
 .max800 li select{width: 146px;height: 23px;border-radius: 2px}
 .max800 li textarea{width: 230px;border-radius: 2px;border-color: #8c8c8c}
-.max800 .z-in3{margin-top: 0;background-position: 337px -289px}
-.max800 .z-in3_short{background-position: 265px -289px}
+.max800 .z-in3{margin-top: 0;background-position: 337px -289px;width: 400px}
+.max800 .z-in3_short{background-position: 265px -289px;width: 300px}
 .max800 li .file_del{width: 14px;display: inline-block;right: -18px}
+/*4-1黑名单*/
+.all_input31 .choice{margin-left: 20px;}
+.all_input31.all_input33 .find{left: 72%}
+.iconfont1{width: 26px;height: 24px;background: url(../img/xuebi_y.png) no-repeat 0px -342px;}
+.max628{width: 628px}
+/*9-1*/
+.max800 li label{margin-right: 10px;}
+.max800 li input[type="checkbox"],.max800 li input[type="radio"]{width: auto;margin-right: 5px;position: relative;top: 4px}
+.max800 label span{width: auto}
+.max628 li select{width: 230px;margin-left: -3px;}
+/*8-1*/
+.notice li{height: 80px;line-height: 80px;position: relative;border: 1px solid #ddd}
+.notice li:first-child{border-top-right-radius: 2px;border-top-left-radius: 2px}
+.notice li:last-child{border-bottom-right-radius: 2px;border-bottom-left-radius: 2px}
+.notice li img{width: 55px;height: 55px;margin-left: 20px;margin-right: 5px;display: inline-block;position: relative;;top: 12.5px}
+.notice li p{display: inline-block;position: relative;top: -10px;cursor: pointer;height: 30px;line-height: 30px;}
+.notice li span{position: absolute;right: 35px;top: 0px;padding-right: 20px;font-size: 12px;color: #8da5b6}
+.notice li p:hover{text-decoration: underline;}
+article{padding: 0 60px 0 20px;border: 1px solid #ddd;margin-bottom: 20px;}
+article h2{height: 42px;line-height: 42px;font-weight: 500;font-size: 14px;}
+article .article_all p{line-height: 28px;text-indent: 2em;}
+.mark{border-top: 1px solid #eaeaea;color: #878787;width: 100%;padding: 10px 0;font-size: 12px;}
+
 
 
 

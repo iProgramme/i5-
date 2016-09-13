@@ -12,714 +12,121 @@
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
+    <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/bui.css" rel="stylesheet">
     <style type="text/css">
-    .contextMenuPlugin {
-        
-        width: 110px;
-        padding: 0;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 15px #000;
-        position: absolute;
-    }
-    
-    .contextMenuPlugin li {
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        background-color: #fff;cursor: pointer;
-    }
-    
-    .contextMenuPlugin li:hover {
-        background-color: #324e75;
-    }
-    
-    .contextMenuPlugin > li > a:hover {
-        border: 0;
-        background: none;
-        outline: 0;
-    }
-    
-    .contextMenuPlugin li:hover span {
-        color: #fff
-    }
-    
-    .contextMenuPlugin > li > a {
-        margin: 0;width: 100%
-    }
-    
-    
-    .contextMenuPlugin span {
-        font-size: 14px;
-        cursor: pointer;color: #494949
-    }
-    .main3_3{overflow: hidden;}
+        .save1_2{margin-top: 30px;}
     </style>
-    <!-- jqgrid-->
 </head>
+<body class="main">
+    <!-- 面包屑 -->
+    <header>
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>信息发布</li>
+            <li>LED屏幕内容发布</li>
+        </ul>
+    </header>
+    <!-- 面包屑 -->
+    
 
-<body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
-    <div class="main3_3 cl">
-        <!-- 第一个框框 -->
-        <div class="input3_3 main fl input2_2">
-            <form>
-                <ul>
-                    
-                    <li>
-                        <label for="">
-                            <span>&nbsp;用&nbsp;户&nbsp;名&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;登&nbsp;录&nbsp;名&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li class="time">
-                        <div class="demo-content">
-                            <form method="post">
-                                <p>
-                                    <label>登陆时间：</label>
-                                    <input type="text" class="calendar" />
-                                </p><!-- 
-                                 --><p>
-                                    <label>至&nbsp;&nbsp;&nbsp;</label>
-                                    <input type="text" class="calendar" />
-                                </p>
-                            </form>
-                            <script src="../bui/jquery-1.8.1.min.js"></script>
-                            <script src="../bui/sea.js"></script>
-                            <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
-                            <!-- script start -->
-                            <script type="text/javascript">
-                            BUI.use('bui/calendar', function(Calendar) {
-                                var datepicker = new Calendar.DatePicker({
-                                    trigger: '.calendar',
-                                    autoRender: true
-                                });
-                            });
-                            </script>
-                            <!-- script end -->
-                        </div>
-                    </li>
-                    
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li class="main_btn">
-                        <label for="">
-                            <input type="button" value="查询">
-                            <input type="button" value="导出excel">
-                            <input type="button" value="重置">
-                        </label>
-                    </li>
-                   
-                </ul>
-            </form>
-        </div>
-        <!-- 第一个框框 -->
-        <!-- 第二个框框 表格-->
-        <div id="form33_sty" class="fl">
-            <div class="form10_tab">
-                <table>
-                    <tr>
-                        <th>用户名</th>
-                        <th>登录名</th>
-                        <th>性别</th>
-                        <th>电话号码</th>
-                        <th>登陆时间</th>
-                        <th>离开时间</th>
-                        <th>退出类型</th>
-                        <th>登陆时长</th>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                </table>
+    <!-- 内容新闻部分 -->
+    <div class="max900 max1260_1">
+        <article>
+            <h2>孩子啊没事多看看书</h2>
+            <div class="article_all">
+                <p>单纯从年号上看，名正言顺的三国时代开始于魏文帝曹丕废汉献帝刘协，三国各自称帝称王。</p>
+                <p>然而，硬说三国开始于曹丕，谁都不会同意。原因就是那个时候的东汉，早就名存实亡了。因此，谈到三国时不能不先谈一谈东汉的衰败。</p>
+                <p>东汉的几个皇帝，除光武帝刘秀外几乎都是“少年得志”。</p>
+                <p>后汉书中记载，自孝和皇帝以来即位时最年长的少帝不过17岁，最“年轻”的孝殇帝刘隆不过100多天！乳臭未干的小孩焉能君临天下？</p>
+                <p>权力自然就落到了亲朋好友的手里。后宫干预朝政，天下从来没有太平过，更何况东汉几十年如一日地贯彻这一基本国策？</p>
             </div>
-            <div class="pages">
-                <ul>
-                    <li>共28条</li>
-                    <li>第1/1页</li>
-                    
-                    <li><a href="javascript:void(0)" class="pre_page"><</a></li>
-                    <li>
-                        <ul class="change">
-                            <li><a href="javascript:void(0)" class="active">1</a></li>
-                            <li><a href="javascript:void(0)">2</a></li>
-                            <li><a href="javascript:void(0)">3</a></li>
-                            <li><a href="javascript:void(0)">4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)" class="next_page active">></a></li>
-                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">跳转</a></li>
-                </ul>
-            </div>
-            <!-- 添加窗口 -->
-            <div class="form31_1 form3_1 disN">
-                <table>
-                    <tr>
-                        <th colspan=2>添加停车柱<a href="javascript:void(0)" class="close"></a></th>
-                    </tr>
-                    <tr>
-                        <td>停车柱编号：</td>
-                        <td>
-                           <select>
-                               <option>请选择状态</option>
-                               <option>玉清</option>
-                               <option>上清</option>
-                               <option>太清</option>
-                           </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>状态：</td>
-                        <td>
-                            <select>
-                                <option>请选择状态</option>
-                                <option>玉清</option>
-                                <option>上清</option>
-                                <option>太清</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>所属管理箱：</td>
-                        <td>
-                           <select>
-                               <option>请选择停车点</option>
-                               <option>青云门门口</option>
-                               <option>焚香谷谷口</option>
-                               <option>天音阁灭口</option>
-                           </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>备注：</td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                        </td>
-                    </tr>
-                </table>
-                <div class="form311_btn">
-                    <input type="button" name="" value="确定" class="sure">
-                    <input type="button" name="" value="取消" class="cancel">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 添加窗口 -->
-            <!-- 删除窗口 -->
-            <div class="form31_2 form3_1 disN">
-                <div class="bell">
-                    <img src="../img/bell.png">
-                    <span>确定删除?</span>
-                    <span class="grey">删除后不可恢复</span>
-                </div>
-                <div class="form312_btn">
-                    <input type="button" name="" value="取消" class="cancel">
-                    <input type="button" name="" value="确定" class="sure">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 删除窗口 -->
-            <!-- 修改窗口 -->
-            <div class="form31_3 form3_1 disN">
-                <table>
-                    <tr>
-                        <th colspan=2>修改停车柱<a href="javascript:void(0)" class="close"></a></th>
-                    </tr>
-                    <tr>
-                        <td>停车柱编号：</td>
-                        <td>
-                           <select>
-                               <option>110</option>
-                               <option>120</option>
-                               <option>120111</option>
-                           </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>状态：</td>
-                        <td>
-                            <select>
-                                <option>正常</option>
-                                <option>傻了</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>所属管理箱：</td>
-                        <td>
-                           <select>
-                               <option>北京路一号</option>
-                               <option>北京东路二号</option>
-                           </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>备注：</td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                        </td>
-                    </tr>
-                </table>
-                <div class="form313_btn">
-                    <input type="button" name="" value="确定" class="sure">
-                    <input type="button" name="" value="取消" class="cancel">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 修改窗口 -->
-            <!-- 关停窗口 -->
-            <div class="form31_4 form3_1 disN">
-                <div class="bell">
-                    <img src="../img/bell.png">
-                    <span>确定关停</span>
-                </div>
-                <div class="form314_btn">
-                    <input type="button" name="" value="取消" class="cancel">
-                    <input type="button" name="" value="确定" class="sure">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 关停窗口 -->
-            <!-- 开锁窗口 -->
-            <div class="form31_5 form3_1 disN">
-                <div class="bell">
-                    <img src="../img/bell.png">
-                    <span>确定开锁</span>
-                </div>
-                <div class="form315_btn">
-                    <input type="button" name="" value="取消" class="cancel">
-                    <input type="button" name="" value="确定" class="sure">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 开锁窗口 -->
-            <!-- 批量添加窗口 -->
-            <div class="form31_6 form3_1 disN">
-                <table>
-                    <tr>
-                        <th colspan=2>批量添加停车柱</th>
-                    </tr>
-                    <tr>
-                        <td>停车柱编号：</td>
-                        <td>
-                           <input type="text" name="">
-                           <input type="text" name=""> -
-                           <input type="text" name="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>状态：</td>
-                        <td>
-                            <select>
-                                <option>正常</option>
-                                <option>傻了</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>所属管理箱：</td>
-                        <td>
-                           <select>
-                               <option>北京路一号</option>
-                               <option>北京东路二号</option>
-                           </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>备注：</td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                        </td>
-                    </tr>
-                </table>
-                <div class="form316_btn">
-                    <input type="button" name="" value="确定" class="sure">
-                    <input type="button" name="" value="取消" class="cancel">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 批量添加窗口 -->
-            
-        </div>
-        <!-- 历史记录窗口 -->
-        <div class="form33_sty form31_7 form3_1 disN">
-            <div class="btn3_2">
-                <input type="button" name="" value="返回">
-            </div>
-            <div class="form10_tab">
-                <table>
-                    <tr>
-                        <th>编号</th>
-                        <th>用户名</th>
-                        <th>卡号</th>
-                        <th>卡类型</th>
-                        <th>用户状态</th>
-                        <th>余额</th>
-                        <th>操作员</th>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="pages">
-                <ul>
-                    <li>共28条</li>
-                    <li>第1/1页</li>
-                    
-                    <li><a href="javascript:void(0)" class="pre_page"><</a></li>
-                    <li>
-                        <ul class="change">
-                            <li><a href="javascript:void(0)" class="active">1</a></li>
-                            <li><a href="javascript:void(0)">2</a></li>
-                            <li><a href="javascript:void(0)">3</a></li>
-                            <li><a href="javascript:void(0)">4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0)" class="next_page active">></a></li>
-                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">跳转</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- 历史记录窗口 -->
-        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-        <script src="../js/jquery.contextmenu.js"></script>
-        <script>
-        $(function() {
-            $('#form33_sty tr').contextPopup({
-                // title: 'My Popup Menu',
-                items: [{
-                    label: '添加',
-                    // icon: 'img/right_add.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_1").show()
-                    }
-                }, {
-                    label: '批量添加',
-                    // icon: 'img/right_del.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_6").show()
-                    }
-                },{
-                    label: '删除',
-                    // icon: 'img/right_del.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_2").show()
-                    }
-                }, {
-                    label: '修改',
-                    // icon: 'img/right_gai.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_3").show()
-                    }
-                }, {
-                    label: '关停',
-                    // icon: 'img/right_gai.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_4").show()
-                    }
-                }, {
-                    label: '开锁',
-                    // icon: 'img/right_gai.png',
-                    action: function() {
-                        $(".form3_1").hide();
-                        $(".form31_5").show()
-                    }
-                },{
-                    label: '记录',
-                    // icon: 'img/right_del.png',
-                    action: function() {
-                        $(".form3_1,#form33_sty,.main").hide();
-                        $(".form31_7").show()
-                    }
-                }]
-            });
-        });
-        </script>
-        <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-        <script>
-        // 点取消，关闭弹出窗
-        $(".cancel,.close").click(function() {
-            $(".form3_1").hide()
-        })
-        // 历史记录点击返回
-        $(".btn3_2 input").click(function () {
-            $(".form3_1,.form31_7").hide();
-            $("#form33_sty,.main").show();
-        })
-        // 点击翻页
-        $(".change a").click(function () {
-            $(".change a").removeClass('active');
-            $(this).addClass('active');
-            var num1=$(this).index();
-            var num2=$(".change a:last-child").index();
-            // 判断是不是第一个
-            if (num2==0) {
-
-            } else {}
-            // 判断是不是最后一个
-            if (num1==num2) {
-
-            } else {}
-        })
-        // 点击上一页
-        $(".pre_page").click(function () {
-            var pre_page=$(".change a").index();
-            if (pre_page==0) {
-
-            } else {}
-            
-        })
-        </script>
-        <!-- 第二个框框 表格-->
+            <span class="mark">管理员发送于 2016-09-13 15:34:01</span>
+        </article>
     </div>
+    <!-- 内容新闻部分 -->
+    
+    
+    <!-- 内容新闻部分 -->
+    <div class="max900 max1260_2">
+        <article>
+            <h2>多看看书没有坏处的</h2>
+            <div class="article_all">
+                <p>汉灵帝中平五年(公元188年)，时任太常的江夏人刘焉看到天下大乱盗贼四起(黄巾起义已经爆发)，建议：“四方兵寇，由刺史威轻，既不能禁，且用非其人，以致离叛。宜改置牧伯，选清名重臣以居其任。</p>
+                <p>简单地说，就是要从中央选派要员加强对地方的领导，并扩大地方官的权力使其能够更加有力地镇压各地的叛乱。</p>
+                <p>这一建议被采纳，刘焉也亲自出任益州牧。这一三国演义中并未提及的政策却大大影响了后世几十年的风云</p>
+                <p>公平地讲，东汉末年是个腐败透顶的时代。桓灵时公开卖官，连公卿这样的官职也一千万八百万地明码标价童叟无欺，一时拿不出钱甚至可以赊欠！这样的官员上了台，除了拼命“赚钱”外还能干什么？</p>
+                <p>这样的朝代不灭亡才是奇迹。但仔细地分析一下，它的灭亡却不是“秦朝方式”，即亡于风起云涌的农民起义，连黄巾大起义也未能将其颠覆；而是“周朝方式”，即亡于地方官(诸侯)的反叛不臣。</p>
+                <p>董卓后有谁对朝廷真正忠诚过？究其原因，刘焉的政策起了举足轻重的作用。中央要员下派地方，手中有了相当的权力，对付黄巾当然更加灵活有力，那么反过来对付中央呢？</p>
+            </div>
+            <span class="mark">管理员发送于 2016-09-13 15:34:01</span>
+        </article>
+    </div>
+    <!-- 内容新闻部分 -->
+    
+
+    <!-- 内容新闻部分 -->
+    <div class="max900 max1260_3">
+        <article>
+            <h2>这里先来个三国给你爽爽</h2>
+            <div class="article_all">
+                <p>所谓的朝廷不过是一群妇女儿童残疾人(嘿嘿，这么称呼宦官够客气了吧)，太常刘焉(益州牧)太仆黄琬(豫州牧)宗正刘虞(幽州牧)本来就不会把他们放在眼里，更何况现在已经山高皇帝远？</p>
+                <p>这个政策的实行，实际上把东汉由中央集权变成了分封。这就是东汉末年诸侯林立，群雄并起的原因。</p>
+                <p>这个时候，外戚宦官之间的狗咬狗愈演愈烈。中平六年，灵帝崩，少帝刘辩以17岁的“高龄”继位。外戚大将军何进与司隶校尉袁绍等人计议诛杀宦官，却又不听陈琳曹操的劝告执意召董卓勒兵进京。</p>
+                <p>董卓是当时的悍将，“膂力过人，双带两鞬，左右驰射，为羌胡所畏。”因战功拜前将军。因为疑虑他拥兵自重朝廷屡次要升迁他为少府（财政部长，九卿之一），并州牧，来个明升暗降，他都推辞掉了。这次是个苦差事，他能高高兴兴地来吗？一旦来了，又会是为什么呢？</p>
+                <p>董卓真的来了，但何进却没看到。这个大将军实在太废物，还没等到董卓的兵马就因为事情泄漏引火烧身，自己反被“残疾人”骗进宫中作掉了。</p>
+                <p>袁绍袁术等人一看，哪里肯甘休当即放火烧宫门进攻要完成何大将军“遗志”。宦官们见势不妙，连忙劫持了少帝及陈留王刘协(就是后来的汉献帝，当时只有9岁)逃跑。</p>
+            </div>
+            <span class="mark">管理员发送于 2016-09-13 15:34:01</span>
+        </article>
+    </div>
+    <!-- 内容新闻部分 -->
+    
+    <!-- 分页 -->
+    <div class="max900">
+        <div class="pages">
+            <ul>
+                <li>共28条</li>
+                <li>第1/1页</li>
+                
+                <li><a href="javascript:void(0)" class="pre_page"></a></li>
+                <li>
+                    <ul class="change">
+                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="next_page active"></a></li>
+                <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">前往</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 分页 -->
+
+
+  
+
 </body>
+<script type="text/javascript">
+    
+    // 点击翻页
+    $(".change a").click(function () {
+        $(".change a").removeClass('active');
+        $(this).addClass('active');
+        var num1=$(this).index();
+        var num2=$(".change a:last-child").index();
+        // 判断是不是第一个
+        if (num2==0) {
+
+        } else {}
+        // 判断是不是最后一个
+        if (num1==num2) {
+
+        } else {}
+    })
+</script>
+
 
 </html>
