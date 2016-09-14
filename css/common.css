@@ -58,13 +58,10 @@ button{cursor: pointer;border-radius: 2px}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header{margin-bottom: 20px;}
-.main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
-.main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
-.main header .left{background: url(../img/bread.png) no-repeat 5px -70px;width: 20px;height: 40px}
-.main header .right{background: url(../img/bread.png) no-repeat 0px 0;width: 20px;height: 40px;font-size: 16px;}
-.main header li:first-child{text-align: center;background: none;padding-left: 0;}
-.main header li:first-child .right{font-size: 26px;}
+.main header,.index_main header{margin-bottom: 20px;}
+.main header li,.index_main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
+.main header span,.index_main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
+.main header li:first-child,.index_main header li:first-child{text-align: center;background: none;padding-left: 0;}
 .center{padding: 0 20px}
 /*2-1*/
 /*待审核*/
@@ -229,12 +226,41 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .max900_1 .address input[type="text"]{width: 285px}
 .max800_p{width: 888px;}
 /*右下角弹窗*/
-.frame_win{width: 255px;height: 155px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px}
+.frame_win{width: 255px;height: 155px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px;background-color: #fff;}
 .win_p{width: 100%;background-color: #73b2ff;color: #fff;height: 35px;line-height: 35px;text-align: center;position: relative;}
 .win_p a{position: absolute;right: 0px;top: 0px;width: 35px;height: 35px;background: url(../img/xuebi_y.png) no-repeat 7px -369px;}
 .frame_win ul{padding: 5px 0}
 .frame_win li{cursor: pointer;color: #73b2ff;height: 28px;line-height: 28px;text-align: center;}
 .frame_win li:hover{text-decoration: underline;}
+.max1260_2 .time .demo-content{margin-top: 13px;}
+/*2-1查看*/
+.wid_look{width: 898px;border: 1px solid #b9b9b9}
+.wid_look tbody{width: 896px}
+.wid_look tr{border-bottom: 1px solid #dcdcdc;}
+.wid_look tr:last-child{border: 0}
+.wid_look td{height: 40px;padding-left: 10px;}
+.wid_look .wid155{width: 145px;background-color: #f6f6f6;text-align: right;border-right: 1px solid #dcdcdc}
+/*设置*/
+#page-wrapper{position: relative;}
+.index_main{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #fff;padding: 20px 35px}
+.index_main .max800{padding-bottom: 0;}
+.index_main .max800 input{line-height: 23px;}
+.index_main .max800 ul{padding: 10px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

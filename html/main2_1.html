@@ -12,332 +12,346 @@
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
+    <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+        
+    <link rel="stylesheet" href="../upload/zyupload-1.0.0.min.css " type="text/css">
+    <script type="text/javascript" src="../upload/zyupload-1.0.0.min.js"></script>
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/bui.css" rel="stylesheet">
-    <style type="text/css">
-    .contextMenuPlugin {
-        width: 200px;
-        padding: 0;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 15px #000;
-        position: absolute;
-    }
-    
-    .contextMenuPlugin li {
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        background-color: #fff;cursor: pointer;
-    }
-    
-    .contextMenuPlugin li:hover {
-        background-color: #324e75;
-    }
-    
-    .contextMenuPlugin > li > a:hover {
-        border: 0;
-        background: none;
-        outline: 0;
-    }
-    
-    .contextMenuPlugin li:hover span {
-        color: #fff
-    }
-    
-    .contextMenuPlugin > li > a {
-        margin: 0;width: 100%
-    }
-    
-    
-    .contextMenuPlugin span {
-        font-size: 14px;
-        cursor: pointer;color: #494949
-    }
-    .main3_3{overflow: hidden;}
-    </style>
-    <!-- jqgrid-->
+    <link href="../bui/bui.css" rel="stylesheet">
+   <style type="text/css">
+       .save1_2{width: 800px;margin-top: 30px;}
+       .max628{padding-bottom: 10px;}
+       .approve{margin-bottom: 0;}
+   </style>
+    <script src="../bui/sea.js"></script>
+    <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
 </head>
-
-<body class="fixed-sidebar full-height-layout gray-bg" style="padding: 20px 0">
-    <div class="main3_3 cl">
-        <!-- 第一个框框 -->
-        <div class="input3_3 main fl input2_2">
-            <form>
-                <ul>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;卡&nbsp;类&nbsp;型&nbsp;：</span>
-                            <select name="">
-                                <option value="">全部</option>
-                                <option value="">报警</option>
-                                <option value="">给警察</option>
-                                <option value="">打电话</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;&nbsp;&nbsp;卡&nbsp;&nbsp;&nbsp;号：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;用&nbsp;户&nbsp;名&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li>
-                        <label for="">
-                            <span>&nbsp;证&nbsp;件&nbsp;号&nbsp;：</span>
-                            <input type="text" placeholder="请输入">
-                        </label>
-                    </li>
-                    <li class="time">
-                        <div class="demo-content">
-                            <form method="post">
-                                <p>
-                                    <label>开卡时间：</label>
-                                    <input type="text" class="calendar" />
-                                </p><!-- 
-                                 --><p>
-                                    <label>至</label>
-                                    <input type="text" class="calendar" />
-                                </p>
-                            </form>
-                            <script src="../bui/jquery-1.8.1.min.js"></script>
-                            <script src="../bui/sea.js"></script>
-                            <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
-                            <!-- script start -->
-                            <script type="text/javascript">
-                            BUI.use('bui/calendar', function(Calendar) {
-                                var datepicker = new Calendar.DatePicker({
-                                    trigger: '.calendar',
-                                    autoRender: true
-                                });
-                            });
-                            </script>
-                            <!-- script end -->
-                        </div>
-                    </li><li><span></span></li>
-                    <li class="main_btn">
-                        <label for="">
-                            <input type="button" value="查询">
-                            <input type="button" value="导出excel">
-                            <input type="button" value="重置">
-                        </label>
-                    </li>
-                   
-                </ul>
-            </form>
-        </div>
-        <!-- 第一个框框 -->
-        <!-- 第二个框框 表格-->
-        <div id="form33_sty" class="fl">
-            <div class="form10_tab">
-                <table>
-                    <tr>
-                        <th>编号</th>
-                        <th>用户名</th>
-                        <th class="green">卡号</th>
-                        <th class="green2">卡类型</th>
-                        <th>用户状态</th>
-                        <th>余额</th>
-                        <th>手机号码</th>
-                        <th>证件号</th>
-                        <th>开户时间</th>
-                        <th>操作员</th>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td>201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1101</td>
-                        <td class="green">201503</td>
-                        <td>正常</td>
-                        <td>3/0/4</td>
-                        <td>盈泽演示</td>
-                        <td>192.168.10.144</td>
-                        <td>2005</td>
-                        <td>市财政局</td>
-                        <td>天元区</td>
-                        <td class="green">TN-黄河南</td>
-                    </tr>
-                </table>
+<body class="main">
+    <!-- 面包屑 -->
+    <header>
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>车辆预约</li>
+            <li>年审预约</li>
+        </ul>
+    </header>
+    <!-- 面包屑 -->
+    
+    <!-- 黑名单首页 -->
+    <!-- 输入框及表格部分 -->
+    <div class="max1260 max1260_1">
+        <!-- 输入框部分 -->
+        <div class="all_input clear all_input31">
+            <p class="head_p">查询<span>添加</span></p>
+            <ul class="dib fl">
+                <li>
+                    <label>
+                        <span>车牌号码：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>预约人姓名：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>车辆所属人：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>粤通卡号：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+                
+            </ul>
+            
+            <div class="find dib">
+                <button class="search1">查询</button>
             </div>
+        </div>
+        <!-- 输入框部分 -->
+        <!-- 表格部分 -->
+        <div class="table1_2 induce">
+            <table>
+                <thead><tr><td colspan="9"><div class="clear"><h3><span>年审预约</span></h3></div></td></tr></thead>
+                <tbody>
+                    <tr>
+                        <th>系统编号</th>
+                        <th>车辆所属人</th>
+                        <th>手机号码</th>
+                        <th>车辆类型</th>
+                        <th>车牌号码</th>
+                        <th>粤通号码</th>
+                        <th>品牌型号</th>
+                        <th>预约时间</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>买买买</td>
+                        <td>买买买</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="look">查看</li>
+                                <li>取消</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
             <div class="pages">
                 <ul>
                     <li>共28条</li>
                     <li>第1/1页</li>
                     
-                    <li><a href="javascript:void(0)" class="pre_page"><</a></li>
+                    <li><a href="javascript:void(0)" class="pre_page"></a></li>
                     <li>
                         <ul class="change">
                             <li><a href="javascript:void(0)" class="active">1</a></li>
@@ -346,140 +360,194 @@
                             <li><a href="javascript:void(0)">4</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0)" class="next_page active">></a></li>
-                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">跳转</a></li>
+                    <li><a href="javascript:void(0)" class="next_page active"></a></li>
+                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">前往</a></li>
                 </ul>
             </div>
-            <!-- 修改的窗口 -->
-            <div class="form10_open form10_open1 disN">
-                <table>
-                    <tr>
-                        <th colspan=2>个人信息 <a href="javascript:void(0)" class="close"></a></th>
-                    </tr>
-                    <tr>
-                        <td>有用户名：</td>
-                        <td>
-                            张小凡
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>表面卡号：</td>
-                        <td>
-                            09824308572498570893475
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>卡类型：</td>
-                        <td>
-                            管理卡
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>用户状态：</td>
-                        <td>
-                            正常
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>证件号：</td>
-                        <td>
-                            11008723492734083
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>备注：</td>
-                        <td>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
-                        </td>
-                    </tr>
-                </table>
-                <div class="form10_btn">
-                    <input type="button" name="" value="确定" class="sure">
-                    <input type="button" name="" value="取消" class="cancel">
-                </div>
-                <a href="javascript:void(0)" class="disN">&nbsp;</a>
-            </div>
-            <!-- 修改窗口结束 -->
         </div>
-        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-        <script src="../js/jquery.contextmenu.js"></script>
-        <script>
-        $(function() {
-            $('.form10_tab td').contextPopup({
-                // title: 'My Popup Menu',
-                items: [{
-                    label: '查看个人信息',
-                    // icon: 'img/right_add.png',
-                    action: function() {
-                        $(".form10_open").show()
-                    }
-                }, {
-                    label: '修改个人信息',
-                    // icon: 'img/right_del.png',
-                    action: function() {}
-                }, {
-                    label: '修改金额',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '个人记录查询',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '信息导出',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '密码修改',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '挂失解挂',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '销户',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }, {
-                    label: '删除',
-                    // icon: 'img/right_gai.png',
-                    action: function() {}
-                }]
-            });
-        });
-        </script>
-        <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-        <script>
-        $(".form10_open .cancel,.form10_open .close").click(function() {
-            $(".form10_open").hide()
-        })
-        // 点击翻页
-        $(".change a").click(function () {
-            $(".change a").removeClass('active');
-            $(this).addClass('active');
-            var num1=$(this).index();
-            var num2=$(".change a:last-child").index();
-            // 判断是不是第一个
-            if (num2==0) {
-
-            } else {}
-            // 判断是不是最后一个
-            if (num1==num2) {
-
-            } else {}
-        })
-        // 点击上一页
-        $(".pre_page").click(function () {
-            var pre_page=$(".change a").index();
-            if (pre_page==0) {
-
-            } else {}
-            
-        })
-        </script>
-        <!-- 第二个框框 表格-->
+        <!-- 表格部分 -->
     </div>
+    <!-- 输入框及表格部分 -->
+    <!-- 黑名单首页 -->
+    
+
+    <!-- 添加 -->
+    <div class="max900 approve max900_1 disN">
+        <p class="max800_p">添加</p>
+        <div class="creat clear">
+            <ul>
+                <li class="z-in3"><span>预约人姓名：</span><input type="text"></li>
+                <li class="z-in3"><span>行驶证车辆所属人：</span><input type="text"></li>
+                <li class="z-in3">
+                    <span>行驶证车辆类型：</span>
+                    <select>
+                        <option>请选择</option>
+                    </select>
+                </li>
+                <li class="z-in3">
+                    <span>车牌号码：</span>
+                    <input type="text" name="">
+                </li>
+                <li class="z-in3">
+                    <span>手机号码：</span>
+                    <input type="text" name="">
+                </li>
+                <li class="z-in3">
+                    <span>粤通号码：</span>
+                    <input type="text" name="rank">
+                </li>
+                <li class="z-in3"><span>品牌型号：</span><input type="text"></li>
+                <li class="z-in3">
+                    <span>预约日期：</span>
+                    <input type="text" class="calendar">
+                </li>
+                <li class="z-in3">
+                    <span>预约时间：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>上午</option>
+                        <option>下午</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 添加 -->
+
+    <!-- 查看 -->
+    <div class="max900 disN">
+        <table class="wid_look">
+            <tr>
+                <td class="wid155">预约人姓名：</td>
+                <td>张三</td>
+            </tr>
+            <tr>
+                <td class="wid155">行驶证车辆所属人：</td>
+                <td>张三</td>
+            </tr>
+            <tr>
+                <td class="wid155">车牌号码：</td>
+                <td>9187492384</td>
+            </tr>
+            <tr>
+                <td class="wid155">粤通卡号：</td>
+                <td>jsdfkjsdhf1293872193</td>
+            </tr>
+            <tr>
+                <td class="wid155">行驶证车辆类型：</td>
+                <td>坦克</td>
+            </tr>
+            <tr>
+                <td class="wid155">品牌型号：</td>
+                <td>振金</td>
+            </tr>
+            <tr>
+                <td class="wid155">手机号码：</td>
+                <td>1236129879218</td>
+            </tr>
+            <tr>
+                <td class="wid155">预约时间：</td>
+                <td>2016年09月14日09:55:25</td>
+            </tr>
+            
+        </table>
+    </div>
+    <!-- 查看 -->
+
+
+    <!-- 添加页面的保存 -->
+    <div class="save1_2 disN save3_2">
+        <input type="button" name="" value="保存" class="save">
+        <input type="button" name="" value="返回" class="back">
+    </div>
+    <!-- 添加页面的保存 -->
+
+    <!-- 添加页面的保存 -->
+    <div class="save1_2 disN save2_2">
+        <input type="button" name="" value="返回" class="back">
+    </div>
+    <!-- 添加页面的保存 -->
 </body>
+<script type="text/javascript">
+    // 点击打开表格的操作
+    $(".action span").click(function() {
+       
+        if ($(this).next('ul').is(':hidden')) {
+            $(".action span").removeClass('operate');
+            $(this).addClass('operate');
+            $(".action").children('ul').hide();
+            $(".action span").parents('td').css('z-index','1');
+            $(this).parents('td').css('z-index','2');
+            $(this).next('ul').show();
+            
+        } else {
+            $(this).next('ul').hide();
+            $(".action span").removeClass('operate');
+
+        }
+    });
+   
+    // 点击翻页
+    $(".change a").click(function () {
+        $(".change a").removeClass('active');
+        $(this).addClass('active');
+        var num1=$(this).index();
+        var num2=$(".change a:last-child").index();
+        // 判断是不是第一个
+        if (num2==0) {
+
+        } else {}
+        // 判断是不是最后一个
+        if (num1==num2) {
+
+        } else {}
+    })
+   
+    // 点击添加
+    $(".head_p span").click(function () {
+        $(".max1260").hide();
+        $(".approve,.save3_2").show()
+    })
+
+
+    // 点击查看
+    $(".look").click(function () {
+        $(".max900,.save2_2").show();
+        $(".max1260,.approve").hide();
+    })
+   
+    // 点击返回
+    $(".back").click(function () {
+        $(".max900,.save3_2,.save2_2").hide();
+        $(".max1260").show()
+    })
+
+    // 点保存的时候判断
+    $(".save3_2 .save").click(function () {  
+        $(".approve .z-in3 input").each(function () {
+            var value=$(this).val();
+            if (value==""||$(".approve .z-in3 select").val()=="请选择") {
+                alert("带*号的为必填项，请填写完整")
+            } else {
+                $(".max800").hide();
+                $(".max1260").show()
+            }   
+        })
+    })
+
+
+    
+</script>
+<!-- script start -->
+<script type="text/javascript">
+BUI.use('bui/calendar', function(Calendar) {
+    var datepicker = new Calendar.DatePicker({
+        trigger: '.calendar',
+        autoRender: true
+    });
+});
+</script>
+<!-- script end -->
 
 </html>
+ 

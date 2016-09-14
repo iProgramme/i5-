@@ -15,6 +15,9 @@
     <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/style.min.css?v=4.1.0" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <style type="text/css">
+        .save1_2{margin-top: 35px;margin-bottom: 120px;}
+    </style>
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -22,7 +25,7 @@
         <p class="fl"><img src="img/logo.png">校园交通服务平台</p>
         <ul class="fr">
             <li><span class="icon iconfont">&#xe60d;</span><span>管理员</span></li>
-            <li><span class="icon iconfont">&#xe600;</span><span>设置</span></li>
+            <li><span class="icon iconfont set2">&#xe600;</span><span>设置</span></li>
             <li><span class="icon iconfont">&#xe60f;</span><span>注销</span></li>
         </ul>
     </header>
@@ -178,6 +181,46 @@
                 <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="html/index.html" frameborder="0" data-id="index_v1.html" seamless></iframe>
             </div>
             
+            <!-- 右侧设置 -->
+            <div class="index_main disN">
+                <!-- 面包屑 -->
+                <header>
+                    <ul class="clear">
+                        <li>当前位置</li>
+                        <li>设置</li>
+                    </ul>
+                </header>
+                <!-- 面包屑 -->
+
+                <!-- 违章还能修改？ -->
+                <div class="max800 approve">
+                    <p>违章录入</p>
+                    <ul>
+                        <li class="z-in3"><span>登录名：</span><input type="text"></li>
+                        <li class="z-in3"><span>姓名：</span><input type="text"></li>
+                        <li class="z-in3"><span>员工编号：</span><input type="text"></li>
+                        <li class="password"><span>密码：</span><input type="password"></li>
+                        <li class="password"><span>重复密码：</span><input type="password"></li>
+                        <li>
+                            <span>性别：</span>
+                            <label><input type="radio" name="sex" checked><span>男</span></label>
+                            <label><input type="radio" name="sex"><span>女</span></label>
+                        </li>
+                        <li><span>手机号码：</span><input type="text"></li>
+                        <li><span>电子邮箱：</span><input type="text"></li>
+                    </ul>
+                    
+                </div>
+                <!-- 违章还能修改？ -->
+
+                <!-- 保存 -->
+                <div class="save1_2">
+                    <input type="button" name="" value="保存" class="save">
+                    <input type="button" name="" value="返回" class="back">
+                </div>
+                <!-- 保存 -->
+            </div>
+            <!-- 右侧设置 -->
         </div>
         <!--右侧部分结束-->
     </div>
@@ -199,6 +242,14 @@
     })
     $(".win_p a").click(function () {
         $(".frame_win").hide()
+    })
+    // 打开设置
+    $(".set2").click(function () {
+        $(".index_main").show()
+    })
+    // 关闭设置
+    $(".back").click(function () {
+        $(".index_main").hide()
     })
     </script>
     <script src="js/bootstrap.min.js?v=3.3.6"></script>
