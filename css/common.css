@@ -57,7 +57,7 @@ button{cursor: pointer;border-radius: 2px}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
-.main{padding: 20px 35px}
+.main{padding: 20px 35px;min-height: 600px\9}
 /*面包屑*/
 .main .header,.index_main .header{margin-bottom: 20px;}
 .main .header li,.index_main .header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
