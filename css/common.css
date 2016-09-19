@@ -59,10 +59,10 @@ button{cursor: pointer;border-radius: 2px}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px}
 /*面包屑*/
-.main header,.index_main header{margin-bottom: 20px;}
-.main header li,.index_main header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
-.main header span,.index_main header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
-.main header li:first-child,.index_main header li:first-child{text-align: center;background: none;padding-left: 0;}
+.main .header,.index_main .header{margin-bottom: 20px;}
+.main .header li,.index_main .header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
+.main .header span,.index_main .header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
+.main .header li:first-child,.index_main .header li:first-child{text-align: center;background: none;padding-left: 0;}
 .center{padding: 0 20px}
 /*2-1*/
 /*待审核*/
