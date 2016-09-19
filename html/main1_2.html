@@ -13,14 +13,14 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+    <script src="../js/uplo.js"></script>  
         
-    <link rel="stylesheet" href="../upload/zyupload-1.0.0.min.css " type="text/css">
-    <script type="text/javascript" src="../upload/zyupload-1.0.0.min.js"></script>
     <link href="../css/common.css" rel="stylesheet">
     <link href="../bui/bui.css" rel="stylesheet">
     <style type="text/css">
         #form33_sty tr{cursor: pointer;}
         #form33_sty tr:hover{background-color: rgba(151,164,183,0.5);color: #fff}
+        #Button1,#Button2{margin: 20px 0 0 20px;padding: 8px 5px}
     </style>
     <script src="../bui/sea.js"></script>
     <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
@@ -83,7 +83,7 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="10"><div class="clear"><h3><span>大型车辆预约</span></h3></div></td></tr></thead>
+                <thead><tr><td colspan="10"><div class="clear"><h3><span>待审核</span></h3></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th>编号</th>
@@ -414,8 +414,7 @@
                     <div class="demo-content">
                         <form method="post">
                             <p>
-                                <label>登&nbsp;记&nbsp;日&nbsp;期&nbsp;：</label>
-                                <input type="text" class="calendar" />
+                                <label>登&nbsp;记&nbsp;日&nbsp;期&nbsp;：</label><input type="text" class="calendar" />
                             
                                 <label>至&nbsp;&nbsp;&nbsp;</label>
                                 <input type="text" class="calendar" />
@@ -437,7 +436,7 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="13"><div class="clear"><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
+                <thead><tr><td colspan="13"><div class="clear"><p><i class="icon iconfont">&#xe60b;</i><span>导出</span></p></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th class="tab_checkbox"><span></span></th>
@@ -839,7 +838,7 @@
         <!-- 表格部分 -->
         <div class="table1_2 induce">
             <table>
-                <thead><tr><td colspan="13"><div class="clear"><h3><span>查询</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>大型车辆预约</span></p></div></td></tr></thead>
+                <thead><tr><td colspan="13"><div class="clear"><h3><span>停车证</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>导出</span></p></div></td></tr></thead>
                 <tbody>
                     <tr>
                         <th class="tab_checkbox"><span></span></th>
@@ -1264,10 +1263,10 @@
         </div>
         <!-- 车辆信息 -->
         
-        <!-- 车主信息 -->
+        <!-- 审批信息 -->
         <div class="creat clear">
-            <p>车主信息</p>
-            <ul>
+            <p>审批信息</p>
+            <ul class="clear">
                 <li>
                     <label for="">
                         <span>职工姓名：</span>
@@ -1299,14 +1298,15 @@
                     </label>
                 </li>
             </ul>
-            <div class="upload fl">
-                <div id="" class="zyupload"></div>  
-                
-                
-                
-            </div>
+            <div class="add_img">  
+          
+            <input id="Button1" type="button" value="选择文件" /><span class="img_char">(最多添加五张图片)</span>
+            <!-- <input id="files1" type="button" value="上传" />   -->
+            <!-- <div style="width: 420px; height: 180px; overflow:auto;border:1px solid #C0C0C0;">-->  
+            <div id="fileList1" style="margin-top: 10px; padding-top:10px; font-size: 13px; width:100%;border-top: 1px solid #eaeaea"></div>  
+             </div>
         </div>
-        <!-- 车主信息 -->
+        <!-- 审批信息 -->
 
         <!-- 停放信息 -->
         <div class="creat clear over_vis">
@@ -1465,12 +1465,13 @@
                     </label>
                 </li>
             </ul>
-            <div class="upload fl">
-                <div id="" class="zyupload"></div>  
-                
-                
-                
-            </div>
+            <div class="add_img">  
+            
+            <input id="Button2" type="button" value="选择文件" /><span class="img_char">(最多添加五张图片)</span>
+            <!-- <input id="files2" type="button" value="上传" />   -->
+            <!-- <div style="width: 420px; height: 180px; overflow:auto;border:1px solid #C0C0C0;">-->  
+            <div id="fileList2" style="margin-top: 10px; padding-top:10px; font-size: 13px; width:100%;border-top: 1px solid #eaeaea"></div>  
+             </div>
             
         </div>
         <!-- 车主信息 -->
@@ -1676,6 +1677,7 @@
             $(this).children('span').addClass('checkbox_active');
         }
     })
+    
     // 切换待审核nav之类的
     $(".tab1_2 li").click(function () {
         var num=$(this).index();
@@ -1686,46 +1688,9 @@
         $(".zyupload").removeAttr('id', 'zyupload');
         $(".zyupload").children('form').remove();
         $(".max1260").eq(num).find('.zyupload').attr('id', 'zyupload');
-        // 初始化插件
-        $("#zyupload").zyUpload({
-            width            :   "896px",                 // 宽度
-            height           :   "355px",                 // 宽度
-            itemWidth        :   "140px",                 // 文件项的宽度
-            itemHeight       :   "115px",                 // 文件项的高度
-            url              :   "/upload/UploadAction",  // 上传文件的路径
-            fileType         :   ["jpg","png","txt","js","exe"],// 上传文件的类型
-            fileSize         :   51200000,                // 上传文件的大小
-            multiple         :   true,                    // 是否可以多个文件上传
-            dragDrop         :   true,                    // 是否可以拖动上传文件
-            tailor           :   true,                    // 是否可以裁剪图片
-            del              :   true,                    // 是否可以删除文件
-            finishDel        :   false,                   // 是否在上传文件完成后删除预览
-            /* 外部获得的回调接口 */
-            onSelect: function(selectFiles, allFiles){    // 选择文件的回调方法  selectFile:当前选中的文件  allFiles:还没上传的全部文件
-                console.info("当前选择了以下文件：");
-                console.info(selectFiles);
-            },
-            onDelete: function(file, files){              // 删除一个文件的回调方法 file:当前删除的文件  files:删除之后的文件
-                console.info("当前删除了此文件：");
-                console.info(file.name);
-            },
-            onSuccess: function(file, response){          // 文件上传成功的回调方法
-                console.info("此文件上传成功：");
-                console.info(file.name);
-                console.info("此文件上传到服务器地址：");
-                console.info(response);
-                $("#uploadInf").append("<p>上传成功，文件地址是：" + response + "</p>");
-            },
-            onFailure: function(file, response){          // 文件上传失败的回调方法
-                console.info("此文件上传失败：");
-                console.info(file.name);
-            },
-            onComplete: function(response){               // 上传完成的回调方法
-                console.info("文件上传完成");
-                console.info(response);
-            }
-        });
+        
     })
+
     // 新建申请-停放类型
     $(".sel1_2").click(function () {
         $(this).next().toggle()
@@ -1750,45 +1715,41 @@
         $(".zyupload").children('form').remove();
         $(".zyupload").removeAttr('id', 'zyupload');
         $(".max1260_5").find('.zyupload').attr('id', 'zyupload');
-        // 初始化插件
-        $("#zyupload").zyUpload({
-            width            :   "896px",                 // 宽度
-            height           :   "355px",                 // 宽度
-            itemWidth        :   "140px",                 // 文件项的宽度
-            itemHeight       :   "115px",                 // 文件项的高度
-            url              :   "/upload/UploadAction",  // 上传文件的路径
-            fileType         :   ["jpg","png","txt","js","exe"],// 上传文件的类型
-            fileSize         :   51200000,                // 上传文件的大小
-            multiple         :   true,                    // 是否可以多个文件上传
-            dragDrop         :   true,                    // 是否可以拖动上传文件
-            tailor           :   true,                    // 是否可以裁剪图片
-            del              :   true,                    // 是否可以删除文件
-            finishDel        :   false,                   // 是否在上传文件完成后删除预览
-            /* 外部获得的回调接口 */
-            onSelect: function(selectFiles, allFiles){    // 选择文件的回调方法  selectFile:当前选中的文件  allFiles:还没上传的全部文件
-                console.info("当前选择了以下文件：");
-                console.info(selectFiles);
-            },
-            onDelete: function(file, files){              // 删除一个文件的回调方法 file:当前删除的文件  files:删除之后的文件
-                console.info("当前删除了此文件：");
-                console.info(file.name);
-            },
-            onSuccess: function(file, response){          // 文件上传成功的回调方法
-                console.info("此文件上传成功：");
-                console.info(file.name);
-                console.info("此文件上传到服务器地址：");
-                console.info(response);
-                $("#uploadInf").append("<p>上传成功，文件地址是：" + response + "</p>");
-            },
-            onFailure: function(file, response){          // 文件上传失败的回调方法
-                console.info("此文件上传失败：");
-                console.info(file.name);
-            },
-            onComplete: function(response){               // 上传完成的回调方法
-                console.info("文件上传完成");
-                console.info(response);
-            }
-        });
+        // 图片
+        $(function () {  
+            //var btn = $("#Button1");  
+        
+            var btn = $("#Button2").uploadFile({  
+                url: "file.php",  
+                fileSuffixs: ["jpg", "png", "gif", "txt"],  
+                maximumFilesUpload: 5,//最大文件上传数  
+                onComplete: function (msg) {  
+                    $("#testdiv").append(msg + "<br/>");  
+                },  
+                onAllComplete: function () {  
+                    alert("全部上传完成");  
+                },  
+                isGetFileSize: true,//是否获取上传文件大小，设置此项为true时，将在onChosen回调中返回文件fileSize和获取大小时的错误提示文本errorText  
+                onChosen: function (file, obj, fileSize, errorText) {  
+                    if (!errorText) {
+                        // 显示文件所在位置
+                        // $("#file_size").text(file + "文件大小为：" + fileSize + "KB");  
+                    } else {  
+                        alert(errorText);  
+                        return false;  
+                    }  
+                    return true;//返回false将取消当前选择的文件  
+                },  
+                perviewElementId: "fileList2", //设置预览图片的元素id  
+                perviewImgStyle: { width: '100px', height: '100px', border: '0px solid #ebebeb' }//设置预览图片的样式  
+            });  
+        
+            var upload = btn.data("uploadFileData");  
+        
+            $("#files2").click(function () {  
+                upload.submitUpload();  
+            });  
+        }); 
     })
     // 审批-车主信息-状态
     $(".max1260_5 .approve .sel_ul li").click(function() {
@@ -1818,6 +1779,42 @@
     $(".test_tab .sure,.test_tab p a").click(function () {
         $(".test_tab").hide()
     })
+
+    // 图片
+    $(function () {  
+        //var btn = $("#Button1");  
+    
+        var btn = $("#Button1").uploadFile({  
+            url: "file.php",  
+            fileSuffixs: ["jpg", "png", "gif", "txt"],  
+            maximumFilesUpload: 5,//最大文件上传数  
+            onComplete: function (msg) {  
+                $("#testdiv").append(msg + "<br/>");  
+            },  
+            onAllComplete: function () {  
+                alert("全部上传完成");  
+            },  
+            isGetFileSize: true,//是否获取上传文件大小，设置此项为true时，将在onChosen回调中返回文件fileSize和获取大小时的错误提示文本errorText  
+            onChosen: function (file, obj, fileSize, errorText) {  
+                if (!errorText) {
+                    // 显示文件所在位置
+                    // $("#file_size").text(file + "文件大小为：" + fileSize + "KB");  
+                } else {  
+                    alert(errorText);  
+                    return false;  
+                }  
+                return true;//返回false将取消当前选择的文件  
+            },  
+            perviewElementId: "fileList1", //设置预览图片的元素id  
+            perviewImgStyle: { width: '100px', height: '100px', border: '0px solid #ebebeb' }//设置预览图片的样式  
+        });  
+    
+        var upload = btn.data("uploadFileData");  
+    
+        $("#files1").click(function () {  
+            upload.submitUpload();  
+        });  
+    }); 
 </script>
 
 

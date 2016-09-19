@@ -15,7 +15,7 @@
     <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
     <link href="../css/common.css" rel="stylesheet">
     <style type="text/css">
-        .save1_2{margin-top: 10px;}
+        .save1_2{margin-top: 10px;width: 900px}
     </style>
 </head>
 <body class="main">
@@ -292,7 +292,7 @@
         var num=$(this).index();
         $(".tab1_2 li").removeClass('tab_active');
         $(this).addClass('tab_active');
-        $(".max900").hide();
+        $(".max900,.save1_2").hide();
         $(".max900").eq(num).show();
     })
 

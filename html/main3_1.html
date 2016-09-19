@@ -12,24 +12,31 @@
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
-        
-    <link rel="stylesheet" href="../upload/zyupload-1.0.0.min.css " type="text/css">
-    <script type="text/javascript" src="../upload/zyupload-1.0.0.min.js"></script>
+    <script src="../js/uplo.js"></script>  
+    <link rel="stylesheet" href="../dist/css/demo.css">
+    <link rel="stylesheet" href="../dist/css/dropify.min.css">
     <link href="../css/common.css" rel="stylesheet">
    <style type="text/css">
-       .upload_choose{padding: 0}
-       .upload_box{margin: 0}
-       .convent_choice{height: 30px}
-       .andArea,.upload_drag_area{padding: 0;}
-       .upload_drag_area,.status_bar,.upload_append_list{display: none;}
-       .andArea,.upload_preview,.upload_main{background: none;border: 0}
-       .filePicker{width: 100px;font-size: 14px;height: 23px;line-height: 23px;position: relative;top: 3px;left: 30px}
-       .convent_choice{height: 0}
-       .zyupload{position: relative;top: -36px}
-       .upload_append_list{float: right;}
-       #uploadList_0{display: block;}
-       .save1_2{width: 800px;margin-top: 30px;}
+        .upload_choose{padding: 0}
+        .upload_box{margin: 0}
+        .convent_choice{height: 30px}
+        .andArea,.upload_drag_area{padding: 0;}
+        .upload_drag_area,.status_bar,.upload_append_list{display: none;}
+        .andArea,.upload_preview,.upload_main{background: none;border: 0}
+        .filePicker{width: 100px;font-size: 14px;height: 23px;line-height: 23px;position: relative;top: 3px;left: 30px}
+        .convent_choice{height: 0}
+        .zyupload{position: relative;top: -36px}
+        .upload_append_list{float: right;}
+        #uploadList_0{display: block;}
+        .save1_2{width: 800px;margin-top: 30px;}
+        /*图*/
+        #files1{display: none;}
+        .max800{padding-bottom: 70px;}
+        .max800 ul{padding-top: 15px;}
+        .max800 li #Button1{width: 70px;padding: 0}
+        #fileList1{position: absolute;left: 450px;top: -45px}
    </style>
 </head>
 <body class="main">
@@ -50,17 +57,18 @@
         <p>违章录入</p>
         <ul>
             <li class="z-in3"><span>车&nbsp;&nbsp;&nbsp;牌&nbsp;：&nbsp;</span><input type="text"></li>
-            <li><span>图&nbsp;&nbsp;&nbsp;片&nbsp;：&nbsp;</span><div id="zyupload" class="zyupload"></div>  </li>
             <li class="z-in3 z-in3_short"><span>违章类型：</span><select><option>请选择</option><option>随意</option><option>我的天哪</option><option>口香糖</option><option>游泳</option></select></li>
             <li class="z-in3">
-                <span>发现时间：&nbsp;</span>
-                <input type="text" class="calendar">
+                <span>发现时间：</span><input type="text" class="calendar">
                 
             </li>
             <li class="z-in3"><span>违章地点：&nbsp;</span><input type="text"></li>
-            <li><span style="top: -86px">违章原因：&nbsp;</span><textarea rows="6"></textarea></li>
+            <li style="margin-top: 12px"><span style="top: -70px">违章原因：&nbsp;</span><textarea rows="6"></textarea></li>
         </ul>
-        
+        <div class="load_img">
+            <label for="input-file-now">添加图片：</label>
+            <input type="file" id="input-file-now" class="dropify" />
+        </div>
     </div>
     <!-- 违章还能修改？ -->
 
@@ -73,6 +81,8 @@
 
 
 </body>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../dist/js/dropify.min.js"></script>
 <script type="text/javascript">
  
     // 点保存的时候判断
@@ -91,50 +101,49 @@
     $(".back").click(function () {
         $(".save1_2,.max800").hide();
         $(".max1260").show()
-    })
+    }) 
+</script>
+<script>
+    $(document).ready(function(){
+        // Basic
+        $('.dropify').dropify();
 
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove:  'Supprimer',
+                error:   'Désolé, le fichier trop volumineux'
+            }
+        });
 
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
 
-    // 初始化插件
-    $("#zyupload").zyUpload({
-        width            :   "750px",                 // 宽度
-        height           :   "155px",                 // 宽度
-        itemWidth        :   "140px",                 // 文件项的宽度
-        itemHeight       :   "115px",                 // 文件项的高度
-        url              :   "/upload/UploadAction",  // 上传文件的路径
-        fileType         :   ["jpg","png","txt","js","exe"],// 上传文件的类型
-        fileSize         :   51200000,                // 上传文件的大小
-        multiple         :   false,                    // 是否可以多个文件上传
-        dragDrop         :   true,                    // 是否可以拖动上传文件
-        tailor           :   true,                    // 是否可以裁剪图片
-        del              :   true,                    // 是否可以删除文件
-        finishDel        :   false,                   // 是否在上传文件完成后删除预览
-        /* 外部获得的回调接口 */
-        onSelect: function(selectFiles, allFiles){    // 选择文件的回调方法  selectFile:当前选中的文件  allFiles:还没上传的全部文件
-            console.info("当前选择了以下文件：");
-            console.info(selectFiles);
-        },
-        onDelete: function(file, files){              // 删除一个文件的回调方法 file:当前删除的文件  files:删除之后的文件
-            console.info("当前删除了此文件：");
-            console.info(file.name);
-        },
-        onSuccess: function(file, response){          // 文件上传成功的回调方法
-            console.info("此文件上传成功：");
-            console.info(file.name);
-            console.info("此文件上传到服务器地址：");
-            console.info(response);
-            $("#uploadInf").append("<p>上传成功，文件地址是：" + response + "</p>");
-        },
-        onFailure: function(file, response){          // 文件上传失败的回调方法
-            console.info("此文件上传失败：");
-            console.info(file.name);
-        },
-        onComplete: function(response){               // 上传完成的回调方法
-            console.info("文件上传完成");
-            console.info(response);
-        }
+        drEvent.on('dropify.beforeClear', function(event, element){
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element){
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element){
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e){
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
     });
 </script>
-
 
 </html>

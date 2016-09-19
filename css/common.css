@@ -12,6 +12,7 @@ span,a,i{ display: inline-block;font-family: "Microsoft Yahei"}
 a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 .fl{float:left;}
 .fr{float:right;}
+select{border-radius: 2px;color: #535353}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 .over_vis{overflow: visible;}
 input[type="button"]{cursor: pointer;border-radius: 2px;border: 0}
@@ -66,38 +67,39 @@ button{cursor: pointer;border-radius: 2px}
 /*2-1*/
 /*待审核*/
 .tab1_2{margin: 0px 0 20px 0;text-align: left;}
-.tab1_2 li{width: 160px;height: 36px;line-height: 36px;text-align: center;float: left;background-color: #f0f0f0;color: #535353;font-size: 16px;margin-right: 1px;cursor: pointer;}
+.tab1_2 li{width: 160px;height: 36px;line-height: 36px;text-align: center;float: left;background-color: #f0f0f0;color: #535353;font-size: 14px;margin-right: 1px;cursor: pointer;}
 .tab1_2 li:hover,.tab1_2 .tab_active{background-color: #1a2734;color: #fff}
 .tab1_2 .add{background:url(../img/xuebi_y.png) no-repeat 12px 7px;margin-left: 30px;color: #535353}
 .tab1_2 .add:hover{background:url(../img/xuebi_y.png) no-repeat 12px 7px;color: #535353}
 /*输入框部分*/
-.all_input{border: 1px solid #b9b9b9;position: relative;padding: 0}
-.all_input .head_p{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 40px;line-height: 40px;background-color: #eee;position: relative;}
+.all_input{border: 1px solid #b2b2b2;position: relative;padding: 0}
+.all_input .head_p{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;background-color: #e8f2ff;position: relative;}
 .all_input ul{width: 61.5%;padding: 5px 0}
 .all_input li{float: left;width: calc(49% - 20px);height: 55px;line-height: 55px;text-align: left;padding-left: 20px;}
 .all_input .time{width: calc(96% - 20px)}
 .time p{border: 0;padding: 0;display: inline-block;width: 100%}
-.time p label{padding-right: 15px;text-align: right;padding-right: 0;padding-left: 15px;}
+.time p label{padding-right: 15px;text-align: right;padding-right: 0;padding-left: 20px;}
 .time p:last-child{text-align: left;}
 .all_input li label{width: 100%}
 .all_input li input{width: calc(100% - 160.578px);height: 28px;padding: 0 5px}
 .all_input .choice{height: 50px;line-height: 80px;top: -7px;left: 0px;position: relative;}
 .all_input li span{width: 107px;text-align: right;}
 .all_input li label:first-child{width: 120px}
-.all_input .time input{width: calc(50% - 170.578px)}
+.all_input .time input{width: calc(50% - 163.578px)}
 .choice,.find{}
 .all_input .find{bottom: 16px;left: 80%;position: absolute;}
-.all_input .find button{width: 82px;line-height: 32px;height: 32px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
+.all_input .find button{width: 82px;height: 34px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
 .all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 54px -51px #00ccab;width: 82px;padding-right: 10px;border: 1px solid #00ccab}
 .all_input .find .search3{margin-left:106px;}
 /*表格*/
 .table1_2{margin-top: 20px;}
-.table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353;border: 1px solid #b9b9b9}
-.table1_2 thead{border: 1px solid #b9b9b9;background-color: #f6f6f6;text-align: left;}
-.table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 3px;height: 38px;line-height: 38px;}
+.table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353;border: 1px solid #b2b2b2}
+.table1_2 thead{border: 1px solid #b9b9b9;background-color: #e8f2ff;text-align: left;}
+.table1_2 thead span{border-left: 0px solid #293d51;color: #313131;padding-left: 10px;height: 38px;line-height: 38px;}
+.table1_2 thead p span{padding-left: 3px;}
 .table1_2 th{color: #000;height: 30px}
 .table1_2 td{height: 30px;position: relative;z-index: 1}
-.table1_2 tr:nth-child(odd){background-color: #eee;}
+.table1_2 tr:nth-child(odd){background-color: #f3f8ff;}
 .action span{width: 100px;height: 22px;border: 0px solid #00ccab;cursor: pointer;line-height: 22px;margin: 0 10px;color: #00ccab}
 .action span:hover,.action .operate{border: 1px solid #00ccab;background: url(../img/xuebi_y.png) no-repeat 64px -247px #fff;width: 98px}
 .delete span:hover{border: 0;background: none;width: 90px}
@@ -127,10 +129,10 @@ button{cursor: pointer;border-radius: 2px}
 /*缴费记录*/
 .all_input .find .search2{background-color: #f6f6f6;color: #535353;border: 1px solid #dcdcdc}
 .induce thead{text-align: right;border: 0;}
-.induce thead td{height: 43px}
-.induce thead tr:nth-child(odd){background-color: #dedede;}
+.induce thead td{height: 38px}
+.induce thead tr:nth-child(odd){background-color: #e8f2ff;}
 .induce thead span{margin-right: 20px;border: 0}
-.induce thead div{border-left: 0px solid #293d51;height: 43px}
+.induce thead div{border-left: 0px solid #293d51;height: 38px}
 .induce thead p{display: inline-block;cursor: pointer;}
 .induce thead div i{position: relative;top: 8px}
 .induce thead div span{position: relative;top: 3px}
@@ -148,7 +150,7 @@ button{cursor: pointer;border-radius: 2px}
 .creat li{float: left;width: 38%;height: 55px ;line-height: 55px;padding-right: 11%;text-align: right;}
 .creat li label{position: relative;}
 .creat li span{text-align: right;}
-.creat li input[type="text"]{width: 170px;height: 28px}
+.creat li input[type="text"]{width: 165px;height: 28px;padding-left: 5px;}
 .creat li input[type="button"]{position: absolute;right: -75px;width: 60px;height: 30px;color: #fff;background-color: #00ccab;top: -5px}
 .creat li:nth-child(odd){text-align: right;padding-right: 15%;width: 34.5%;}
 .creat .upload{border: 1px solid #eaeaea;width: 896px;border-top: 0;padding: 0;padding-top: 0;}
@@ -166,12 +168,13 @@ button{cursor: pointer;border-radius: 2px}
 .sel_ul li:hover li{color: #000}
 .sel_ul li li:hover{color: #00ccab}
 .save1_2{margin-top: 175px;margin-bottom: 20px;text-align: center;}
-.save1_2 input{width: 82px;height: 40px;color: #fff;background-color: #00ccab;margin: 0 19px}
+.save1_2 input{width: 82px;height: 34px;color: #fff;background-color: #00ccab;margin: 0 19px}
 .save1_2 .back{background-color: #fff;color: #535353;border: 1px solid #bebebe}
 .approve{margin-bottom: 190px;}
-.approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 325px -283px;margin-top: 40px;}
-.approve .textarea1_2{margin-top: -17px;width: 48%;padding-right: 1%;}
-.textarea1_2 textarea{width: 66%;position: relative;top: 40px}
+.approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 307px -284px;margin-top: 40px;}
+.max800 .textarea1_2{margin-top: -17px;width: 48%;padding-right: 1%;}
+.textarea1_2 textarea{width: 65%;position: relative;top: 20px}
+.creat .textarea1_2 span{position: relative;top: -20px}
 .test_tab{position: fixed;left: 150px;top: 150px;background-color: #fff;box-shadow: 0 0 15px #000;z-index: 4;border: 1px solid #7b7773}
 .test_tab p{height: 42px;background-color: #f6f7fb;position: relative;padding-left: 20px;line-height: 42px;}
 .test_tab ul{line-height: 55px;}
@@ -187,25 +190,26 @@ button{cursor: pointer;border-radius: 2px}
 .file_edit{display: none;}
 /*3-1的结构*/
 .all_input31 .find{left: 61%}
-.max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;}
+.max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;position: relative;}
 .max800 p,.max800_p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
 .max800 ul{width: 500px;}
-.max800 li{height: 55px;line-height: 55px;}
+.max800 li{height: 43px;line-height: 43px;}
 .max800 li span{width: 100px;text-align: right;position: relative;}
-.max800 li input{width: 225px;height: 23px;border-radius: 2px;padding-left: 5px;}
-.max800 li select{width: 146px;height: 25px;border-radius: 2px}
+.max800 li input{width: 225px;height: 28px;border-radius: 2px;padding-left: 5px;}
+.max800 li select{width: 146px;height: 30px;border-radius: 2px}
 .max800 li textarea{width: 230px;border-radius: 2px;border-color: #8c8c8c}
-.max800 .z-in3,.max900_1 .z-in3{margin-top: 0;background-position: 345px -284px;width: 400px}
-.max800 .z-in3_short{background-position: 265px -284px;width: 300px}
+.max800 .z-in3,.max900_1 .z-in3{margin-top: 0;background-position: 307px -284px;width: 400px}
+.max800 .z-in3_short{background-position: 244px -288px;width: 300px}
 .max800 li .file_del{width: 14px;display: inline-block;right: -18px}
 /*4-1黑名单*/
 .all_input31 .choice{margin-left: 20px;}
-.all_input31.all_input33 .find{left: 72%}
+.all_input31 .choice2{margin-left: 50px;}
+.all_input31.all_input33 .find{left: 74%}
 .iconfont1{width: 26px;height: 24px;background: url(../img/xuebi_y.png) no-repeat 0px -342px;}
 .max628{width: 628px}
 /*9-1*/
 .max800 li label{margin-right: 10px;}
-.max800 li input[type="checkbox"],.max800 li input[type="radio"]{width: auto;margin-right: 5px;position: relative;top: 4px}
+.max800 li input[type="checkbox"],.max800 li input[type="radio"]{width: auto;margin-right: 5px;position: relative;top: 11px}
 .max800 label span{width: auto}
 .max628 li select{width: 230px;margin-left: -3px;}
 /*8-1*/
@@ -222,17 +226,17 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .mark{border-top: 1px solid #eaeaea;color: #878787;width: 100%;padding: 10px 0;font-size: 12px;}
 .creat li select{width: 170px;height: 30px}
 .max900_1 .z-in3,.max900_1 .creat li{width: 34.5%;padding-right: 15%;}
-.max900_1 .creat .address{width: 425px;background-position: 450px -283px;}
+.max900_1 .creat .address{width: 425px;background-position: 423px -284px;}
 .max900_1 .address input[type="text"]{width: 285px}
 .max800_p{width: 888px;}
 /*右下角弹窗*/
-.frame_win{width: 255px;height: 155px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px;background-color: #fff;}
+.frame_win{width: 200px;height: 100px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px;background-color: #fff;font-size: 12px;}
 .win_p{width: 100%;background-color: #73b2ff;color: #fff;height: 35px;line-height: 35px;text-align: center;position: relative;}
 .win_p a{position: absolute;right: 0px;top: 0px;width: 35px;height: 35px;background: url(../img/xuebi_y.png) no-repeat 7px -369px;}
 .frame_win ul{padding: 5px 0}
 .frame_win li{cursor: pointer;color: #73b2ff;height: 28px;line-height: 28px;text-align: center;}
 .frame_win li:hover{text-decoration: underline;}
-.max1260_2 .time .demo-content{margin-top: 13px;}
+.max1260_2 .time .demo-content{margin-top: 0px;}
 /*2-1查看*/
 .wid_look{width: 898px;border: 1px solid #b9b9b9}
 .wid_look tbody{width: 896px}
@@ -246,15 +250,15 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .index_main .max800{padding-bottom: 0;}
 .index_main .max800 input{line-height: 23px;}
 .index_main .max800 ul{padding: 10px 0;}
-
-
-
-
-
-
-
-
-
+/*添加图片*/
+.creat #fileList1 ul,.creat #fileList2 ul{border: 0;float: none;}
+.creat #fileList1 li,.creat #fileList2 li{width: auto;padding: 0}
+.add_img{float: left;width:896px;border:1px solid #eaeaea;border-top: 0;height:200px;margin-bottom: 0px}
+.img_char{margin-left: 20px;font-size: 12px;}
+.load_img{position: absolute;top: 58px;width: 280px;left: 460px}
+.load_img .add_img{width: 100%;border: 0;height: 241px}
+#fileList2{margin-top: 10px; padding-top:10px; font-size: 13px; width:275px;border: 1px solid #eaeaea;height: 200px}
+.demo-content{margin-top: 15px;}
 
 
 

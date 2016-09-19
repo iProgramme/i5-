@@ -191,7 +191,7 @@ UploadAssist.prototype = {
                         li.style.cssFloat = "left";  
                     }  
   
-                    li.style.margin = "5px";  
+                    li.style.margin = "15px";  
                     li.appendChild(main);  
                     ul.appendChild(li);  
                     var div = $(main).children("div").get(0);  
@@ -678,8 +678,8 @@ var perviewImage = {
       //text.innerHTML = file;  
   
   
-        var top = 0 - window.parseInt(style.width) +18;  
-        var right = 0 - window.parseInt(style.width) + 18;  
+        var top = 0 - 118;  
+        var right = 0 - 18;  
         var close = document.createElement("img");  
         close.setAttribute("name", name);  
         close.src = this.closeImg.before;  
