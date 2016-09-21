@@ -49,13 +49,14 @@ button{cursor: pointer;border-radius: 2px}
 
 /*common*/
 #side-menu{padding-bottom: 75px;}
-.common_top{height: 75px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
+.common_top{height: 76px;background-color: #444444;width: 100%;color: #fff;padding: 0 30px}
 .common_top p{font-size: 18px;line-height: 75px;}
 .common_top li{float: left;cursor: pointer;}
 .common_top .iconfont{margin-top: 5px;}
 .common_top li:last-child .iconfont{font-size: 24px;}
 .sidebar-collapse,.nav ul{background-color: #213240;height: 100%}
-.common_top li span{width: 100%;text-align: center;height: 35px;line-height: 35px;}
+.common_top li span{width: 100%;text-align: center;height: 35px;line-height: 25px;}
+.common_top li .iconfont{line-height: 45px;}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
@@ -139,14 +140,14 @@ button{cursor: pointer;border-radius: 2px}
 .induce thead span{margin-right: 20px;border: 0}
 .induce thead div{border-left: 0px solid #293d51;height: 38px}
 .induce thead p{display: inline-block;cursor: pointer;}
-.induce thead div i{position: relative;top: 8px}
-.induce thead div span{position: relative;top: 3px}
+.induce thead div i{position: relative;top: 5px}
+.induce thead div span{position: relative;top: 0px}
 .induce thead h3 span{top: 0px}
 .induce thead h3 {text-align: left;font-weight: normal;float: left;}
 .tab_checkbox input{opacity: 0}
 .tab_checkbox span{width: 18px;height: 18px;background: url(../img/xuebi_y.png) no-repeat 0px -198px;position: relative;top: 3px}
 .tab_checkbox .checkbox_active{background: url(../img/xuebi_y.png) no-repeat -47px -199px;}
-.induce .top0{top: 4px}
+.induce .top0{top: 1px}
 .all_input .lie2{left: 65%;width: 220px}
 /*新建申请*/
 .creat{width: 100%;margin-bottom: 30px;}
@@ -235,9 +236,9 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .max900_1 .address input[type="text"]{width: 285px}
 .max800_p{width: 888px;}
 /*右下角弹窗*/
-.frame_win{width: 200px;height: 100px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 10px;right: 10px;border-radius: 2px;background-color: #fff;font-size: 12px;}
-.win_p{width: 100%;background-color: #73b2ff;color: #fff;height: 35px;line-height: 35px;text-align: center;position: relative;}
-.win_p a{position: absolute;right: 0px;top: 0px;width: 35px;height: 35px;background: url(../img/xuebi_y.png) no-repeat 7px -369px;}
+.frame_win{width: 180px;height: 100px;border: 1px solid #73b2ff;padding: 1px;position: fixed;bottom: 20px;right: 20px;border-radius: 2px;background-color: #fff;font-size: 12px;}
+.win_p{width: 100%;background-color: #73b2ff;color: #fff;height: 28px;line-height: 28px;text-align: center;position: relative;}
+.win_p a{position: absolute;right: 0px;top: 0px;width: 28px;height: 28px;background: url(../img/xuebi_y.png) no-repeat 4px -372px;}
 .frame_win ul{padding: 5px 0}
 .frame_win li{cursor: pointer;color: #73b2ff;height: 28px;line-height: 28px;text-align: center;}
 .frame_win li:hover{text-decoration: underline;}
