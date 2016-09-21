@@ -59,10 +59,10 @@ button{cursor: pointer;border-radius: 2px}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
-.main{padding: 20px 35px;min-height: 600px\9}
+.main{padding: 5px 35px 20px;min-height: 600px\9}
 #content-main{height: 700px\9;padding-bottom: 150px\9;overflow: auto\9;}
 /*面包屑*/
-.main .header,.index_main .header{margin-bottom: 20px;}
+.main .header,.index_main .header{margin-bottom: 5px;}
 .main .header li,.index_main .header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
 .main .header span,.index_main .header span{height: 40px;line-height: 40px;color: #535353;background-color: #e8e8e8;}
 .main .header li:first-child,.index_main .header li:first-child{text-align: center;background: none;padding-left: 0;}
@@ -141,7 +141,7 @@ button{cursor: pointer;border-radius: 2px}
 .induce thead p{display: inline-block;cursor: pointer;}
 .induce thead div i{position: relative;top: 8px}
 .induce thead div span{position: relative;top: 3px}
-.induce thead h3 span{top: 3px}
+.induce thead h3 span{top: 0px}
 .induce thead h3 {text-align: left;font-weight: normal;float: left;}
 .tab_checkbox input{opacity: 0}
 .tab_checkbox span{width: 18px;height: 18px;background: url(../img/xuebi_y.png) no-repeat 0px -198px;position: relative;top: 3px}

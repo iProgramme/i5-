@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+<body class="main">
+    <!-- 面包屑 -->
+    <div class="header">
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>车辆预约</li>
+            <li>外来车辆预约审批</li>
+        </ul>
+    </div>
+    <!-- 面包屑 -->
+
+    <!-- nav条 -->
+    <div class="tab1_2 clear">
+        <ul>
+            <li class="tab_active" style="border-top-left-radius: 2px;border-bottom-left-radius: 2px">轿车预约审批</li>
+            <li style="border-top-right-radius: 2px;border-bottom-right-radius: 2px">大型车辆预约审批</li>
+        </ul>
+    </div>
+    <!-- nav条 -->
+
+    <!-- 轿车管理 -->
+    <div class="max1260 ">
+        <!-- 输入框部分 -->
+        <div class="all_input clear all_input33">
+            <p class="head_p">查询<span>添加</span></p>
+            
+            <ul class="dib fl">
+                <li>
+                    <label>
+                        <span>车牌号：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+            </ul>
+            <div class="choice dib">
+                <label>
+                    <span>状&nbsp;&nbsp;态&nbsp;&nbsp;：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>正常</option>
+                        <option>️已注销</option>
+                    </select>
+                </label>
+            </div>
+            <div class="find dib">
+                <button class="search1">查询</button>
+            </div>
+        </div>
+        <!-- 输入框部分 -->
+        <!-- 表格部分 -->
+        <div class="table1_2 induce">
+            <table>
+                <thead><tr><td colspan="10"><div class="clear"><h3><span>轿车预约</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>导出</span></p></div></td></tr></thead>
+                <tbody>
+                    <tr>
+                        <th>车牌号码</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>车辆类别</th>
+                        <th>登记时间</th>
+                        <th>用户类型</th>
+                        <th>金额</th>
+                        <th>收费员</th>
+                        <th>所属学校</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="pages">
+                <ul>
+                    <li>共28条</li>
+                    <li>第1/1页</li>
+                    
+                    <li><a href="javascript:void(0)" class="pre_page"></a></li>
+                    <li>
+                        <ul class="change">
+                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" class="next_page active"></a></li>
+                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">前往</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 表格部分 -->
+    </div>
+    <!-- 轿车管理 -->
+
+    <!-- 大型车辆管理 -->
+    <div class="max1260 disN">
+        <!-- 输入框部分 -->
+        <div class="all_input clear all_input33">
+            <p class="head_p">查询 <span>添加</span></p>
+            
+            <ul class="dib fl">
+                <li>
+                    <label>
+                        <span>车牌号：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+            </ul>
+            <div class="choice dib">
+                <label>
+                    <span>状&nbsp;&nbsp;态&nbsp;&nbsp;：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>正常</option>
+                        <option>️已注销</option>
+                    </select>
+                </label>
+            </div>
+            <div class="find dib">
+                <button class="search1">查询</button>
+            </div>
+        </div>
+        <!-- 输入框部分 -->
+        <!-- 表格部分 -->
+        <div class="table1_2 induce">
+            <table>
+                <thead><tr><td colspan="10"><div class="clear"><h3><span>大型车辆预约</span></h3><p><i class="icon iconfont top0">&#xe60a;</i><span>批量打印</span></p><p><i class="icon iconfont">&#xe60b;</i><span>导出</span></p></div></td></tr></thead>
+                <tbody>
+                    <tr>
+                        <th>车牌号码</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>车辆类别</th>
+                        <th>登记时间</th>
+                        <th>用户类型</th>
+                        <th>金额</th>
+                        <th>收费员</th>
+                        <th>所属学校</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>买买买</td>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li>查看</li>
+                                <li>修改</li>
+                                <li>打印</li>
+                                <li>上传</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="pages">
+                <ul>
+                    <li>共28条</li>
+                    <li>第1/1页</li>
+                    
+                    <li><a href="javascript:void(0)" class="pre_page"></a></li>
+                    <li>
+                        <ul class="change">
+                            <li><a href="javascript:void(0)" class="active">1</a></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" class="next_page active"></a></li>
+                    <li>跳转到第<input type="text">页&nbsp;<a href="javascript:void(0)" class="active1">前往</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 表格部分 -->
+    </div>
+    <!-- 大型车辆管理 -->
+    
+</body>
+<script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+    // 点击打开表格的操作
+    $(".action span").click(function() {
+       
+        if ($(this).next('ul').is(':hidden')) {
+            $(".action span").removeClass('operate');
+            $(this).addClass('operate');
+            $(".action").children('ul').hide();
+            $(".action span").parents('td').css('z-index','1');
+            $(this).parents('td').css('z-index','2');
+            $(this).next('ul').show();
+            
+        } else {
+            $(this).next('ul').hide();
+            $(".action span").removeClass('operate');
+
+        }
+    });
+
+    // 切换待审核nav之类的
+    $(".tab1_2 li").click(function () {
+        var num=$(this).index();
+        $(".tab1_2 li").removeClass('tab_active');
+        $(this).addClass('tab_active');
+        $(".max1260").hide();
+        $(".max1260").eq(num).show();
+    })
+    // 点击翻页
+    $(".change a").click(function () {
+        $(".change a").removeClass('active');
+        $(this).addClass('active');
+        var num1=$(this).index();
+        var num2=$(".change a:last-child").index();
+        // 判断是不是第一个
+        if (num2==0) {
+
+        } else {}
+        // 判断是不是最后一个
+        if (num1==num2) {
+
+        } else {}
+    })
+
+    
+</script>
+</html>
+
+ 

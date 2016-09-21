@@ -1686,9 +1686,6 @@
         $(this).addClass('tab_active');
         $(".max1260").hide();
         $(".max1260").eq(num).show();
-        $(".zyupload").removeAttr('id', 'zyupload');
-        $(".zyupload").children('form').remove();
-        $(".max1260").eq(num).find('.zyupload').attr('id', 'zyupload');
         
     })
 
@@ -1714,8 +1711,6 @@
         $(".max1260").hide();
         $(".max1260_5").show();
         $(".zyupload").children('form').remove();
-        $(".zyupload").removeAttr('id', 'zyupload');
-        $(".max1260_5").find('.zyupload').attr('id', 'zyupload');
         // 图片
         $(function () {  
             //var btn = $("#Button1");  
