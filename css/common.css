@@ -290,23 +290,23 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .head_p71{background: url(../img/xuebi_y.png) no-repeat 0px 8px;line-height: 40px;}
 .head_p71{height: 40px;padding-left: 30px;cursor: pointer;}
 /*登陆页面*/
-.land_main{max-width: 1400px;margin: 0 auto;height: 365px;margin-top: 120px\9;position: relative;top: calc(50% - 180px)}
+.land_main{width: 1100px;margin: 0 auto;height: 365px;margin-top: 120px\9;position: relative;top: calc(50% - 130px)}
 .land_content{width: calc(50% - 1px);float: left;height: 100%;width: 49.5%\9}
 .land_content1{border-right: 1px solid #5a6379;text-align: center;}
-.land_content1 img{position: relative;top: 101px}
+.land_content1 img{position: relative;top: 101px;width: 71%}
 .land_content2{padding-left: 10%;width: 40%}
-.land_char{font-size: 41px;margin-bottom: 10px;color: #fff;font-family: "SimSun"!important;}
-.land_content2 li{line-height: 50px;border-bottom: 1px solid #5a6379;width: 80%;margin-top: 20px;}
-.land_text{padding-left: 40px;font-size: 18px;color: #5a6379}
-.land_content2 input{border: 0;background-color: #333e5a;color: #fff;height: 40px;width: 64%;padding-left: 10px;font-size: 18px;}
+.land_char{font-size: 20px;margin-bottom: 10px;color: #fff;font-family: "SimSun"!important;}
+.land_content2 li{line-height: 50px;border-bottom: 1px solid #5a6379;width: 80%;margin-top: 30px;}
+.land_text{padding-left: 27px;font-size: 18px;color: #5a6379}
+.land_content2 input,.land_content2 a{border: 0;background-color: #333e5a;color: #fff;height: 40px;width: 64%;padding-left: 10px;font-size: 16px;font-family: "SimSun"!important;line-height: 40px;border-radius: 2px}
 .land_content2 .test{width: 63%}
-.land_content2 .test input{width: 50%}
-.test_num{background-color: #575757;position: relative;top: 5px;height: 30px;padding: 0 10px;margin-left: 10px;left: 75px;line-height: 30px;color: #fff;cursor: pointer;}
+.land_content2 .test input{width: calc(100% - 180px);width: 29%\9;}
+.test_num{background-color: #575757;position: relative;top:0;height: 30px;padding: 0 10px;margin-left: 10px;left: 145px;line-height: 30px;color: #fff;cursor: pointer;}
 .land_content2 .land_btn{border-bottom: 0;text-align: center;}
-.land_content2 .land_btn input{width: 100%;height: 60px;background-color: #00ccab;font-size: 40px;}
-.land_text{background: url(../img/land_bg.png) no-repeat;}
-.land_text1{background-position: 3px 11px;}
-.land_text2{background-position: 3px -47px;}
-.land_text3{background-position: 3px -122px;}
+.land_content2 .land_btn input,.land_content2 .land_btn a{width: 100%;background-color: #00ccab;font-size: 20px;}
+.land_text{background: url(../img/land_bg.png) no-repeat;height: 30px;position: relative;top: 10px}
+.land_text1{background-position: -2px 3px;}
+.land_text2{background-position: -2px -56px;}
+.land_text3{background-position: -2px -132px;}
 
 
