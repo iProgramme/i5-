@@ -11,8 +11,13 @@
 
     <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
     <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/default.css" />
+    <script charset="utf-8" src="../js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="../js/zh_CN.js"></script>
     <style type="text/css">
         .save1_2{margin-top: 10px;width: 900px}
+        .max800{width: 800px;padding-bottom: 0;}
+        .max1260{max-width: 1260px}
     </style>
 </head>
 <body class="main">
@@ -36,64 +41,326 @@
 
 
     <!-- app -->
-    <!-- 输入框及表格部分 -->
-    <div class="max900 max1260_1">
+    <div class="max900 max1260 max1260_1">
+        <!-- 输入框部分 -->
+        <div class="all_input clear all_input33">
+            <p class="head_p">查询 <span>添加</span></p>
+            
+            <ul class="dib fl">
+                <li>
+                    <label>
+                        <span>标题：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+            </ul>
+            <div class="choice dib">
+                <label>
+                    <span>信息类型：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>交通新闻</option>
+                        <option>️国家法规政策</option>
+                        <option>信息公告</option>
+                        <option>教育宣传</option>
+                        <option>校园交通规则</option>
+                        <option>办事指南</option>
+                        <option>使用指南</option>
+                    </select>
+                </label>
+            </div>
+            <div class="find dib">
+                <button class="search1">查询</button>
+            </div>
+        </div>
+        <!-- 输入框部分 -->
         <!-- 表格部分 -->
         <div class="table1_2 induce">
-            <ul class="notice">
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                
-            </ul>
-
+            <table>
+                <thead><tr><td colspan="8"><div class="clear"><h3><span>公告</span></h3></div></td></tr></thead>
+                <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>标题</th>
+                        <th>信息类型</th>
+                        <th>阅读数</th>
+                        <th>创建人</th>
+                        <th>发布时间</th>
+                        <th>所属学校</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
             <div class="pages">
                 <ul>
                     <li>共28条</li>
@@ -115,68 +382,329 @@
         </div>
         <!-- 表格部分 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- app -->
 
     <!-- web -->
-    <!-- 输入框及表格部分 -->
-    <div class="max900 max1260_2 disN">
+    <div class="max900 max1260 max1260_1">
+        <!-- 输入框部分 -->
+        <div class="all_input clear all_input33">
+            <p class="head_p">查询 <span>添加</span></p>
+            
+            <ul class="dib fl">
+                <li>
+                    <label>
+                        <span>标题：</span><input type="text" placeholder="请输入">
+                    </label>
+                </li>
+            </ul>
+            <div class="choice dib">
+                <label>
+                    <span>信息类型：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>交通新闻</option>
+                        <option>️国家法规政策</option>
+                        <option>信息公告</option>
+                        <option>教育宣传</option>
+                        <option>校园交通规则</option>
+                        <option>办事指南</option>
+                        <option>使用指南</option>
+                    </select>
+                </label>
+            </div>
+            <div class="find dib">
+                <button class="search1">查询</button>
+            </div>
+        </div>
+        <!-- 输入框部分 -->
         <!-- 表格部分 -->
         <div class="table1_2 induce">
-            <ul class="notice">
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice.png" alt="">
-                    <p>这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                <li>
-                    <img src="../img/notice_visited.png" alt="">
-                    <p class="visited">标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</p>
-                    <span>2016-09-13 14:52:57</span>
-                </li>
-                
-            </ul>
-
+            <table>
+                <thead><tr><td colspan="8"><div class="clear"><h3><span>公告</span></h3></div></td></tr></thead>
+                <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>标题</th>
+                        <th>信息类型</th>
+                        <th>阅读数</th>
+                        <th>创建人</th>
+                        <th>发布时间</th>
+                        <th>所属学校</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>买买买</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>09234</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>卡萨接电话</td>
+                        <td>09234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>卖卖卖</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>234</td>
+                        <td>奥斯卡接电话</td>
+                        <td>234234</td>
+                        <td>皇家理工</td>
+                        <td class="action">
+                            <span>操作</span>
+                            <ul class="disN">
+                                <li class="movement1">查看</li>
+                                <li class="movement2">修改</li>
+                                <li>删除</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
             <div class="pages">
                 <ul>
                     <li>共28条</li>
@@ -198,12 +726,10 @@
         </div>
         <!-- 表格部分 -->
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- web -->
 
 
     <!-- app新闻 -->
-    <!-- 输入框及表格部分 -->
     <div class="max900 max1260_3 disN ">
         <article>
             <h2>标题可以随便写，不过我要写的长一点，最后的那个时间不能受影响</h2>
@@ -223,13 +749,11 @@
             <span class="mark">管理员发送于 2016-09-13 15:34:01</span>
         </article>
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- app新闻 -->
     
 
 
     <!-- web新闻 -->
-    <!-- 输入框及表格部分 -->
     <div class="max900 max1260_4 disN ">
         <article>
             <h2>标这个要求字一定要不一样，不过我要写的长一点，最后的那个时间不能受影响</h2>
@@ -250,24 +774,76 @@
             <span class="mark">管理员发送于 2016-09-13 15:34:01</span>
         </article>
     </div>
-    <!-- 输入框及表格部分 -->
     <!-- web新闻 -->
+    
 
+    <!-- app修改 -->
+    <div class="max900 max1260_5 approve max800 max628 disN">
+        <p>修改</p>
+        <ul>
+            <li class="z-in3">
+                <span>标&nbsp;&nbsp;&nbsp;题&nbsp;&nbsp;&nbsp;：&nbsp;</span><input type="text">
+            </li>
+            <li class="z-in3">
+                <span>信息类型：&nbsp;</span>
+                <select>
+                    <option>请选择</option>
+                    <option>交通新闻</option>
+                    <option>️国家法规政策</option>
+                    <option>信息公告</option>
+                    <option>教育宣传</option>
+                    <option>校园交通规则</option>
+                    <option>办事指南</option>
+                    <option>使用指南</option>
+                </select>
+            </li>
+            <li class="textarea_li"><span>备&nbsp;&nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;：&nbsp;</span><form>
+            <textarea name="content" style="width:800px;height:200px;"></textarea>
+            <p class="textarea_p">
+                您当前输入了 <span class="word_count1">022</span> 个文字。
+            </p>
+        </form></li>
+        </ul>
+    </div>
+    <!-- app修改 -->
 
-    <!-- 返回 -->
+    <!-- app新闻返回 -->
     <div class="save1_2 disN save2_2">
         <input type="button" name="" value="返回" class="back">
     </div>
-    <!-- 返回 -->
-    <!-- 返回 -->
+    <!-- app新闻返回 -->
+    <!-- web新闻返回 -->
     <div class="save1_2 disN save3_2">
         <input type="button" name="" value="返回" class="back">
     </div>
-    <!-- 返回 -->
+    <!-- web新闻返回 -->
+    <!-- app修改返回 -->
+    <div class="save1_2 disN save4_2">
+        <input type="button" name="" value="保存" class="save">
+        <input type="button" name="" value="返回" class="back">
+    </div>
+    <!-- app修改返回 -->
 
 </body>
 <script type="text/javascript">
-    
+    // 点击打开表格的操作
+    $(".action span").click(function() {
+       
+        if ($(this).next('ul').is(':hidden')) {
+            $(".action span").removeClass('operate');
+            $(this).addClass('operate');
+            $(".action").children('ul').hide();
+            $(".action span").parents('td').css('z-index','1');
+            $(this).parents('td').css('z-index','2');
+            $(this).next('ul').show();
+            
+        } else {
+            $(this).next('ul').hide();
+            $(".action span").removeClass('operate');
+
+        }
+    });
+
     // 点击翻页
     $(".change a").click(function () {
         $(".change a").removeClass('active');
@@ -304,18 +880,39 @@
         $(".max900,.save1_2").hide();
         $(".max1260_2").show()
     })
+    // 点击返回的时候
+    $(".save4_2 .back").click(function () {
+        $(".max900,.save1_2").hide();
+        $(".max1260_1").show()
+    })
 
-    // 点击新闻标题看新闻
-    $(".max1260_1 .notice p").click(function () {
-        $(".max900").hide();
+    // 点开app-查看
+    $(".movement1").click(function () {
+        $(".max1260_1").hide();
         $(".max1260_3,.save2_2").show()
     })
-    // 点击新闻标题看新闻
+    // 点开app-修改
+    $(".movement2").click(function () {
+        $(".max1260_1").hide();
+        $(".max1260_5,.save4_2").show()
+    })
+   
+    // 点击web新闻标题看新闻
     $(".max1260_2 .notice p").click(function () {
         $(".max900").hide();
         $(".max1260_4,.save3_2").show()
     })
 </script>
-
+<script>
+    // 这个是比较复杂的文本编辑框
+    KindEditor.ready(function(K) {
+        K.create('textarea[name="content"]', {
+            afterChange : function() {
+                K('.word_count1').html(this.count());
+                K('.word_count2').html(this.count('text'));
+            }
+        });
+    });
+</script>
 
 </html>

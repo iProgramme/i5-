@@ -7,6 +7,7 @@ table{border-collapse:collapse;border-spacing:0;}
 ul,ol,li{list-style:none;font-family: "Microsoft Yahei"}
 a{text-decoration:none;font-family: "Microsoft Yahei"}
 img{border:0;}
+textarea{font-size: 14px;font-family: "Microsoft Yahei";}
 input{outline:none;font-family: "Microsoft Yahei";border: 1px solid #8c8c8c;border-radius: 2px}
 span,a,i{ display: inline-block;font-family: "Microsoft Yahei"}
 a:focus,area{outline:none;font-family: "Microsoft Yahei"}
@@ -15,10 +16,11 @@ a:focus,area{outline:none;font-family: "Microsoft Yahei"}
 select{border-radius: 2px;color: #535353}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
 .over_vis{overflow: visible;}
+.over_auto{overflow: auto;}
 input[type="button"]{cursor: pointer;border-radius: 2px;border: 0}
 .dib{display: inline-block;}
-.nav .iconfont,.nav .iconfont:last-child{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px;width: 22px}
-.nav .iconfont:last-child{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
+.nav .iconfont,.nav .last_icon{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px;width: 22px}
+.nav .last_icon{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
 .nav .active .icon2{color: #fff;transform:rotate(90deg);background-color: #fff;}
 span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 16px}
 .max1260{max-width: 1260px}
@@ -58,6 +60,7 @@ button{cursor: pointer;border-radius: 2px}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
 .main{padding: 20px 35px;min-height: 600px\9}
+#content-main{height: 700px\9;padding-bottom: 150px\9;overflow: auto\9;}
 /*面包屑*/
 .main .header,.index_main .header{margin-bottom: 20px;}
 .main .header li,.index_main .header li{float: left;text-align: center;height: 40px;line-height: 40px;margin-right: 10px; padding: 0 0px 0 20px;background: url(../img/xuebi_y.png) no-repeat -87px -90px;}
@@ -91,6 +94,8 @@ button{cursor: pointer;border-radius: 2px}
 .all_input .find button{width: 82px;height: 34px;color: #fff;background-color: #00ccab;margin-right: 20px;font-size: 14px;margin-top: 20px;}
 .all_input .find .search1{background: url(../img/xuebi_y.png) no-repeat 54px -51px #00ccab;width: 82px;padding-right: 10px;border: 1px solid #00ccab}
 .all_input .find .search3{margin-left:106px;}
+.all_input73 .choice{top: -15px;left: 13%}
+.all_input73 .find{left: 40%;bottom: 7px}
 /*表格*/
 .table1_2{margin-top: 20px;}
 .table1_2 table{width: 100%;text-align: center;font-size: 12px;color: #535353;border: 1px solid #b2b2b2}
@@ -146,7 +151,7 @@ button{cursor: pointer;border-radius: 2px}
 /*新建申请*/
 .creat{width: 100%;margin-bottom: 30px;}
 .creat p{width: 100%;border-left: 3px solid #ff503f;padding-left: 10px;margin-bottom: 10px;height: 28px;line-height: 28px;}
-.creat ul{border: 1px solid #eaeaea;float: left;padding: 10px 0;width: 99.5%}
+.creat ul{border: 1px solid #eaeaea;padding: 10px 0;width: 99.5%;clear:both;zoom:1;overflow:hidden;}
 .creat li{float: left;width: 38%;height: 55px ;line-height: 55px;padding-right: 11%;text-align: right;}
 .creat li label{position: relative;}
 .creat li span{text-align: right;}
@@ -156,7 +161,7 @@ button{cursor: pointer;border-radius: 2px}
 .creat .upload{border: 1px solid #eaeaea;width: 896px;border-top: 0;padding: 0;padding-top: 0;}
 .creat .time p{border-left: 0;margin-bottom: 0;padding-left: 0;text-align: right;}
 .creat .time input[type="text"]{width: 100px}
-.creat .time{padding-right: 0%;width: 47.5%}
+.creat .time{padding-right: 0%;width: 48.8%}
 .creat .sel1_2{width: 160px;padding: 0;float:none;display: inline-block;border:1px solid #8c8c8c;height: 28px;line-height: 28px;text-align: left;padding-left: 10px;background: url(../img/xuebi_y.png) no-repeat 147px -218px;cursor: pointer;}
 .creat .sel_ul{width: 170px;position: absolute;left: 74px;top: 25px;padding: 0;border: 1px solid #8c8c8c;border-top: 0;padding-left: 0px;background-color: #fff;}
 .approve .sel_ul{left: 46px}
@@ -167,10 +172,9 @@ button{cursor: pointer;border-radius: 2px}
 .sel_ul li:hover{color: #00ccab;background-color: #f9f9f9;}
 .sel_ul li:hover li{color: #000}
 .sel_ul li li:hover{color: #00ccab}
-.save1_2{margin-top: 175px;margin-bottom: 20px;text-align: center;}
+.save1_2{margin-top: 30px;margin-bottom: 20px;text-align: center;}
 .save1_2 input{width: 82px;height: 34px;color: #fff;background-color: #00ccab;margin: 0 19px}
 .save1_2 .back{background-color: #fff;color: #535353;border: 1px solid #bebebe}
-.approve{margin-bottom: 190px;}
 .approve .z-in3{background: url(../img/xuebi_y.png) no-repeat 307px -284px;margin-top: 40px;}
 .max800 .textarea1_2{margin-top: -17px;width: 48%;padding-right: 1%;}
 .textarea1_2 textarea{width: 65%;position: relative;top: 20px}
@@ -182,17 +186,17 @@ button{cursor: pointer;border-radius: 2px}
 .test_tab p a{position: absolute;height: 40px;width: 40px;background: url(../img/xuebi_y.png) no-repeat -34px -217px;right: 20px}
 .test_tab p .sure{position: absolute;right: 20px;width: 60px;height: 28px;background-color: #fff;border: 1px solid #d2d2d2;top: 8px}
 
-.all_input .choice select{height: 30px;padding-right: 15px;}
+.all_input .choice select{height: 30px;padding-right: 15px;padding-right: 0\9;}
 /*2-3的结构*/
 .all_input33 ul{width: 30.75%}
 .all_input33 li{width: calc(100% - 20px)}
-.all_input33 .find{left: 50%}
+.all_input33 .find{left: 60%}
 .file_edit{display: none;}
 /*3-1的结构*/
 .all_input31 .find{left: 61%}
 .max800{width: 800px;border: 1px solid #dcdcdc;margin-bottom: 0;padding-bottom: 100px;position: relative;}
 .max800 p,.max800_p{padding-left: 10px;height: 33px;line-height: 33px;background-color: #e7e7e7;}
-.max800 ul{width: 500px;}
+.max800 ul{width: 500px;padding-top: 20px;}
 .max800 li{height: 43px;line-height: 43px;}
 .max800 li span{width: 100px;text-align: right;position: relative;}
 .max800 li input{width: 225px;height: 28px;border-radius: 2px;padding-left: 5px;}
@@ -212,6 +216,7 @@ button{cursor: pointer;border-radius: 2px}
 .max800 li input[type="checkbox"],.max800 li input[type="radio"]{width: auto;margin-right: 5px;position: relative;top: 11px}
 .max800 label span{width: auto}
 .max628 li select{width: 230px;margin-left: -3px;}
+.max628 .z-in3{background-position: 329px -290px;}
 /*8-1*/
 .notice li{height: 80px;line-height: 80px;position: relative;border: 1px solid #ddd}
 .notice li:first-child{border-top-right-radius: 2px;border-top-left-radius: 2px}
@@ -257,20 +262,51 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .img_char{margin-left: 20px;font-size: 12px;}
 .load_img{position: absolute;top: 58px;width: 280px;left: 460px}
 .load_img .add_img{width: 100%;border: 0;height: 241px}
-#fileList2{margin-top: 10px; padding-top:10px; font-size: 13px; width:275px;border: 1px solid #eaeaea;height: 200px}
+#fileList2{margin-top: 10px; padding-top:10px; font-size: 13px; width:275px;border: 0px solid #eaeaea;height: 200px}
 .demo-content{margin-top: 15px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
+.max800 .textarea_p{background-color: #fff;}
+.max800 li .word_count1{width: 35px}
+.max900 .textarea_li{height: auto;}
+.textarea_li form{position: relative;top: -30px;left: 100px}
+.save4_2{width: 800px}
+/*私信*/
+.look_talk{border: 1px solid #dfdfdf;border-radius: 2px}
+.talk_main .talk1{border: 1px solid #599eff;left: 45px}
+.talk_main .talk2{border: 1px solid #acceff;right: -120px}
+.talk_main .talk_all{width: 700px;position: relative;margin-bottom: 30px;padding: 16px 15px;border-radius: 10px}
+.talk_all .arrow{position: absolute;top: calc(50% - 30px);display:block;width:50px;height:50px;top: -5px\9}
+.talk1 .arrow{left: -50px}
+.talk2 .arrow{right: -40px;}
+.talk_all .arrow1{display:block;position:absolute;left:10px;top:10px;width:0;height:0;border-style:solid;border-width:20px;border-color:transparent #599eff transparent transparent;}
+.talk_all .arrow2{display:block;position:absolute;left:11px;top:10px;;width:0;height:0;border-style:solid;border-width:20px;border-color:transparent #fff transparent transparent;}
+.talk2 .arrow1{border-color:transparent  transparent  transparent #acceff;}
+.talk2 .arrow2{left:9px;border-color:transparent transparent transparent #fff ;}
+.talk_time{width: 100%;text-align: center;font-size: 12px;height: 40px;line-height: 40px;}
+.answer{border-radius: 2px;width: 888px;padding: 5px;border-color: #dfdfdf;padding-bottom: 30px;}
+.send_answer{padding: 20px 0;text-align: right;}
+.send_answer input{width: 85px;height: 34px;background-color: #00ccab;color: #fff;border-radius: 2px}
+.lost_char{height: 30px;margin-top: -30px;text-align: right;padding: 0 20px}
+.lost_char span{color: #e17a36}
+.head_p71{background: url(../img/xuebi_y.png) no-repeat 0px 8px;line-height: 40px;}
+.head_p71{height: 40px;padding-left: 30px;cursor: pointer;}
+/*登陆页面*/
+.land_main{max-width: 1400px;margin: 0 auto;height: 365px;margin-top: 120px\9;position: relative;top: calc(50% - 180px)}
+.land_content{width: calc(50% - 1px);float: left;height: 100%;width: 49.5%\9}
+.land_content1{border-right: 1px solid #5a6379;text-align: center;}
+.land_content1 img{position: relative;top: 101px}
+.land_content2{padding-left: 10%;width: 40%}
+.land_char{font-size: 41px;margin-bottom: 10px;color: #fff;font-family: "SimSun"!important;}
+.land_content2 li{line-height: 50px;border-bottom: 1px solid #5a6379;width: 80%;margin-top: 20px;}
+.land_text{padding-left: 40px;font-size: 18px;color: #5a6379}
+.land_content2 input{border: 0;background-color: #333e5a;color: #fff;height: 40px;width: 64%;padding-left: 10px;font-size: 18px;}
+.land_content2 .test{width: 63%}
+.land_content2 .test input{width: 50%}
+.test_num{background-color: #575757;position: relative;top: 5px;height: 30px;padding: 0 10px;margin-left: 10px;left: 75px;line-height: 30px;color: #fff;cursor: pointer;}
+.land_content2 .land_btn{border-bottom: 0;text-align: center;}
+.land_content2 .land_btn input{width: 100%;height: 60px;background-color: #00ccab;font-size: 40px;}
+.land_text{background: url(../img/land_bg.png) no-repeat;}
+.land_text1{background-position: 3px 11px;}
+.land_text2{background-position: 3px -47px;}
+.land_text3{background-position: 3px -122px;}
 
 

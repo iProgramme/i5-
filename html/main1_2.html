@@ -1236,13 +1236,13 @@
                 <li>
                     <label for="">
                         <span>车牌号码：</span>
-                        <input type="text">
+                        <input type="text" disabled="true" value="此框内容不可编辑">
                     </label>
                 </li>
                 <li>
                     <label for="">
                         <span>车辆所属人：</span>
-                        <input type="text">
+                        <input type="text" disabled="true" value="此框内容不可编辑">
                     </label>
                 </li>
                 <li>
@@ -1261,9 +1261,9 @@
         </div>
         <!-- 车辆信息 -->
         
-        <!-- 审批信息 -->
+        <!-- 车主信息 -->
         <div class="creat clear">
-            <p>审批信息</p>
+            <p>车主信息</p>
             <ul class="clear">
                 <li>
                     <label for="">
@@ -1298,13 +1298,13 @@
             </ul>
             <div class="add_img">  
           
-            <input id="Button1" type="button" value="选择文件" /><span class="img_char">(最多添加五张图片)</span>
+            <input id="Button1" type="button" value="选择证件照片" /><span class="img_char">(最多添加五张图片)</span>
             <!-- <input id="files1" type="button" value="上传" />   -->
             <!-- <div style="width: 420px; height: 180px; overflow:auto;border:1px solid #C0C0C0;">-->  
-            <div id="fileList1" style="margin-top: 10px; padding-top:10px; font-size: 13px; width:100%;border-top: 1px solid #eaeaea"></div>  
+            <div id="fileList1" style="margin-top: 10px; padding-top:10px; font-size: 13px; width:100%;border-top: 0px solid #eaeaea"></div>  
              </div>
         </div>
-        <!-- 审批信息 -->
+        <!-- 车主信息 -->
 
         <!-- 停放信息 -->
         <div class="creat clear over_vis">
@@ -1468,42 +1468,13 @@
             <input id="Button2" type="button" value="选择文件" /><span class="img_char">(最多添加五张图片)</span>
             <!-- <input id="files2" type="button" value="上传" />   -->
             <!-- <div style="width: 420px; height: 180px; overflow:auto;border:1px solid #C0C0C0;">-->  
-            <div id="fileList2" style="margin-top: 10px; padding-top:10px; font-size: 13px; width:100%;border-top: 1px solid #eaeaea"></div>  
+            <div id="fileList2" ></div>  
              </div>
             
         </div>
         <!-- 车主信息 -->
 
-        <!-- 审批信息 -->
-        <div class="creat clear approve over_vis">
-            <p>车主信息</p>
-            <ul style="height: 130px">
-                <li class="z-in3">
-                     <label for="">
-                         <span>状态：</span>
-                         <span class="sel1_2 change_value">请选择</span>
-                         <ul class="sel_ul disN">
-                             <li>
-                                 <span>通过</span>
-                             </li>
-                             <li>
-                                 <span>不通过</span>
-                             </li>
-                        </ul>
-                    </label>
-                </li>
-                <li class="textarea1_2">
-                    <label for="">
-                        <span>保卫处审批意见：</span>
-                        <textarea rows="6"></textarea>
-                    </label>
-                </li>
-                
-            </ul>
-            
-            
-        </div>
-        <!-- 审批信息 -->
+       
 
         <!-- 停放信息 -->
         <div class="creat clear over_vis">
@@ -1591,6 +1562,38 @@
             </ul>
         </div>
         <!-- 停放信息 -->
+
+        <!-- 审批信息 -->
+        <div class="creat clear approve over_vis">
+            <p>审核信息</p>
+            <ul style="height: 130px">
+                <li class="z-in3">
+                     <label for="">
+                         <span>状态：</span>
+                         <span class="sel1_2 change_value">请选择</span>
+                         <ul class="sel_ul disN">
+                             <li>
+                                 <span>通过</span>
+                             </li>
+                             <li>
+                                 <span>不通过</span>
+                             </li>
+                        </ul>
+                    </label>
+                </li>
+                <li class="textarea1_2">
+                    <label for="">
+                        <span>保卫处审批意见：</span>
+                        <textarea rows="6"></textarea>
+                    </label>
+                </li>
+                
+            </ul>
+            
+            
+        </div>
+        <!-- 审批信息 -->
+
 
         <!-- 保存 -->
         <div class="save1_2">
@@ -1813,6 +1816,8 @@
             upload.submitUpload();  
         });  
     }); 
+    // 表格点击选择全部
+   
 </script>
 
 
