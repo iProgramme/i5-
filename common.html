@@ -149,6 +149,7 @@
         <div id="page-wrapper" class="gray-bg dashbard-1">
             
             <div class="row J_mainContent" id="content-main">
+            <iframe src="html/index.html" class="J_iframe" style="display: block;border:0;" height="100%" width="100%"></iframe>
             </div>
             
             
@@ -216,7 +217,7 @@
         var num1=$(this).parents('li').parents('li').index()+1,
             num2=$(this).parents('.caidan_b').index()+1;
             src='html/main'+num1+'_'+num2+'.html';
-            frame= '<iframe class="J_iframe" width="100%" height="100%" style="display: block;border:0;min-height:600px\9;" src="' + src + '"></iframe>';
+            frame= '<iframe class="J_iframe" width="100%" height="100%" style="display: block;border:0;;" src="' + src + '"></iframe>';
         $("#content-main iframe").remove();
         $("#content-main").append(frame);
 
@@ -224,9 +225,14 @@
     // 点击展开二级菜单
     $('.caidan_a').click(function () {
         if ($(this).next('ul').is(':hidden')) {
+            $(".caidan_a .last_icon").css("transform","rotate(0deg)");
+            $(this).children(".last_icon").css("transform","rotate(90deg)");
+            $(".caidan_a .last_icon").removeClass('for_ie8');
+            $(this).children(".last_icon").addClass('for_ie8');
             $('#side-menu ul').hide(200);
             $(this).next('ul').show(200)
         } else {
+            $(".caidan_a .last_icon").css("transform","rotate(0deg)");
             $(this).next('ul').hide(200)
         }
     })

@@ -20,7 +20,8 @@ select{border-radius: 2px;color: #535353}
 input[type="button"]{cursor: pointer;border-radius: 2px;border: 0}
 .dib{display: inline-block;}
 .nav .iconfont,.nav .last_icon{font-size: 22px;padding: 0;color: #c6e2ff;text-align: center;position: relative;top: 3px;width: 22px}
-.nav .last_icon{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;}
+.nav .last_icon{float: right;width: 20px;overflow: hidden;line-height: 20px;height: 20px;margin-top: 15px;right: 15%;font-size: 14px;font-size: 0\9;background: url(../img/nav_arrow.png) no-repeat 0 2px\9;}
+.nav .for_ie8{background-position: 0 6px\9}
 .nav .active .icon2{color: #fff;transform:rotate(90deg);background-color: #fff;}
 span.nav-label{position: relative;top: 0px;height:55px;line-height: 55px;left: 16px}
 .max1260{max-width: 1260px}
@@ -309,5 +310,35 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .land_text1{background-position: -2px 3px;}
 .land_text2{background-position: -2px -56px;}
 .land_text3{background-position: -2px -132px;}
+.J_iframe{min-height: 600px\9}
+/*首页*/
+.max1000{width: 1000px;border: 10px;border: 1px solid #a0a0a0;border-radius: 2px;height: 450px;background: url(../img/index_bg.png) no-repeat 320px 68px;}
+.inform{width: 40px;position: relative;top: 218px;text-align: center;left: 473px;color: #fff}
+.max1000 p{padding: 10px 20px;position: relative;border: 1px solid #64b2ff;border-radius: 5px;display: inline-block;}
+.max1000 p a{border-bottom: 1px solid #fff}
+.max1000 p a:hover{border-bottom: 1px solid #64b2ff}
+.max1000 p span{color: #ffc444}
+.max1000 .option1{left: 385px;top: 19px}
+.max1000 .option2{left: -1px;top: 189px}
+.max1000 .option3{left: -110px;top: 352px}
+.max1000 .option4{left:175px;top: 198px}
+.max1000 .option5{left: -56px;top: 315px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
