@@ -252,7 +252,7 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .wid_look td{height: 40px;padding-left: 10px;}
 .wid_look .wid155{width: 145px;background-color: #f6f6f6;text-align: right;border-right: 1px solid #dcdcdc}
 /*设置*/
-#page-wrapper{position: relative;}
+#page-wrapper{position: absolute;}
 .index_main{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #fff;padding: 20px 35px}
 .index_main .max800{padding-bottom: 0;}
 .index_main .max800 input{line-height: 23px;}
