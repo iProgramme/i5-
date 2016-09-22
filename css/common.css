@@ -61,7 +61,7 @@ button{cursor: pointer;border-radius: 2px}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
-.main{padding: 5px 35px 20px;min-height: 600px\9}
+.main{padding: 5px 0px 20px 35px;min-height: 600px\9;margin-right: 35px;}
 #content-main{height: 700px\9;padding-bottom: 150px\9;overflow: auto\9;}
 /*面包屑*/
 .main .header,.index_main .header{margin-bottom: 5px;}
@@ -312,7 +312,7 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .land_text3{background-position: -2px -132px;}
 .J_iframe{min-height: 600px\9}
 /*首页*/
-.max1000{width: 1000px;border: 10px;border: 1px solid #a0a0a0;border-radius: 2px;height: 450px;background: url(../img/index_bg.png) no-repeat 320px 68px;}
+.max1000{max-width: 1000px;border: 10px;border: 1px solid #a0a0a0;border-radius: 2px;height: 450px;background: url(../img/index_bg.png) no-repeat 320px 68px;}
 .inform{width: 40px;position: relative;top: 218px;text-align: center;left: 473px;color: #fff}
 .max1000 p{padding: 10px 20px;position: relative;border: 1px solid #64b2ff;border-radius: 5px;display: inline-block;}
 .max1000 p a{border-bottom: 1px solid #fff}
