@@ -385,7 +385,7 @@
     <!-- app -->
 
     <!-- web -->
-    <div class="max900 max1260 max1260_1">
+    <div class="max900 max1260 max1260_2 disN">
         <!-- 输入框部分 -->
         <div class="all_input clear all_input33">
             <p class="head_p">查询 <span>添加</span></p>
@@ -883,17 +883,17 @@
     // 点击返回的时候
     $(".save4_2 .back").click(function () {
         $(".max900,.save1_2").hide();
-        $(".max1260_1").show()
+        $(".max1260_2").show()
     })
 
     // 点开app-查看
-    $(".movement1").click(function () {
+    $(".max1260_1 .movement1").click(function () {
         $(".max1260_1").hide();
         $(".max1260_3,.save2_2").show()
     })
     // 点开app-修改
-    $(".movement2").click(function () {
-        $(".max1260_1").hide();
+    $(".max1260_2 .movement2").click(function () {
+        $(".max1260_2").hide();
         $(".max1260_5,.save4_2").show()
     })
    
