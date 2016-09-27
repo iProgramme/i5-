@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="../baidu_upload/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="../baidu_upload/style.css" />
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+
+<body class="main user_main">
+    <!-- 面包屑 -->
+    <div class="header">
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>业务办理</li>
+            <li>车辆登记</li>
+        </ul>
+    </div>
+    <!-- 面包屑 -->
+
+
+    <!-- 车辆管理 -->
+    <div class="max900 approve">
+        <ul>
+            <li class="z-in3">
+                <label>
+                    <span>车牌号码：</span>
+                    <input type="text">
+                </label>
+            </li>
+            <li class="z-in3">
+                <label>
+                    <span>行驶证车辆所属人：</span>
+                    <input type="text">
+                </label>
+            </li>
+            <li class="z-in3">
+                <label>
+                    <span>手机号码：</span>
+                    <input type="text">
+                </label>
+            </li>
+            <li class="z-in3">
+                <label>
+                    <span>行驶证车辆类型号码：</span>
+                    <select>
+                        <option>请选择</option>
+                    </select>
+                </label>
+            </li>
+            <li class="z-in3">
+                <label>
+                    <span>粤通号码：</span>
+                    <input type="text">
+                    <i>(粤通卡输入卡号时不需要输入860或者440)</i>
+                </label>
+            </li>
+            <li class="z-in3">
+                <label>
+                    <span>住址类型：</span>
+                    <select>
+                        <option>请选择</option>
+                        <option>我擦</option>
+                        <option>随意</option>
+                    </select>
+                </label>
+            </li>
+            <li class="z-in3 long">
+                <label>
+                    <span>家庭住址：</span>
+                    <input type="text">
+                </label>
+            </li>
+        </ul>
+
+        <!-- 上传图片 -->
+        <div id="wrapper" class="clear">
+            <p class="baidu_up">车辆图片：</p>
+            <div id="container">
+                <!--头部，相册选择和格式选择-->
+
+                <div id="uploader">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <div id="filePicker"></div>
+                            <p>将照片拖到这里，最多5张，每张不大于1M</p>
+                        </div>
+                    </div>
+                    <div class="statusBar" style="display:none;">
+                        <div class="progress">
+                            <span class="text">0%</span>
+                            <span class="percentage"></span>
+                        </div><div class="info"></div>
+                        <div class="btns">
+                            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 上传图片 -->
+
+        <!-- 保存 -->
+        <div class="save1_2" style="margin-top: 30px">
+            <input type="button" name="" value="保存" class="save">
+        </div>
+        <!-- 保存 -->
+    </div>
+    <!-- 添加 -->
+</body>
+<script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="../baidu_upload/webuploader.js"></script>
+<script type="text/javascript" src="../baidu_upload/upload.js"></script>
+<script type="text/javascript">
+   
+    // 点击翻页
+    $(".change a").click(function () {
+        $(".change a").removeClass('active');
+        $(this).addClass('active');
+        var num1=$(this).index();
+        var num2=$(".change a:last-child").index();
+        // 判断是不是第一个
+        if (num2==0) {
+
+        } else {}
+        // 判断是不是最后一个
+        if (num1==num2) {
+
+        } else {}
+    })
+ 
+    // 点保存的时候判断
+    $(".save").click(function () {
+    
+        $(".z-in3 input").each(function () {
+
+            var value=$(this).val();
+            if (value=="") {
+                alert("带*号的为必填项，请填写完整")
+            } else {
+                $(".max800").hide();
+                $(".max1260").show()
+            } 
+        })
+    })
+
+    
+</script>
+</html>

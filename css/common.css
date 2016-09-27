@@ -1,8 +1,8 @@
 @charset "utf-8";
 *{margin:0;padding:0;}
 body{font-family:"Microsoft Yahei";background:#fff;color:#535353;padding:0;margin:0; overflow: hidden;font-size: 14px;}
-html{ overflow-x: hidden;background-color: #fff;}
-body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei"!important;}
+html{ overflow-x: hidden;background:none;}
+body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei";}
 table{border-collapse:collapse;border-spacing:0;}
 ul,ol,li{list-style:none;font-family: "Microsoft Yahei"}
 a{text-decoration:none;font-family: "Microsoft Yahei"}
@@ -61,7 +61,7 @@ button{cursor: pointer;border-radius: 2px}
 .nav li{border-bottom: 1px solid #213240}
 .content-tabs{display: none}
 .nav .active span:last-child{transform: rotate(90deg);}
-.main{padding: 5px 0px 20px 35px;min-height: 600px\9;margin-right: 35px;}
+.main{padding: 5px 0px 20px 35px;min-height: 600px\9;padding-right: 35px;background: none;}
 #content-main{height: 700px\9;padding-bottom: 150px\9;overflow: auto\9;}
 /*面包屑*/
 .main .header,.index_main .header{margin-bottom: 5px;}
@@ -326,13 +326,44 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 
 
 
+/*用户端页面首页*/
+.user_common_top{height: 50px;background: url(../img/users_top.png) no-repeat 0 0;}
+.user_common_top p{height: 41px;line-height: 41px;}
+.user_common_top li{margin-left: 15px;}
+.user_common_top li span{line-height: 36px;height: 36px;padding-left: 50px;background: url(../img/user_out.png) no-repeat 16px 10px;margin-top: 5px;border-left: 1px solid rgba(256,256,256,0.5)}
+.user_common_top li .out{background-position: 17px -35px;}
+.user_main iframe{background: url(../img/users_top.png) no-repeat -279px -41px;padding: 5px 0}
+.user_main #content-main{height: calc(100% - 30px)}
+.user_main .nav .J_menuItem{padding-left: 30px;margin-left: 40px}
+.user_main .nav li li a:hover{margin-left: 40px;padding-left: 30px}
+.user_main .nav .nav a{background-color: #f6fafd;}
+.user_main .nav ul{background: #f6fafd;}
+.user_main .navbar-default .nav>li>a:hover,.user_main .navbar-default .nav li li a:focus,.user_main .navbar-default .nav li li a:hover,.user_main .navbar-default .nav li li .index_active{background-color: #f6fafd;color: #4f535a;border: 0;}
+.user_main .navbar-default .nav li li .index_active,.user_main .navbar-default .nav li li a:focus,.user_main .navbar-default .nav .J_menuItem:hover{padding-left: 30px;margin-left: 40px;border-top-left-radius: 40px;border-bottom-left-radius: 40px;background-color: #f28873;color: #fff}
+.user_main .nav li a,.user_main .navbar-default .nav>li>a:focus{padding-left: 40px;background-color: #f6fafd;color: #4f535a}
+.user_main .sidebar-collapse{background-color: #f0f3f7;}
+.user_main .nav li{border-bottom: 1px solid #e2e5e9}
+.user_main .nav .last_icon{color: #d4dbe2}
+.user_main .max900 li{height: 48px;line-height: 48px;}
+.user_main .approve .z-in3{margin-top: 0;background-position: 344px -288px ;}
+.user_main .max900 li span{width: 140px;text-align: right;}
+.user_main .max900 li i{margin-left: 14px;font-size: 12px;font-family: 'simsun';}
+.user_main .max900 li input,.user_main .max900 li select{width: 198px;border: 1px solid #e2e5e9;height: 30px;line-height: 30px;}
+.user_main textarea{border-color: #e2e5e9}
+.user_main .max900 li input{width: 188px;padding: 0 5px;position: relative;height: 28px;line-height: 28px;}
+.user_main .approve .long{background-position: 472px -288px;}
+.user_main .approve .long input{width: 315px;}
+.user_main .save1_2{width: 600px}
+#wrapper .baidu_up{width: 140px;text-align: right;float: left;}
 
-
-
-
-
-
-
+.user_main .creat li:nth-child(odd){width: 40%;padding-right: 9%;}
+.user_main .creat li{width: 40%;padding-right: 9%;}
+.user_main .max1260 .z-in3{background: url(../img/xuebi_y.png) no-repeat 356px -288px;}
+.user_main .max1260_4 #wrapper .baidu_up{width: auto;float: none;text-align: left;border-left: 3px solid #ff503f;padding-left:10px;height: 28px;line-height: 28px;}
+.user_main .max1260_4 #container{margin-left: 0;margin-top: 10px;}
+.user_main .max900 .uesr_textarea12{height: 70px;}
+.user_main .max900 .uesr_textarea12 textarea{width: 198px}
+.user_main .max900 .uesr_textarea12 span{top: -45px;position: relative;}
 
 
 

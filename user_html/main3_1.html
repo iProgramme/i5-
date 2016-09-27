@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+    <script src="../js/uplo.js"></script>  
+    <link rel="stylesheet" href="../dist/css/demo.css">
+    <link rel="stylesheet" href="../dist/css/dropify.min.css">
+    <link href="../css/common.css" rel="stylesheet">
+   <style type="text/css">
+        .upload_choose{padding: 0}
+        .upload_box{margin: 0}
+        .convent_choice{height: 30px}
+        .andArea,.upload_drag_area{padding: 0;}
+        .upload_drag_area,.status_bar,.upload_append_list{display: none;}
+        .andArea,.upload_preview,.upload_main{background: none;border: 0}
+        .filePicker{width: 100px;font-size: 14px;height: 23px;line-height: 23px;position: relative;top: 3px;left: 30px}
+        .convent_choice{height: 0}
+        .zyupload{position: relative;top: -36px}
+        .upload_append_list{float: right;}
+        #uploadList_0{display: block;}
+        .save1_2{width: 800px;margin-top: 30px;}
+        /*图*/
+        #files1{display: none;}
+        .max800{padding-bottom: 70px;}
+        .max800 ul{padding-top: 15px;}
+        .max800 li #Button1{width: 70px;padding: 0}
+        #fileList1{position: absolute;left: 450px;top: -45px}
+   </style>
+</head>
+<body class="main user_main">
+    <!-- 面包屑 -->
+    <div class="header">
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>违章业务</li>
+            <li>违章录入</li>
+        </ul>
+    </div>
+    <!-- 面包屑 -->
+   
+    
+
+    <!-- 违章还能修改？ -->
+    <div class="max800 approve">
+        <p>违章录入</p>
+        <ul>
+            <li class="z-in3"><span>车&nbsp;&nbsp;&nbsp;牌&nbsp;：&nbsp;</span><input type="text"></li>
+            <li class="z-in3 z-in3_short"><span>违章类型：</span><select><option>请选择</option><option>随意</option><option>我的天哪</option><option>口香糖</option><option>游泳</option></select></li>
+            <li class="z-in3">
+                <span>发现时间：</span><input type="text" class="calendar">
+                
+            </li>
+            <li class="z-in3"><span>违章地点：&nbsp;</span><input type="text"></li>
+            <li style="margin-top: 12px"><span style="top: -70px">违章原因：&nbsp;</span><textarea rows="5"></textarea></li>
+        </ul>
+        <div class="load_img">
+            <label for="input-file-now">添加图片：</label>
+            <input type="file" id="input-file-now" class="dropify" />
+        </div>
+    </div>
+    <!-- 违章还能修改？ -->
+
+    <!-- 保存 -->
+    <div class="save1_2">
+        <input type="button" name="" value="保存" class="save">
+    </div>
+    <!-- 保存 -->
+    
+
+
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../dist/js/dropify.min.js"></script>
+<script type="text/javascript">
+ 
+    // 点保存的时候判断
+    $(".save").click(function () {
+        $(".approve .z-in3 input").each(function () {
+            var value=$(this).val();
+            if ($(".approve .z-in3 select").val()=="请选择"||value=="") {
+                alert("带*号的为必填项，请填写完整")
+            } else {
+                $(".save1_2,.max800").hide();
+                $(".max1260").show()
+            }
+        })
+    })
+    // 点击返回
+    $(".back").click(function () {
+        $(".save1_2,.max800").hide();
+        $(".max1260").show()
+    }) 
+</script>
+<script>
+    $(document).ready(function(){
+        // Basic
+        $('.dropify').dropify();
+
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove:  'Supprimer',
+                error:   'Désolé, le fichier trop volumineux'
+            }
+        });
+
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
+
+        drEvent.on('dropify.beforeClear', function(event, element){
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element){
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element){
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e){
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
+    });
+</script>
+
+</html>

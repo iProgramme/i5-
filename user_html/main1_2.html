@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title> 自行车后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <script type="text/javascript" src="../upload/jquery-1.7.2.js"></script>
+     
+    <link rel="stylesheet" type="text/css" href="../baidu_upload/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="../baidu_upload/style.css" />
+    <link href="../css/common.css" rel="stylesheet">
+    
+</head>
+<body class="main user_main">
+    <!-- 面包屑 -->
+    <div class="header">
+        <ul class="clear">
+            <li>当前位置</li>
+            <li>业务办理</li>
+            <li>车辆月保申请</li>
+        </ul>
+    </div>
+    <!-- 面包屑 -->
+    
+  
+
+
+    
+
+    <!-- 新建申请 -->
+    <div class="max1260 max1260_4  max900">
+        <!-- 车辆信息 -->
+        <div class="creat clear">
+            <p>车辆信息</p>
+            <ul>
+                <li class="z-in3">
+                    <label for="">
+                        <span>车牌号码：</span>
+                        <input type="text" disabled="true" value="此框内容不可编辑">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <span>车辆所属人：</span>
+                        <input type="text" disabled="true" value="此框内容不可编辑">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <span>粤通卡号：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>电话号码：</span>
+                        <input type="text">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <!-- 车辆信息 -->
+        
+        <!-- 车主信息 -->
+        <div class="creat clear">
+            <p>车主信息</p>
+            <ul class="clear">
+                <li class="z-in3">
+                    <label for="">
+                        <span>职工姓名：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>申请人与该职工关系：</span>
+                        <select>
+                            <option>请选择</option>
+                            <option>啥关系</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>职工编号：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>车辆使用者：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>手机号码1：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <span>手机号码2：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>办公电话：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>单位：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>住址类型：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>住址：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="uesr_textarea12">
+                    <label for="">
+                        <span>备注：</span>
+                        <textarea rows="3"></textarea>
+                    </label>
+                </li>
+                
+            </ul>
+            
+        </div>
+        <!-- 车主信息 -->
+
+        <!-- 停放信息 -->
+        <div class="creat clear over_vis">
+            <p>停放信息</p>
+            <ul>
+                <li class="z-in3">
+                     <label for="">
+                         <span>停放区域：</span>
+                         <select>
+                             <option>请选择</option>
+                             <option>区域</option>
+                             <option>中国</option>
+                         </select>
+                        
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label>
+                        <span>停放类型：</span>
+                        <select>
+                            <option>请选择</option>
+                            <option>类型二</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>是否过夜：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>停放时间：</span>
+                        <input type="text">
+                    </label>
+                </li>
+                <li class="z-in3">
+                    <label for="">
+                        <span>收费金额：</span>
+                        <input type="text">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <!-- 停放信息 -->
+
+        <!-- 上传图片 -->
+        <div id="wrapper" class="clear">
+            <p class="baidu_up">证件上传：</p>
+            <div id="container">
+                <!--头部，相册选择和格式选择-->
+
+                <div id="uploader">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <div id="filePicker"></div>
+                            <p>将照片拖到这里，最多10张，每张不大于1M</p>
+                        </div>
+                    </div>
+                    <div class="statusBar" style="display:none;">
+                        <div class="progress">
+                            <span class="text">0%</span>
+                            <span class="percentage"></span>
+                        </div><div class="info"></div>
+                        <div class="btns">
+                            <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 上传图片 -->
+
+        <!-- 保存 -->
+        <div class="save1_2">
+            <input type="button" name="" value="保存">
+            <input type="button" name="" value="存为草稿" class="draft">
+        </div>
+        <!-- 保存 -->
+    </div>
+    <!-- 新建申请 -->
+
+
+
+    
+</body>
+<script type="text/javascript" src="../baidu_upload/webuploader.js"></script>
+<script type="text/javascript" src="../baidu_upload/upload10.js"></script>
+<script type="text/javascript">
+  
+    // 点击翻页
+    $(".change a").click(function () {
+        $(".change a").removeClass('active');
+        $(this).addClass('active');
+        var num1=$(this).index();
+        var num2=$(".change a:last-child").index();
+        // 判断是不是第一个
+        if (num2==0) {
+
+        } else {}
+        // 判断是不是最后一个
+        if (num1==num2) {
+
+        } else {}
+    })
+    
+    // 点保存的时候判断
+    $(".max1260_5 .save").click(function () {
+        var chioce="请选择";
+        if ($(".max1260_5 .approve .change_value").text()==chioce) {
+            alert("请填写车主信息状态")
+        } else {
+            $(".test_tab").show()
+        }
+    })
+    // 点击返回的时候
+    // $(".back").click(function () {
+    //     $(".max1260").hide();
+    //     $(".max1260_1").show()
+    // })
+    // $(".test_tab .sure,.test_tab p a").click(function () {
+    //     $(".test_tab").hide()
+    // })
+
+    
+   
+</script>
+
+
+</html>
