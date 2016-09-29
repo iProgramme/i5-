@@ -27,23 +27,58 @@
         </ul>
     </div>
     <!-- 面包屑 -->
-    
-  
-
-
-    
 
     <!-- 新建申请 -->
     <div class="max1260 max1260_4  max900">
         <!-- 车辆信息 -->
-        <div class="creat clear">
+        <div class="creat clear" style="position: relative;z-index: 4;overflow: visible">
             <p>车辆信息</p>
-            <ul>
-                <li class="z-in3">
-                    <label for="">
+            <ul style="height: 96px;overflow: visible">
+                <li class="z-in3 search12">
                         <span>车牌号码：</span>
-                        <input type="text" disabled="true" value="此框内容不可编辑">
-                    </label>
+                        <!-- 车牌号查找 -->
+                        <input type="text">
+                    <div class="search_answer">   
+                        <ul class="search_li">
+                            <li>粤887654</li>
+                            <li>粤887654</li>
+                            <li>粤887654</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤654325</li>
+                            <li>粤887654</li>
+                            <li>粤887654</li>
+                            <li>粤887654</li>
+                            <li>粤887654</li>
+                        </ul>
+                        <div class="pages">
+                            <ul>
+                                
+                                
+                                <li><a href="javascript:void(0)" class="next_page active"></a></li>
+                                <li>
+                                    <ul class="change">
+                                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                                        <li><a href="javascript:void(0)">2</a></li>
+                                        <li><a href="javascript:void(0)">3</a></li>
+                                        <li><a href="javascript:void(0)">4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0)" class="pre_page"></a></li>
+                                <li>共28条记录</li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <label for="">
@@ -269,7 +304,23 @@
     // $(".test_tab .sure,.test_tab p a").click(function () {
     //     $(".test_tab").hide()
     // })
-
+    $(function(){
+        $('.search12 input').keyup(function(){     //输入字符后键盘up时触发事件
+            var txtLeng = $('.search12 input').val().length;      //把输入字符的长度赋给txtLeng
+            //拿输入的值做判断
+            if( txtLeng>10 ){  
+                //输入长度大于300时span显示0
+                $('.search12 input').val(' 0 ');
+                //截取输入内容的前300个字符，赋给fontsize
+                var fontsize = $('#comment textarea').val().substring(0,300);
+                //显示到textarea上
+                $(' #comment textarea ').val( fontsize );
+            }else{
+                //输入长度小于300时span显示300减去长度
+                $('#comment p span').text(300-txtLeng);  
+            }
+        });
+    });
     
    
 </script>

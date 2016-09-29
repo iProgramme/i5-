@@ -356,7 +356,8 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .user_main .save1_2{width: 600px}
 #wrapper .baidu_up{width: 140px;text-align: right;float: left;}
 
-.user_main .creat li:nth-child(odd){width: 40%;padding-right: 9%;}
+.user_main .creat li:nth-child(odd){width: 40%;padding-right: 9%;text-align: left;background-position: 301px -288px;}
+.user_main .creat li:nth-child(odd) span{width: 100px}
 .user_main .creat li{width: 40%;padding-right: 9%;}
 .user_main .max1260 .z-in3{background: url(../img/xuebi_y.png) no-repeat 356px -288px;}
 .user_main .max1260_4 #wrapper .baidu_up{width: auto;float: none;text-align: left;border-left: 3px solid #ff503f;padding-left:10px;height: 28px;line-height: 28px;}
@@ -364,6 +365,34 @@ article .article_all p{line-height: 28px;text-indent: 2em;}
 .user_main .max900 .uesr_textarea12{height: 70px;}
 .user_main .max900 .uesr_textarea12 textarea{width: 198px}
 .user_main .max900 .uesr_textarea12 span{top: -45px;position: relative;}
+/*用户端1-2*/
+.user_main .creat ul .search_answer{width: 538px;background-color: #fff;margin-left: 104px;margin-top: -9px;box-shadow: 4px 4px 8px rgba(0,0,0,0.5);border: 1px solid #e0dfdf}
+.user_main .creat ul .search_answer ul{border: 0;}
+.user_main .creat ul .search12{z-index: 4;}
+.user_main .creat li .search_li li{width: 20%!important;float: left;padding: 0!important;text-align: center!important;cursor: default;}
+.user_main .creat li .search_li li:hover{background-color: #f6f6f6;}
+.user_main .creat li .pages li{width: auto;padding: 0;height: auto;line-height: 16px;margin: 0 5px;float: right;}
+.user_main .creat ul ul ul{border: 0;width: auto;padding: 0;margin: 0;height: 25px;}
+.user_main .pages li .pre_page,.user_main .pages li .next_page{top: 0;background: url(../img/land_bg.png) 20px 0;width: 20px}
+.user_main .pages li .next_page{background-position: 20px -68px;}
+.user_main .max900 .pages input{width: 26px;height: 16px;padding: 0;margin: -6px 5px 0;top: 6px}
+.user_main .creat li .pages li li{float: left;}
+.user_main .pages .change .active{background-color: #fff;color: #f28873}
+.user_main .pages .change a{border: 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
