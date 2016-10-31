@@ -14,6 +14,8 @@
     <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/style.min.css?v=4.1.0" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jeasyui/easyui.css">
+    <link rel="stylesheet" type="text/css" href="jeasyui/icon.css">
     <style type="text/css">
         .save1_2{margin-top: 35px;margin-bottom: 120px;}
     </style>
@@ -40,104 +42,104 @@
                             <span class="icon iconfont">&#xe604;</span><span class="nav-label">车辆业务</span><span class="icon iconfont last_icon">&#xe60e;</span>
                         </a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">车辆管理</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('车辆管理','./html/main1_1.html')">车辆管理</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">停车证管理</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('停车证管理','./html/main1_2.html')">停车证管理</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont">&#xe614;</span><span class="nav-label">预约审批</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">年审预约审批</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('年审预约审批','./html/main2_1.html')">年审预约审批</a>
                             </li>
+                           
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('外来车辆预约审批','./html/main2_2.html')">外来车辆预约审批</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">外来车辆预约审批</a>
-                            </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">大型车辆待发数据</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('大型车辆待发数据','./html/main2_3.html')">大型车辆待发数据</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont">&#xe606;</span><span class="nav-label">违章业务</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">违章录入</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('违章录入','./html/main3_1.html')">违章录入</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">违章审核</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('违章审核','./html/main3_2.html')">违章审核</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">违章发布</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('违章发布','./html/main3_3.html')">违章发布</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont">&#xe605;</span><span class="nav-label">名单管理</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">黑名单</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('黑名单','./html/main4_1.html')">黑名单</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">白名单</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('白名单','./html/main4_2.html')">白名单</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont" style="font-size: 19px">&#xe608;</span><span class="nav-label">修改历史</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">停车证修改历史</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('停车证修改历史','./html/main5_1.html')">停车证修改历史</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">缴费修改历史</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('缴费修改历史','./html/main5_2.html')">缴费修改历史</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont" style="font-size: 19px">&#xe616;</span><span class="nav-label">注册管理</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">账号管理</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('账号管理','./html/main6_1.html')">账号管理</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">注册审核</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('注册审核','./html/main6_2.html')">注册审核</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont" style="font-size: 19px">&#xe615;</span><span class="nav-label">基础信息</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">车辆类型</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('车辆类型','./html/main7_1.html')">车辆类型</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">停车标准</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('停车标准','./html/main7_2.html')">停车标准</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">校内区域</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('校内区域','./html/main7_3.html')">校内区域</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">停放区域</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('停放区域','./html/main7_4.html')">停放区域</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">停放类别</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('停放类别','./html/main7_5.html')">停放类别</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">楼栋信息</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('楼栋信息','./html/main7_6.html')">楼栋信息</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">单位信息</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('单位信息','./html/main7_7.html')">单位信息</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">在校职工</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('在校职工','./html/main7_8.html')">在校职工</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">下载专区</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('下载专区','./html/main7_9.html')">下载专区</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">后台通知公告</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('后台通知公告','./html/main7_10.html')">后台通知公告</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont">&#xe611;</span><span class="nav-label">信息发布</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">公告</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('公告','./html/main8_1.html')">公告</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">私信</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('私信','./html/main8_2.html')">私信</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">LED频幕内容发布</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('LED频幕内容发布','./html/main8_3.html')">LED频幕内容发布</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="caidan_a"><span class="icon iconfont">&#xe600;</span><span class="nav-label">系统设置</span><span class="icon iconfont last_icon">&#xe60e;</span></a>
                         <ul class="nav nav-second-level disN">
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">用户设置</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('用户设置','./html/main9_1.html')">用户设置</a>
                             </li>
-                            <li class="caidan_b"><a class="J_menuItem" href="javascript:void(0)">角色权限</a>
+                            <li class="caidan_b"><a class="easyui-linkbutton" href="#" onclick="addTab('角色权限','./html/main9_2.html')">角色权限</a>
                             </li>
                         </ul>
                     </li>
@@ -148,8 +150,11 @@
         <!--右侧部分开始-->
         <div id="page-wrapper" class="gray-bg dashbard-1" style="margin-top: 0px;min-width: 1000px;width:calc(100% - 280px);width:85.42%\9">
             
-            <div class="row J_mainContent" id="content-main">
-            <iframe src="html/index.html" class="J_iframe" style="display: block;border:0;" height="100%" width="100%"></iframe>
+            <div class="row J_mainContent easyui-tabs" id="content-main" >
+                <div title="Home">
+                    <iframe src="html/index.html" class="J_iframe" style="display: block;border:0;" height="100%" width="100%"></iframe>
+                    
+                </div>
             </div>
             
             
@@ -199,7 +204,7 @@
     </div>
     <!-- 右下角弹窗 -->
     <div class="frame_win">
-        <p class="win_p">您有新的待审批消息<a href="javascript:void(0)"></a></p>
+        <p class="win_p">您有新的待审批消息<a href="#"></a></p>
         <ul>
             <li>待审批停车柱（10）</li>
             <li>待审批注册用户（123）</li>
@@ -207,19 +212,20 @@
     </div>
     <!-- 右下角弹窗 -->
     <script type="text/javascript" src="upload/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="jeasyui/jquery.easyui.min.js"></script>
     <script type="text/javascript">
-    $(".nav-second-level .J_menuItem").click(function() {
+    $(".nav-second-level .easyui-linkbutton").click(function() {
         // 添加class为样式
-        $(".nav-second-level .J_menuItem").removeClass('index_active');
+        $(".nav-second-level .easyui-linkbutton").removeClass('index_active');
         $(this).addClass('index_active');
         $(".index_main").hide();
         // 点击切换右边的iframe
-        var num1=$(this).parents('li').parents('li').index()+1,
-            num2=$(this).parents('.caidan_b').index()+1;
-            src='html/main'+num1+'_'+num2+'.html';
-            frame= '<iframe class="J_iframe" width="100%" height="100%" style="display: block;border:0;;" src="' + src + '"></iframe>';
-        $("#content-main iframe").remove();
-        $("#content-main").append(frame);
+        // var num1=$(this).parents('li').parents('li').index()+1,
+        //     num2=$(this).parents('.caidan_b').index()+1;
+        //     src='html/main'+num1+'_'+num2+'.html';
+        //     frame= '<iframe class="J_iframe" width="100%" height="100%" style="display: block;border:0;;" src="' + src + '"></iframe>';
+        // $("#content-main iframe").remove();
+        // $("#content-main").append(frame);
 
     })
     // 点击展开二级菜单
@@ -250,6 +256,20 @@
         $(".index_main").hide()
     })
 
+    </script>
+    <script>
+        function addTab(title, url){
+            if ($('#content-main').tabs('exists', title)){
+                $('#content-main').tabs('select', title);
+            } else {
+                var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;" class="J_iframe"></iframe>';
+                $('#content-main').tabs('add',{
+                    title:title,
+                    content:content,
+                    closable:true
+                });
+            }
+        }
     </script>
 </body>
 
